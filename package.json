@@ -10,6 +10,12 @@
   "dependencies": {
     "next": "9.5.2",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "sass": "^1.26.10"
+  },
+  "devDependencies": {
+    "husky": "^4.2.5",
+    "snazzy": "^8.0.0",
+    "standard": "^14.3.4"
   }
 }
