@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 
-import '../sass/index.scss'
+import '../styles/index.scss'
 
 function MyApp({ Component, pageProps }) {
   return (

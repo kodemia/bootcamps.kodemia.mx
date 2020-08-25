@@ -1,0 +1,47 @@
+@import '../mixins.scss';
+@import '../variables.scss';
+
+#navbar {
+	background-color: $black-primary;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	min-width: 100vw;
+	padding: 0 32px;
+
+	.container {
+		align-items: center;
+		display: flex;
+		justify-content: space-between;
+		max-width: $max-page-width;
+		padding: 20px 0;
+		width: 100%;
+
+		.logo {
+			max-width: 38vw;
+			width: 130px;
+		}
+		
+		.button {
+			align-items: center;
+			background-color: $white;
+			border-radius: 15px;
+			color: $black-primary;
+			display: flex;
+			font-weight: 600;
+			height: 45px;
+			justify-content: center;
+			width: 150px;
+
+			@include mobile {
+				height: 35px;
+				width: 100px;
+			}
+			span {
+				@include mobile {
+					display: none;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,14 @@
+// BREAK POINTS
+	$mobile-width: 425px;
+
+@mixin desktop {
+	@media (min-width: #{$mobile-width + 1px})  {
+		@content;
+	}
+}
+
+@mixin mobile {
+	@media (max-width: #{$mobile-width}) {
+		@content;
+	}
+}
