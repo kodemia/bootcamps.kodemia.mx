@@ -18,8 +18,10 @@
 		width: 100%;
 
 		.logo {
+			cursor: pointer;
 			max-width: 38vw;
 			width: 130px;
+			margin-right: 10px;
 		}
 		
 		.button {
@@ -29,13 +31,11 @@
 			color: $black-primary;
 			display: flex;
 			font-weight: 600;
-			height: 45px;
+			padding: 10px 33px;
 			justify-content: center;
-			width: 150px;
 
 			@include mobile {
-				height: 35px;
-				width: 100px;
+				padding: 7px 28px;	
 			}
 			span {
 				@include mobile {

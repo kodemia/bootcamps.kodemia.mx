@@ -1,18 +1,18 @@
-import Link from "next/link";
+import Link from 'next/link';
 
-function NavBar() {
+export default function NavBar() {
   return (
-    <nav id='navbar' className="navbar">
+    <nav id='navbar' className='navbar'>
       <div className='container'>
-        <Link href="/">
+        <Link href='/'>
           <img
-            className="logo"
-            src="/images/kodemia-logo-white.png"
-            alt="Logo Kodemia"
+            className='logo'
+            src='/images/kodemia-logo-white.png'
+            alt='Logo Kodemia'
           />
         </Link>
-        <Link href="/">
-          <a className="button">
+        <Link href='/'>
+          <a className='button'>
             Aplica
             <span>&nbsp;hoy</span>
           </a>
@@ -21,5 +21,3 @@ function NavBar() {
     </nav>
   );
 }
-
-export default NavBar;

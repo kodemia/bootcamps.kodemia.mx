@@ -1,14 +1,13 @@
-import { Children } from "react";
 
-export default function Card(props) {
+export default function Card({title, children}) {
   return (
     <div className="card-container">
       <div className="card-title">
-				<h1>{props.title}</h1>
+				<h1>{title}</h1>
 			</div>
 			<div className='card-content'>
-        {props.children}
+        {children}
 			</div>
     </div>
-  );
+  )
 }
