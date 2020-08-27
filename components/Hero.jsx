@@ -1,15 +1,15 @@
-import Link from "next/link";
+import Link from 'next/link';
 
-export default function Hero({ modality, languaje, apply, brochureDesktop, brochureMobile, image, children }) {
+export default function Hero ({ apply, brochureDesktop, brochureMobile, children, image, languaje, modality }) {
 
   return (
-    <div id="hero" className="hero">
-      <div className="container">
+    <div id='hero' className='hero'>
+      <div className='container'>
         <div className='info-section'>
-          <p className="modality">Web developer | {modality}</p>
-          <h1 className="title margin-title">Bootcamp</h1>
-          <h1 className="title">Full Stack con</h1>
-          <h1 className="title languaje">{languaje}</h1>
+          <p className='modality'>Web developer | {modality}</p>
+          <h1 className='title margin-title'>Bootcamp</h1>
+          <h1 className='title'>Full Stack con</h1>
+          <h1 className='title languaje'>{languaje}</h1>
           <p className='description'>
           {children}
           </p>
@@ -40,5 +40,5 @@ export default function Hero({ modality, languaje, apply, brochureDesktop, broch
         </div>
       </div>
     </div>
-  );
+  )
 }

@@ -5,8 +5,8 @@ export default function Home() {
     <main >
       <h1>
         Kodemia HomePage
-        <Link href="js-presential"><a>JS Presencial</a></Link>
-        <Link href="demo"><a>Demo</a></Link>
+        <Link href='js-presential'><a>JS Presencial</a></Link>
+        <Link href='demo'><a>Demo</a></Link>
       </h1>
     </main>
   )

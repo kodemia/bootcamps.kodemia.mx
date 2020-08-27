@@ -1,0 +1,21 @@
+@import '../mixins.scss';
+@import '../variables.scss';
+
+.metric {
+	background-color: $black-primary;
+
+	.container {
+
+		.stats {
+			color: $cyan;
+			font-size: 70px;
+			font-weight: 600;
+		}
+
+		.description {
+			color: $white;
+			font-size: 18px;
+			font-weight: 500;
+		}
+	}
+}

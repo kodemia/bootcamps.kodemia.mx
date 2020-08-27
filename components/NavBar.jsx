@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
-export default function NavBar() {
+export default function NavBar () {
+
   return (
     <nav id='navbar' className='navbar'>
       <div className='container'>
@@ -19,5 +20,5 @@ export default function NavBar() {
         </Link>
       </div>
     </nav>
-  );
+  )
 }
