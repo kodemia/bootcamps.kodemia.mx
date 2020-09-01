@@ -1,12 +1,10 @@
 
-export default function Metric ({ description, stats }) {
+export default function Metric ({ description, value }) {
 	
 	return (
 		<div className='metric'>
-			<div className='container'>
-				<div className='stats'>{stats}</div>
-				<div className='description'>{description}</div>
-			</div>
+			<div className='value'>{value}</div>
+			<div className='description'>{description}</div>
 		</div>
 	)
 }

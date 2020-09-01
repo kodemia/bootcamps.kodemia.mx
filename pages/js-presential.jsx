@@ -1,8 +1,28 @@
 import Link from 'next/link'
 
-import NavBar from '../components/NavBar'
 import Hero from '../components/Hero'
 import Metric from '../components/Metric'
+import Metrics from '../components/Metrics'
+import NavBar from '../components/NavBar'
+
+const metrics = [
+	{
+		description: 'Horas en clases y talleres complementarios',
+		value: '+340'
+	},
+	{
+		description:'Certificaciones de valor curricular e internacional',
+		value:'2'
+	},
+	{
+		description: 'Horas de prácticas en desafíos y proyectos',
+		value: '+180'	
+	},
+	{
+		description: 'De colocación de egresados de Kodemia',
+		value: '90%'
+	}
+]
 
 export default function JsPresential() {
 	return (
@@ -21,14 +41,7 @@ export default function JsPresential() {
 			donde desarrollarás todas las habilidades para programar 
 			una aplicación web desde cero
 		</Hero>
-		
-		<div className='metrics'>
-		<Metric
-				className='metric'
-				description='Horas en clases y talleres complementarios'
-				stats='+340'
-			/>
-		</div>
+		<Metrics metrics={metrics} />
 
 		<h5>
 		<Link href = "/" >
