@@ -1,10 +1,12 @@
-import Metric from "./Metric";
+import Metric from "./Metric"
 
-export default function Metrics({ metrics }) {
+export default function Metrics ({ metrics }) {
+
   return (
     <div className="metrics">
       <div className="container">
         {metrics.map((metric, index) => {
+					
           return (
             <Metric
               value={metric.value}

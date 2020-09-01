@@ -1,24 +1,24 @@
 @import '../mixins.scss';
 @import '../variables.scss';
 
-.metrics {
-  background-color: $black-primary;
+.details {
+	background-color: $white-primary;
 	display: flex;
 	justify-content: center;
-  padding: 80px 32px;
-    
-  .container {
+	padding: 80px 32px 140px;
+
+	.container {
+		align-items: flex-start;
+		background-color: $white-primary;
+		column-gap: 40px;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
 		max-width: $max-page-width;
 		width: 100%;
-	
+
 		@include mobile {
-			align-items: flex-start;
-			column-gap: 10px;
-			display: grid;
-			grid-template-columns: auto auto;
+			flex-direction: column;
 			row-gap: 30px;
 		}
 	}
