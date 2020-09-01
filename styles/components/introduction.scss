@@ -1,0 +1,35 @@
+@import '../mixins.scss';
+@import '../variables.scss';
+
+.introduction {
+
+  .container {
+
+    .card {
+
+      .container {
+
+        .info-section {
+          .title {
+            background-color: tomato;
+          }
+
+          .text {
+            background-color: goldenrod;
+          }
+          
+          .subtitle {
+            background-color: aquamarine;
+          }
+        }
+
+        .image-section {
+          background-color: yellowgreen;
+          .image {
+            border: 1px solid salmon;
+          }
+        }
+      }
+    }
+  }
+}
