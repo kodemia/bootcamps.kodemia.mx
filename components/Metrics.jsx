@@ -6,7 +6,6 @@ export default function Metrics ({ metrics }) {
     <div className="metrics">
       <div className="container">
         {metrics.map((metric, index) => {
-					
           return (
             <Metric
               value={metric.value}

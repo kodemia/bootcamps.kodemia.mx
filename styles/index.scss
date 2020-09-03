@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
-// UI
-@import './ui/index.scss';
+@import './mixins.scss';
+@import './variables.scss';
 
 // Components
 @import './components/index.scss';

@@ -3,7 +3,7 @@ import Link from 'next/link';
 export default function NavBar () {
 
   return (
-    <nav id='navbar' className='navbar'>
+    <nav className='navbar'>
       <div className='container'>
         <Link href='/'>
           <img

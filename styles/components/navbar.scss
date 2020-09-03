@@ -1,14 +1,9 @@
-@import '../mixins.scss';
-@import '../variables.scss';
-
-#navbar {
+.navbar {
 	background-color: $black-primary;
 	box-sizing: border-box;
 	display: flex;
 	justify-content: center;
-	min-width: 100vw;
 	padding: 0 32px;
-
 	.container {
 		align-items: center;
 		display: flex;
@@ -16,14 +11,12 @@
 		max-width: $max-page-width;
 		padding: 20px 0;
 		width: 100%;
-
 		.logo {
 			cursor: pointer;
 			max-width: 38vw;
 			width: 130px;
 			margin-right: 10px;
 		}
-		
 		.button {
 			align-items: center;
 			background-color: $white;
@@ -33,7 +26,6 @@
 			font-weight: 600;
 			padding: 10px 33px;
 			justify-content: center;
-
 			@include mobile {
 				padding: 7px 28px;	
 			}

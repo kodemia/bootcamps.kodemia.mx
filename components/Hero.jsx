@@ -3,7 +3,7 @@ import Link from 'next/link';
 export default function Hero ({ apply, brochureDesktop, brochureMobile, children, image, languaje, modality }) {
 
   return (
-    <div id='hero' className='hero'>
+    <div className='hero'>
       <div className='container'>
         <div className='info-section'>
           <p className='modality'>Web developer | {modality}</p>
@@ -36,7 +36,7 @@ export default function Hero ({ apply, brochureDesktop, brochureMobile, children
           </div>
         </div>
         <div className='image-section'>
-        <img className='image' src={image} alt='hero' />
+          <img className='image' src={image} alt='hero' />
         </div>
       </div>
     </div>
