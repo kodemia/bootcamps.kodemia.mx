@@ -1,0 +1,46 @@
+.program {
+  // background-color: hotpink;
+  background-color: $black-primary;
+  display: flex;
+	justify-content: center;
+  padding: 0 32px;
+  
+  .container {
+    background-color: lightgreen;
+
+    .header-section {
+      background-color: lightcoral;
+
+      .subtitle {
+
+      }
+      .title {
+
+      }
+      .button {
+        background-color: mediumpurple;
+      }
+      .brochure {
+
+      }
+      .is-desktop {
+
+        .icon {
+  
+        }
+      }
+
+      .is-mobile {
+
+        .icon {
+
+        }
+      }
+
+    }
+
+    .modules-section {
+      background-color: lightskyblue;
+    }
+  }
+}

@@ -6,7 +6,6 @@ export default function Details ({ details }) {
 		<div className='details'>
 			<div className='container'>
 				{ details.map((detail, index) => {
-
 					return (
 						<Detail
 							icon={detail.icon}
