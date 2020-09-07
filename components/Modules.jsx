@@ -4,7 +4,6 @@ export default function Modules ({ modules }) {
 
   return (
     <div className='modules'>
-      {/* <div className='modules-container'> */}
         { modules.map((module, index) => {
           return (
             <Module
@@ -16,9 +15,7 @@ export default function Modules ({ modules }) {
             />
           )
         })
-
         }
-      {/* </div> */}
     </div>
   )
 }
