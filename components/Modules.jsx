@@ -4,21 +4,21 @@ export default function Modules ({ modules }) {
 
   return (
     <div className='modules'>
-      <div className='container'>
+      {/* <div className='modules-container'> */}
         { modules.map((module, index) => {
           return (
             <Module
               image={module.image}
               period={module.period}
               text={module.text}
-              title={module.title}
+              name={module.name}
               key={`module-${index}`}
             />
           )
         })
 
         }
-      </div>
+      {/* </div> */}
     </div>
   )
 }

@@ -1,6 +1,11 @@
 .modules {
-    
-    .container {
+  // .modules-container {
+  //   background-color: gold;
 
-    }
+  // }
+
+    display: grid;
+    grid-gap: 15px;
+    grid-template-areas: 'module module module module';
+    margin-top: 40px;
 }

@@ -1,46 +1,116 @@
 .program {
-  // background-color: hotpink;
   background-color: $black-primary;
   display: flex;
 	justify-content: center;
   padding: 0 32px;
   
   .container {
-    background-color: lightgreen;
+    // border: 0.5px solid green;
+    // display: flex;
+    // flex-wrap: wrap;
+    // max-width: $max-page-width;
+    // padding: 40px 0;
+    // width: 100%;
 
-    .header-section {
-      background-color: lightcoral;
+
+    border: 1px solid green;
+    display: grid;
+    grid-template-areas:  'subtitle subtitle subtitle subtitle'
+                          'title title button button'
+                          'modules modules modules modules';
+    max-width: $max-page-width;
+    padding: 20px 0 40px 0;
+    width: 100%;
+
+    .subtitle { grid-area: subtitle;}
+    .title { grid-area: title;}
+    .button { grid-area: button;}
+    .modules { grid-area: modules;}
+    
+    // .header-section {
+    //   background-color: mediumpurple;
+    //   display: grid;
+    //   // grid-gap: 10px;
+    //   grid-template-areas:  '.subtitle .button'
+    //   '.title .button';
+    //   width: 100%;
+      
+    //   .button { grid-area: button; }
+    //   .subtitle { grid-area: subtitle; }
+    //   .title {grid-area: title; }
 
       .subtitle {
-
+        background-color: red;
+        background-color: transparent;
+        color: $gray-light;
+        display: flex;
+        justify-content: flex-start;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 30px;
       }
       .title {
-
+        background-color: midnightblue;
+        background-color: transparent;
+        color: $white;
+        font-size: 35px;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        line-height: 45px;
+        margin-top: 20px;
+        max-width: 500px;
       }
       .button {
-        background-color: mediumpurple;
+        background-color: purple;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
       }
       .brochure {
-
+        align-items: center;
+        background-color: olive;
+        background-color: $gray-medium;
+        border-radius: 15px;
+        color: $white;
+        display: flex;
+        font-size: 16px;
+        font-weight: 600;
+        justify-content: center;
+        padding: 10px 13px;
+        width: fit-content;
       }
       .is-desktop {
+        display: flex;
+
+        @include mobile {
+          display: none;
+        }
 
         .icon {
-  
+          margin-right: 7px;
         }
       }
 
       .is-mobile {
+        display: none;
 
+        @include mobile {
+          display: flex;
+          // margin: 30px auto;
+        }
         .icon {
-
+          margin-right: 7px;
         }
       }
 
-    }
+    // }
 
-    .modules-section {
-      background-color: lightskyblue;
-    }
-  }
+    // .modules-section {
+    //   background-color: lightskyblue;
+      // display: grid;
+      // grid-template-columns: auto auto auto auto;
+      // grid-template-rows: auto;
+    // }
+  } 
 }

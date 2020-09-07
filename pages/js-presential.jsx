@@ -54,27 +54,27 @@ const metrics = [
 const modules = [
   {
     image: '/images/class-room.png',
+    name: 'Pre-Bootcamp',
     period: '+40 horas',
     text: 'Desde tu inscripción desarrollarás las bases a través de cursos online, presenciales y asesoría personalizada',
-    title: 'Pre-Bootcamp',
   },
   {
     image: '/images/kode-day.png',
+    name: 'Modulo Front End',
     period: 'semana 1 - 6',
     text: 'Ahora crearás un sitio dinámico con HTML, CSS, Bootstrap, SASS y Javascript aplicando tu conocimiento en una página web dinámica y funcional',
-    title: 'Modulo Front End',
   },
   {
     image: '/images/mentor.png',
+    name: 'Modulo Back End',
     period: 'semana 7 - 11',
-    text: '',
-    title: 'Modulo Back End',
+    text: 'Aprenderás a crear el funcionamiento de tu desarrollo en el servidor, utilizando Node, Mongo y Express: la base de datos y crearás tu propia API',
   },
   {
-    image: '/images/class-room.png',
-    period: '+40 horas',
-    text: '',
-    title: '',
+    image: '/images/koders.png',
+    name: 'Front End reactivo',
+    period: 'semana 12 - 15',
+    text: 'Crearás el Front End con ReactJS con componentes de código reutilizable, aprendiendo a ahorrar tiempo y logrando desarrollos más dinámicos',
   }
 ]
 
