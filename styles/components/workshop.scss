@@ -4,22 +4,36 @@
     box-sizing: border-box;
     height: auto;
     padding: 40px;
-    // width: 50%;
+
+    @include mobile {
+      padding: 30px;
+    }
 
     .subtitle {
       color: $gray-light;
       font-size: 20px;
       font-weight: 600;
+      line-height: 30px;
       text-transform: capitalize;
+
+      @include mobile {
+        font-size: 18px;
+      }
     }
      .title {
-       color: $white;
+      color: $white;
       font-size: 35px;
       font-weight: 600;
       letter-spacing: 1.75px;
-      line-height: 1.29;
+      line-height: 45px;
       margin-top: 10px;
-     }
+     
+      @include mobile {
+        font-size: 27px;
+        letter-spacing: 1.4px;
+        line-height: 35px;
+      }
+    }
 
      .bullets {
        color: $white-lighter;
@@ -27,6 +41,5 @@
        font-weight: 500;
        line-height: 27px;
        margin-top: 20px;
-
      }
   }

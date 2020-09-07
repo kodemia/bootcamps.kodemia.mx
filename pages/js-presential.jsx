@@ -97,8 +97,8 @@ const workshops = [
     subtitle: 'certificaciones',
     title: '2 certificaciones',
     bullets: [
-      'Certificación SCRUM\nTe acredita en la metodología de trabajo ágil SCRUM que te dará valor curricular',
-      'Certificación IBM\n\rValida tus conocimientos en IBM Cloud y los microservicios que ofrece'
+      'Certificación SCRUM<br />Te acredita en la metodología de trabajo ágil SCRUM que te dará valor curricular<br /><br />',
+      'Certificación IBM<br />Valida tus conocimientos en IBM Cloud y los microservicios que ofrece'
     ]
   },
 ]

@@ -12,5 +12,11 @@
     column-gap: 25px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
+  
+    @include mobile {
+      column-gap: 0;
+      grid-template-columns: 100%;
+      row-gap: 40px;
+    }
   }
 }

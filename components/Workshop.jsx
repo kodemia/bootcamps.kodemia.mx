@@ -7,7 +7,12 @@ export default function Workshop({ bullets, subtitle, title }) {
       <div className='title'>{title}</div>
       <div className='bullets'>
         {bullets.map((bullet, index) => (
-            <div key={`bullet-${index}`}>{`✓ ${bullet}`}</div>
+            <div
+              className='bullet'
+              dangerouslySetInnerHTML={{__html:`✓ ${bullet}`}}
+              key={`bullet-${index}`}
+            >
+            </div>
           )
         )}
       </div>
