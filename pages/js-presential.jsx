@@ -5,6 +5,7 @@ import Introduction from '../components/Introduction';
 import Metrics from '../components/Metrics';
 import NavBar from '../components/NavBar';
 import Program from '../components/Program';
+import Workshops from '../components/Workshops';
 
 const details = [
   {
@@ -30,7 +31,7 @@ const details = [
     note: '(Remoto por Covid-19)',
     title: 'Lugar',
   },
-];
+]
 
 const metrics = [
   {
@@ -49,7 +50,7 @@ const metrics = [
     description: 'De colocación de egresados de Kodemia',
     value: '90%',
   },
-];
+]
 
 const modules = [
   {
@@ -76,6 +77,30 @@ const modules = [
     period: 'semana 12 - 15',
     text: 'Crearás el Front End con ReactJS con componentes de código reutilizable, aprendiendo a ahorrar tiempo y logrando desarrollos más dinámicos',
   }
+]
+
+const workshops = [
+  {
+    subtitle: 'talleres',
+    title: '7 talleres sabatinos',
+    bullets: [
+      'Principios de UX/UI',
+      'JamStack',
+      'Scrum Fundamentals',
+      'Xtreme Programming',
+      'Github Avanzado',
+      'Negocios TI',
+      'AWS Cloud'
+    ]
+  },
+  {
+    subtitle: 'certificaciones',
+    title: '2 certificaciones',
+    bullets: [
+      'Certificación SCRUM\nTe acredita en la metodología de trabajo ágil SCRUM que te dará valor curricular',
+      'Certificación IBM\n\rValida tus conocimientos en IBM Cloud y los microservicios que ofrece'
+    ]
+  },
 ]
 
 export default function JsPresential() {
@@ -109,6 +134,7 @@ export default function JsPresential() {
         brochureMobile='/brochures/JS_PRESENTIAL-M.pdf'
         modules={modules}
       />
+      <Workshops workshops={workshops} />
     </div>
   )
 }

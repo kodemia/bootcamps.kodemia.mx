@@ -1,0 +1,32 @@
+.workshop {
+    background-color: $gray-medium;
+    border-radius: 30px;
+    box-sizing: border-box;
+    height: auto;
+    padding: 40px;
+    // width: 50%;
+
+    .subtitle {
+      color: $gray-light;
+      font-size: 20px;
+      font-weight: 600;
+      text-transform: capitalize;
+    }
+     .title {
+       color: $white;
+      font-size: 35px;
+      font-weight: 600;
+      letter-spacing: 1.75px;
+      line-height: 1.29;
+      margin-top: 10px;
+     }
+
+     .bullets {
+       color: $white-lighter;
+       font-size: 18px;
+       font-weight: 500;
+       line-height: 27px;
+       margin-top: 20px;
+
+     }
+  }

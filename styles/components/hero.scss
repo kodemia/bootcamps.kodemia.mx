@@ -1,159 +1,159 @@
 .hero {
-	background-color: $black-primary;
-	display: flex;
-	justify-content: center;
-	padding: 0 32px;
+  background-color: $black-primary;
+  display: flex;
+  justify-content: center;
+  padding: 0 32px;
 
-	.container {
-		display: flex;
-		max-width: $max-page-width;
-		padding: 40px 0;
-		width: 100%;
+  .container {
+    display: flex;
+    max-width: $max-page-width;
+    padding: 40px 0;
+    width: 100%;
 
-		@include mobile {
-			flex-direction: column-reverse;
-			padding: 20px 0;
-		}
-		
-		.info-section {
-			flex: 1;
+    @include mobile {
+      flex-direction: column-reverse;
+      padding: 20px 0;
+    }
 
-			.modality {
-				color: $gray-light;
-				font-size: 20px;
-				font-weight: 600;
-				letter-spacing: -0.4px;
-			
-				@include mobile {
-					font-size: 18px;
-					letter-spacing: -0.36px;
-					margin-top: 20px;
-				}
-			}
+    .info-section {
+      flex: 1;
 
-			.margin-title {
-				margin-top: 20px;
+      .modality {
+        color: $gray-light;
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: -0.4px;
 
-				@include mobile {
-					margin-top: 10px;
-				}
-			}
+        @include mobile {
+          font-size: 18px;
+          letter-spacing: -0.36px;
+          margin-top: 20px;
+        }
+      }
 
-			.title {
-				color: $white;
-				font-size: 45px;
-				font-weight: 600;
-				letter-spacing: 2.25px;
-				line-height: 1;
+      .margin-title {
+        margin-top: 20px;
 
-				@include mobile {
-					font-size: 35px;
-					letter-spacing: 1.75px;
-				}
-			}
+        @include mobile {
+          margin-top: 10px;
+        }
+      }
 
-			.languaje {
-				color: $cyan;
-			}
+      .title {
+        color: $white;
+        font-size: 45px;
+        font-weight: 600;
+        letter-spacing: 2.25px;
+        line-height: 1;
 
-			.description {
-				color: $white-lighter;
-				font-size: 18px;
-				margin-top: 20px;
-				max-width: 450px;
-			}
+        @include mobile {
+          font-size: 35px;
+          letter-spacing: 1.75px;
+        }
+      }
 
-			span {
-				color: $cyan;
-			}
+      .languaje {
+        color: $cyan;
+      }
 
-			.buttons {
-				display: flex;
-				width: max-content;
+      .description {
+        color: $white-lighter;
+        font-size: 18px;
+        margin-top: 20px;
+        max-width: 450px;
+      }
 
-				@include mobile {
-					flex-direction: column;
-    				width: 100%;
-				}
+      span {
+        color: $cyan;
+      }
 
-				.apply {
-					align-items: center;
-					background-color: $cyan;
-					border-radius: 15px;
-					color: $black;
-					display: flex;
-					font-size: 16px;
-					font-weight: 600;
-					justify-content: center;
-					margin-right: 20px;
-					margin-top: 40px;
-					padding: 10px 21px;
-					width: fit-content;
+      .buttons {
+        display: flex;
+        width: max-content;
 
-					@include mobile {
-						margin: 40px auto 0 auto;
-						padding: 8px 46px;
-					}
-				}
+        @include mobile {
+          flex-direction: column;
+          width: 100%;
+        }
 
-				.brochure {
-					align-items: center;
-					background-color: $gray-medium;
-					border-radius: 15px;
-					color: $white;
-					display: flex;
-					font-size: 16px;
-					font-weight: 600;
-					justify-content: center;
-					margin-top: 40px;
-					padding: 10px 13px;
-					width: fit-content;
-				
-					@include mobile {
-						padding: 8px 23px;
-					}
-				}
+        .apply {
+          align-items: center;
+          background-color: $cyan;
+          border-radius: 15px;
+          color: $black;
+          display: flex;
+          font-size: 16px;
+          font-weight: 600;
+          justify-content: center;
+          margin-right: 20px;
+          margin-top: 40px;
+          padding: 10px 21px;
+          width: fit-content;
 
-				.is-desktop {
-					display: flex;
-				
-					@include mobile {
-						display: none;
-					}
+          @include mobile {
+            margin: 40px auto 0 auto;
+            padding: 8px 46px;
+          }
+        }
 
-					.icon {
-						margin-right: 7px;
-					}
-				}
+        .brochure {
+          align-items: center;
+          background-color: $gray-medium;
+          border-radius: 15px;
+          color: $white;
+          display: flex;
+          font-size: 16px;
+          font-weight: 600;
+          justify-content: center;
+          margin-top: 40px;
+          padding: 10px 13px;
+          width: fit-content;
 
-				.is-mobile {
-					display: none;
-				
-					@include mobile {
-						display: flex;
-						margin: 30px auto;
-					}
+          @include mobile {
+            padding: 8px 23px;
+          }
+        }
 
-					.icon {
-						margin-right: 7px;
-					}
-				}
-			}
-		}
+        .is-desktop {
+          display: flex;
 
-		.image-section {
-			display: flex;
-			flex: 1;
-			justify-content: flex-end;
+          @include mobile {
+            display: none;
+          }
 
-			@include mobile {
-				justify-content: center;
-			}
+          .icon {
+            margin-right: 7px;
+          }
+        }
 
-			.image {
-				margin: auto 0;
-				max-width: 100%;
-			}
-		}
-	}
+        .is-mobile {
+          display: none;
+
+          @include mobile {
+            display: flex;
+            margin: 30px auto;
+          }
+
+          .icon {
+            margin-right: 7px;
+          }
+        }
+      }
+    }
+
+    .image-section {
+      display: flex;
+      flex: 1;
+      justify-content: flex-end;
+
+      @include mobile {
+        justify-content: center;
+      }
+
+      .image {
+        margin: auto 0;
+        max-width: 100%;
+      }
+    }
+  }
 }

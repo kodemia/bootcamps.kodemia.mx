@@ -1,5 +1,5 @@
 
-export default function Introduction ({ children, text, video }) {
+export default function Introduction ({ children, video }) {
 
   return (
     <div className="introduction">

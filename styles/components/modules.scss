@@ -1,14 +1,14 @@
 .modules {
-    display: grid;
-    grid-gap: 25px;
-    grid-template-areas: 'module module module module';
-    margin-top: 40px;
+  display: grid;
+  grid-gap: 25px;
+  grid-template-areas: 'module module module module';
+  margin-top: 40px;
 
-    @include mobile {
-      grid-gap: 40px;
-      grid-template-areas: 'module'
-                            'module'
-                            'module'
-                            'module';
-    }
+  @include mobile {
+    grid-gap: 40px;
+    grid-template-areas: 'module'
+      'module'
+      'module'
+      'module';
+  }
 }
