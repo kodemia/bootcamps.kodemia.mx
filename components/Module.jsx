@@ -1,4 +1,4 @@
-export default function Module ({ image,  name, period, text }) {
+export default function Module ({ image, name, period, text }) {
 
   return (
     <div className='module'>

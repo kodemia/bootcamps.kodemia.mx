@@ -6,7 +6,7 @@ export default function Workshop({ bullets, subtitle, title }) {
       <div className='subtitle'>{subtitle}</div>
       <div className='title'>{title}</div>
       <div className='bullets'>
-        {bullets.map((bullet, index) => (
+        { bullets.map((bullet, index) => (
             <div
               className='bullet'
               dangerouslySetInnerHTML={{__html:`✓ ${bullet}`}}

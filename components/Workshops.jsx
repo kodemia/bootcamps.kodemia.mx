@@ -5,7 +5,7 @@ export default function Workshops({ workshops }) {
   return (
     <div className='workshops'>
       <div className='container'>
-        {workshops.map((workshop, index) => {
+        { workshops.map((workshop, index) => {
           return (
             <Workshop
               subtitle={workshop.subtitle}

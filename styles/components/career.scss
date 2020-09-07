@@ -1,0 +1,58 @@
+.career {
+  background-color: $black-primary;
+  display: flex;
+  justify-content: center;
+
+  .container {
+    bottom: -40px;
+    display: flex;
+    justify-content: center;
+    max-width: $max-page-width;
+    max-width: 1400px;
+    padding: 0 32px;
+    position: relative;
+    width: 100%;
+
+    .card {
+      background-color: $gray;
+      border-radius: 30px;
+      box-sizing: border-box;
+      height: auto;
+      width: 100%;
+
+      .card-container {
+        display: grid;
+        grid-template-areas: 'subtitle subtitle subtitle subtitle'
+                              'title title title title'
+                              'achievements achievements achievements achievements';
+        margin: 80px auto;
+        max-width: $max-page-width;
+        padding: 0 32px;
+
+        .subtitle { grid-area: subtitle;}
+        .title { grid-area: title;}
+        .achievements { grid-area: achievements;}
+
+        .subtitle {
+          color: $gray-light;
+          font-size: 20px;
+          font-weight: 600;
+        }
+
+        .title {
+          color: $white;
+          font-size: 35px;
+          font-weight: 600;
+          letter-spacing: 1.75px; 
+          line-height: 45px;
+          margin-top: 20px;
+        
+          span {
+            color: $cyan;
+          }
+        }
+      }
+
+    }
+  }
+}
