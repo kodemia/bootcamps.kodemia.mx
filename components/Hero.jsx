@@ -1,7 +1,6 @@
-import Link from 'next/link';
+import Link from 'next/link'
 
 export default function Hero ({ apply, brochureDesktop, brochureMobile, children, image, languaje, modality }) {
-
   return (
     <div className='hero'>
       <div className='container'>
@@ -11,18 +10,18 @@ export default function Hero ({ apply, brochureDesktop, brochureMobile, children
           <h1 className='title'>Full Stack con</h1>
           <h1 className='title languaje'>{languaje}</h1>
           <p className='description'>
-          {children}
+            {children}
           </p>
           <div className='buttons'>
-          <Link href={apply}>
-            <a className='apply'>Aplica al Bootcamp</a>
-          </Link>
-            <a 
+            <Link href={apply}>
+              <a className='apply'>Aplica al Bootcamp</a>
+            </Link>
+            <a
               className='brochure is-desktop'
               href={brochureDesktop}
               target='__blank'
             >
-              <img className='icon' src='/icons/download.svg' alt='download'/>
+              <img className='icon' src='/icons/download.svg' alt='download' />
               Descarga el brochure
             </a>
             <a
@@ -30,7 +29,7 @@ export default function Hero ({ apply, brochureDesktop, brochureMobile, children
               href={brochureMobile}
               target='__blank'
             >
-              <img className='icon' src='/icons/download.svg' alt='download'/>
+              <img className='icon' src='/icons/download.svg' alt='download' />
               Descarga el brochure
             </a>
           </div>

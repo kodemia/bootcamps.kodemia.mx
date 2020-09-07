@@ -1,55 +1,55 @@
 
-import Details from '../components/Details';
-import Hero from '../components/Hero';
-import Introduction from '../components/Introduction';
-import Metrics from '../components/Metrics';
-import NavBar from '../components/NavBar';
-import Program from '../components/Program';
-import Workshops from '../components/Workshops';
+import Details from '../components/Details'
+import Hero from '../components/Hero'
+import Introduction from '../components/Introduction'
+import Metrics from '../components/Metrics'
+import NavBar from '../components/NavBar'
+import Program from '../components/Program'
+import Workshops from '../components/Workshops'
 
 const details = [
   {
     icon: '/icons/calendar.svg',
     description: 'Del 19 de octubre al 1 de febrero',
-    title: 'Fechas',
+    title: 'Fechas'
   },
   {
     icon: '/icons/clock.svg',
     description: 'Lunes a Viernes de 19 a 22 hrs',
     note: '7 sábados de 10 a 18 hrs | GMT-6',
-    title: 'Horarios',
+    title: 'Horarios'
   },
   {
     icon: '/icons/box.svg',
     description: '19 semanas de aprendizaje intensivo',
     note: '340 horas 100% prácticas',
-    title: 'Programa',
+    title: 'Programa'
   },
   {
     icon: '/icons/map-pin.svg',
     description: 'Tonalá 10, col. Roma Norte, CDMX',
     note: '(Remoto por Covid-19)',
-    title: 'Lugar',
-  },
+    title: 'Lugar'
+  }
 ]
 
 const metrics = [
   {
     description: 'Horas en clases y talleres complementarios',
-    value: '+340',
+    value: '+340'
   },
   {
     description: 'Certificaciones de valor curricular e internacional',
-    value: '2',
+    value: '2'
   },
   {
     description: 'Horas de prácticas en desafíos y proyectos',
-    value: '+180',
+    value: '+180'
   },
   {
     description: 'De colocación de egresados de Kodemia',
-    value: '90%',
-  },
+    value: '90%'
+  }
 ]
 
 const modules = [
@@ -57,25 +57,25 @@ const modules = [
     image: '/images/class-room.png',
     name: 'Pre-Bootcamp',
     period: '+40 horas',
-    text: 'Desde tu inscripción desarrollarás las bases a través de cursos online, presenciales y asesoría personalizada',
+    text: 'Desde tu inscripción desarrollarás las bases a través de cursos online, presenciales y asesoría personalizada'
   },
   {
     image: '/images/kode-day.png',
     name: 'Modulo Front End',
     period: 'semana 1 - 6',
-    text: 'Ahora crearás un sitio dinámico con HTML, CSS, Bootstrap, SASS y Javascript aplicando tu conocimiento en una página web dinámica y funcional',
+    text: 'Ahora crearás un sitio dinámico con HTML, CSS, Bootstrap, SASS y Javascript aplicando tu conocimiento en una página web dinámica y funcional'
   },
   {
     image: '/images/mentor.png',
     name: 'Modulo Back End',
     period: 'semana 7 - 11',
-    text: 'Aprenderás a crear el funcionamiento de tu desarrollo en el servidor, utilizando Node, Mongo y Express: la base de datos y crearás tu propia API',
+    text: 'Aprenderás a crear el funcionamiento de tu desarrollo en el servidor, utilizando Node, Mongo y Express: la base de datos y crearás tu propia API'
   },
   {
     image: '/images/koders.png',
     name: 'Front End reactivo',
     period: 'semana 12 - 15',
-    text: 'Crearás el Front End con ReactJS con componentes de código reutilizable, aprendiendo a ahorrar tiempo y logrando desarrollos más dinámicos',
+    text: 'Crearás el Front End con ReactJS con componentes de código reutilizable, aprendiendo a ahorrar tiempo y logrando desarrollos más dinámicos'
   }
 ]
 
@@ -100,10 +100,10 @@ const workshops = [
       'Certificación SCRUM<br />Te acredita en la metodología de trabajo ágil SCRUM que te dará valor curricular<br /><br />',
       'Certificación IBM<br />Valida tus conocimientos en IBM Cloud y los microservicios que ofrece'
     ]
-  },
+  }
 ]
 
-export default function JsPresential() {
+export default function JsPresential () {
   return (
     <div>
       <NavBar />

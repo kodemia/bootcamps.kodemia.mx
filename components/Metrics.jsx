@@ -1,10 +1,9 @@
-import Metric from "./Metric"
+import Metric from './Metric'
 
 export default function Metrics ({ metrics }) {
-
   return (
-    <div className="metrics">
-      <div className="container">
+    <div className='metrics'>
+      <div className='container'>
         {metrics.map((metric, index) => {
           return (
             <Metric
@@ -16,5 +15,5 @@ export default function Metrics ({ metrics }) {
         })}
       </div>
     </div>
-  );
+  )
 }
