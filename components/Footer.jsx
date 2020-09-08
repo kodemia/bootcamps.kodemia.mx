@@ -1,0 +1,18 @@
+
+export default function Footer () {
+  return (
+    <footer className='footer'>
+      <p>
+        Kodemia® 2020. Todos los derechos reservados  |  Pólitica de privacidad
+      </p>
+      <p>
+        Tonalá 10, Roma Norte, Cuauhtémoc, 03800
+        <br />
+        Ciudad de México, México
+      </p>
+      <p>
+        Orgullosamente hecho en México 🇲🇽
+      </p>
+    </footer>
+  )
+}

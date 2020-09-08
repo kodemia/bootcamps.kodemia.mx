@@ -6,6 +6,7 @@ import Metrics from '../components/Metrics'
 import NavBar from '../components/NavBar'
 import Program from '../components/Program'
 import Workshops from '../components/Workshops'
+import Footer from '../components/Footer'
 
 const details = [
   {
@@ -135,6 +136,7 @@ export default function JsPresential () {
         modules={modules}
       />
       <Workshops workshops={workshops} />
+      <Footer />
     </div>
   )
 }
