@@ -23,11 +23,17 @@
       .card-container {
         display: grid;
         grid-template-areas:  'subtitle subtitle subtitle subtitle'
-                              'title title title title'
+                              'title title none none' 
                               'achievements achievements achievements achievements';
         margin: 80px auto;
         max-width: $max-page-width;
-        padding: 0 32px;
+        padding: 0 80px 32px 80px;
+
+        @include mobile {
+          grid-template-areas:  'subtitle'
+                                'title'
+                                'achievements';
+        }
 
         .subtitle {
           grid-area: subtitle;

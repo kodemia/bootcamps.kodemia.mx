@@ -4,6 +4,7 @@ import Details from '../components/Details'
 import Footer from '../components/Footer'
 import Hero from '../components/Hero'
 import Introduction from '../components/Introduction'
+import Investment from '../components/Investment'
 import Metrics from '../components/Metrics'
 import NavBar from '../components/NavBar'
 import Program from '../components/Program'
@@ -101,6 +102,26 @@ const modules = [
   }
 ]
 
+const paymentPlan = [
+  {
+    text: 'a meses sin intereses con tu tarjeta de crédito y con Paypal',
+    name: 'a MSI con tarjeta de crédito'
+  },
+  {
+    text: 'si haces tu pago en una sola exhibición recibe un 10% de descuento',
+    name: '10% OFF con pago de contado'
+  },
+  {
+    text: 'paga a 4 meses tu bootcamp sin intereses directamente con nosotros',
+    name: 'diferido a 4 pagos'
+  },
+  {
+    text: 'puedes pagar a 12, 18, 24 y 36 meses con mensualidades desde $2,926',
+    name: 'financiamiento hasta 36 meses'
+  }
+
+]
+
 const workshops = [
   {
     subtitle: 'talleres',
@@ -158,6 +179,7 @@ export default function JsPresential () {
       />
       <Workshops workshops={workshops} />
       <Career achievements={achievements} />
+      <Investment paymentPlan={paymentPlan} />
       <Footer />
     </div>
   )

@@ -1,7 +1,5 @@
 
-
-export default function Achievement({ name, text }) {
-
+export default function Achievement ({ name, text }) {
   return (
     <div className='achievement'>
       <div className='name'>{name}</div>
