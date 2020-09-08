@@ -5,6 +5,7 @@ import Footer from '../components/Footer'
 import Hero from '../components/Hero'
 import Introduction from '../components/Introduction'
 import Investment from '../components/Investment'
+import MeetOurKoders from '../components/MeetOurKoders'
 import Metrics from '../components/Metrics'
 import NavBar from '../components/NavBar'
 import Program from '../components/Program'
@@ -183,6 +184,7 @@ export default function JsPresential () {
       <Career achievements={achievements} />
       <Investment paymentPlan={paymentPlan} />
       <Scholarship />
+      <MeetOurKoders />
       <ReadyToTransform />
       <Footer />
     </div>
