@@ -1,0 +1,83 @@
+.scholarship {
+  background-color: $black-primary;
+  background-color: $white-primary;
+  background-image: linear-gradient(0, #181818, #181818 #f6f6f6, #f6f6f6);
+  display: flex;
+	justify-content: center;
+  padding: 0 32px;
+
+  .container {
+    max-width: $max-page-width;
+    // padding: 20px 0 40px 0;
+    position: relative;
+    top: -150px;
+    width: 100%;
+
+    @include mobile {
+      top: -190px;
+    }
+
+    .card {
+      background-color: $cyan-primary;
+      border-radius: 30px;
+      margin: 0 80px;
+      padding: 30px;
+
+      @include mobile {
+        margin: 0;
+      }
+
+      .title {
+        color: $gray-darker;
+        font-size: 35px;
+        font-weight: 600;
+        line-height: 45px;
+        width: 60%;
+
+        &::first-letter {
+          text-transform: capitalize;
+        }
+
+        @include mobile {
+          font-size: 28px;
+          line-height: 35px;
+          width: 100%;
+        }
+      }
+
+      .text {
+        color: $gray-darker;
+        font-size: 18px;
+        font-weight: 500;
+        margin-top: 20px;
+        text-align: justify;
+
+        &::first-letter {
+          text-transform: capitalize;
+        }
+
+        @include mobile {
+          letter-spacing: -0.9px;
+        }
+      }
+      .button {
+        background-color: $gray-darker;
+        border-radius: 15px;
+        margin-top: 20px;
+        padding: 12px 28px;
+        text-align: center;
+        width: fit-content;
+
+        @include mobile {
+          padding: 12px 3%;
+        }
+
+        .interview {
+          color: $white;
+          font-size: 16px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

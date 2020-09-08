@@ -2,7 +2,11 @@
   background-color: $black-primary;
   display: flex;
   justify-content: center;
-  padding: 40px 32px;
+  padding: 40px 32px 190px 32px;
+
+  @include mobile {
+    padding: 40px 32px 230px 32px;
+  }
 
   .container {
     display: grid;
@@ -11,7 +15,6 @@
                           'description description description description'
                           'payment_plan payment_plan payment_plan payment_plan';
     max-width: $max-page-width;
-    // padding: 20px 0 40px 0;
     padding: 40px 0;
     width: 100%;
 
