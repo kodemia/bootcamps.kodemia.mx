@@ -1,54 +1,75 @@
 
+import Career from '../components/Career'
 import Details from '../components/Details'
+import Footer from '../components/Footer'
 import Hero from '../components/Hero'
 import Introduction from '../components/Introduction'
 import Metrics from '../components/Metrics'
 import NavBar from '../components/NavBar'
 import Program from '../components/Program'
 import Workshops from '../components/Workshops'
-import Footer from '../components/Footer'
+
+const achievements = [
+  {
+    name: 'personalización de currículum',
+    text: 'de forma estratégica mostrarás en esta herramienta tus habilidades y tu potencial como candidato ante una vacante'
+  },
+  {
+    name: 'estilo de aprendizaje',
+    text: 'Conocer tu estilo de aprendizaje te ayudará a asimilar mucho mejor todo lo que estás por aprender en tu nueva vida como developer'
+  },
+  {
+    name: 'proyección profesional',
+    text: 'conocerás todas las posibilidades de crecimiento que puedes tener en el sector Tech para que tomes las mejores decisiones de crecimiento; según tus objetivos y metas'
+  },
+  {
+    name: 'estrategias de búsqueda de empleo',
+    text: 'eres una persona única y diferente a otros candidatos por esto necesitas crear una estratégia de búsqueda de empleo acorde a tus fortalezas y metas profesionales'
+  }
+
+]
 
 const details = [
   {
     icon: '/icons/calendar.svg',
-    description: 'Del 19 de octubre al 1 de febrero',
-    title: 'Fechas'
+    description: 'del 19 de octubre al 1 de febrero',
+    title: 'fechas'
   },
   {
     icon: '/icons/clock.svg',
-    description: 'Lunes a Viernes de 19 a 22 hrs',
+    description: 'lunes a viernes de 19 a 22 hrs',
     note: '7 sábados de 10 a 18 hrs | GMT-6',
-    title: 'Horarios'
+    title: 'horarios'
   },
   {
     icon: '/icons/box.svg',
     description: '19 semanas de aprendizaje intensivo',
     note: '340 horas 100% prácticas',
-    title: 'Programa'
+    title: 'programa'
   },
   {
     icon: '/icons/map-pin.svg',
-    description: 'Tonalá 10, col. Roma Norte, CDMX',
+    description: 'tonalá 10, col. Roma Norte, CDMX',
     note: '(Remoto por Covid-19)',
-    title: 'Lugar'
+    title: 'lugar'
   }
 ]
 
 const metrics = [
   {
-    description: 'Horas en clases y talleres complementarios',
+    description: 'horas en clases y talleres complementarios',
     value: '+340'
   },
   {
-    description: 'Certificaciones de valor curricular e internacional',
+    description: 'certificaciones de valor curricular e internacional',
     value: '2'
   },
   {
-    description: 'Horas de prácticas en desafíos y proyectos',
+    description: 'horas de prácticas en desafíos y proyectos',
     value: '+180'
   },
   {
-    description: 'De colocación de egresados de Kodemia',
+    description: 'de colocación de egresados de Kodemia',
     value: '90%'
   }
 ]
@@ -56,27 +77,27 @@ const metrics = [
 const modules = [
   {
     image: '/images/class-room.png',
-    name: 'Pre-Bootcamp',
+    name: 'pre-Bootcamp',
     period: '+40 horas',
-    text: 'Desde tu inscripción desarrollarás las bases a través de cursos online, presenciales y asesoría personalizada'
+    text: 'desde tu inscripción desarrollarás las bases a través de cursos online, presenciales y asesoría personalizada'
   },
   {
     image: '/images/kode-day.png',
-    name: 'Modulo Front End',
+    name: 'modulo Front End',
     period: 'semana 1 - 6',
-    text: 'Ahora crearás un sitio dinámico con HTML, CSS, Bootstrap, SASS y Javascript aplicando tu conocimiento en una página web dinámica y funcional'
+    text: 'ahora crearás un sitio dinámico con HTML, CSS, Bootstrap, SASS y Javascript aplicando tu conocimiento en una página web dinámica y funcional'
   },
   {
     image: '/images/mentor.png',
-    name: 'Modulo Back End',
+    name: 'modulo Back End',
     period: 'semana 7 - 11',
-    text: 'Aprenderás a crear el funcionamiento de tu desarrollo en el servidor, utilizando Node, Mongo y Express: la base de datos y crearás tu propia API'
+    text: 'aprenderás a crear el funcionamiento de tu desarrollo en el servidor, utilizando Node, Mongo y Express: la base de datos y crearás tu propia API'
   },
   {
     image: '/images/koders.png',
-    name: 'Front End reactivo',
+    name: 'front End Reactivo',
     period: 'semana 12 - 15',
-    text: 'Crearás el Front End con ReactJS con componentes de código reutilizable, aprendiendo a ahorrar tiempo y logrando desarrollos más dinámicos'
+    text: 'crearás el Front End con ReactJS con componentes de código reutilizable, aprendiendo a ahorrar tiempo y logrando desarrollos más dinámicos'
   }
 ]
 
@@ -136,6 +157,7 @@ export default function JsPresential () {
         modules={modules}
       />
       <Workshops workshops={workshops} />
+      <Career achievements={achievements} />
       <Footer />
     </div>
   )

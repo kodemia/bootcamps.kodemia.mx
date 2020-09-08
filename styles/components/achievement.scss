@@ -1,0 +1,26 @@
+.achievement {
+  padding-top: 40px;
+
+  .name {
+    color: $white-light;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 33px;
+
+    &::first-letter {
+      text-transform: capitalize;
+    }
+  }
+
+  .text {
+    color: $white-lighter;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    margin-top: 20px;
+
+    &::first-letter {
+      text-transform: capitalize;
+    }
+  }
+}

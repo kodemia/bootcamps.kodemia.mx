@@ -16,6 +16,10 @@
       line-height: 30px;
       text-transform: capitalize;
 
+      &::first-letter {
+        text-transform: capitalize;
+      }
+
       @include mobile {
         font-size: 18px;
       }
@@ -27,6 +31,10 @@
       letter-spacing: 1.75px;
       line-height: 45px;
       margin-top: 10px;
+
+      &::first-letter {
+        text-transform: capitalize;
+      }
      
       @include mobile {
         font-size: 27px;
@@ -41,5 +49,9 @@
        font-weight: 500;
        line-height: 27px;
        margin-top: 20px;
+
+       &::first-letter {
+        text-transform: capitalize;
+      }
      }
   }

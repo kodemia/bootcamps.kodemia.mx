@@ -6,9 +6,9 @@
 
   @include mobile {
     grid-gap: 40px;
-    grid-template-areas: 'module'
-      'module'
-      'module'
-      'module';
+    grid-template-areas:  'module'
+                          'module'
+                          'module'
+                          'module';
   }
 }

@@ -11,8 +11,7 @@ export default function Workshop ({ bullets, subtitle, title }) {
             dangerouslySetInnerHTML={{ __html: `✓ ${bullet}` }}
             key={`bullet-${index}`}
           />
-        )
-        )}
+        ))}
       </div>
     </div>
   )

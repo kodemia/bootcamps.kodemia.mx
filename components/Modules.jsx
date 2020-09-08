@@ -7,10 +7,10 @@ export default function Modules ({ modules }) {
         return (
           <Module
             image={module.image}
+            key={`module-${index}`}
+            name={module.name}
             period={module.period}
             text={module.text}
-            name={module.name}
-            key={`module-${index}`}
           />
         )
       })}

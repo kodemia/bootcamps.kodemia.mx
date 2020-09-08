@@ -1,0 +1,12 @@
+.achievements {
+  display: grid;
+  grid-gap: 25px;
+  grid-template-areas: 'achievement achievement achievement achievement';
+
+  @include mobile {
+    grid-template-areas: 'achievement'
+                          'achievement'
+                          'achievement'
+                          'achievement';
+  }
+}
