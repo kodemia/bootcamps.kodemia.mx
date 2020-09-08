@@ -28,6 +28,10 @@
     margin-top: 40px;
     padding: 0 5px;
     width: fit-content;
+
+    &::first-letter {
+      text-transform: capitalize;
+    }
   }
 
   .name {
@@ -35,6 +39,10 @@
     font-size: 22px;
     font-weight: 600;
     margin-top: 10px;
+
+    &::first-letter {
+      text-transform: capitalize;
+    }
   }
 
   .text {
@@ -45,6 +53,10 @@
     letter-spacing: -0.9px;
     line-height: 27px;
     margin-top: 30px;
+
+    &::first-letter {
+      text-transform: capitalize;
+    }
 
     @include mobile {
       margin-top: 20px;

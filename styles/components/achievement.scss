@@ -5,17 +5,22 @@
     color: $white-light;
     font-size: 22px;
     font-weight: 600;
-    letter-spacing: -0.66px;
     line-height: 33px;
-    text-transform: capitalize;
+
+    &::first-letter {
+      text-transform: capitalize;
+    }
   }
 
   .text {
     color: $white-lighter;
     font-size: 18px;
     font-weight: 500;
-    letter-spacing: -0.66px;
     line-height: 27px;
     margin-top: 20px;
+
+    &::first-letter {
+      text-transform: capitalize;
+    }
   }
 }

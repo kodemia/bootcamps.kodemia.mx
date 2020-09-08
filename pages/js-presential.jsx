@@ -15,7 +15,7 @@ const achievements = [
   },
   {
     name: 'estilo de aprendizaje',
-    text: 'conocer tu estilo de aprendizaje te ayudará a asimilar mucho mejor todo lo que estás por aprender en tu nueva vida como developer'
+    text: 'Conocer tu estilo de aprendizaje te ayudará a asimilar mucho mejor todo lo que estás por aprender en tu nueva vida como developer'
   },
   {
     name: 'proyección profesional',
@@ -23,7 +23,7 @@ const achievements = [
   },
   {
     name: 'estrategias de búsqueda de empleo',
-    text: 'Eres una persona única y diferente a otros candidatos por esto necesitas crear una estratégia de búsqueda de empleo acorde a tus fortalezas y metas profesionales'
+    text: 'eres una persona única y diferente a otros candidatos por esto necesitas crear una estratégia de búsqueda de empleo acorde a tus fortalezas y metas profesionales'
   },
 
 ]
@@ -94,7 +94,7 @@ const modules = [
   },
   {
     image: '/images/koders.png',
-    name: 'front End reactivo',
+    name: 'front End Reactivo',
     period: 'semana 12 - 15',
     text: 'crearás el Front End con ReactJS con componentes de código reutilizable, aprendiendo a ahorrar tiempo y logrando desarrollos más dinámicos',
   }
@@ -105,12 +105,12 @@ const workshops = [
     subtitle: 'talleres',
     title: '7 talleres sabatinos',
     bullets: [
-      'principios de UX/UI',
-      'jamStack',
-      'scrum Fundamentals',
-      'xtreme Programming',
-      'github Avanzado',
-      'negocios TI',
+      'Principios de UX/UI',
+      'JamStack',
+      'Scrum Fundamentals',
+      'Xtreme Programming',
+      'Github Avanzado',
+      'Negocios TI',
       'AWS Cloud'
     ]
   },
@@ -118,13 +118,13 @@ const workshops = [
     subtitle: 'certificaciones',
     title: '2 certificaciones',
     bullets: [
-      'certificación SCRUM<br />Te acredita en la metodología de trabajo ágil SCRUM que te dará valor curricular<br /><br />',
-      'certificación IBM<br />Valida tus conocimientos en IBM Cloud y los microservicios que ofrece'
+      'Certificación SCRUM<br />Te acredita en la metodología de trabajo ágil SCRUM que te dará valor curricular<br /><br />',
+      'Certificación IBM<br />Valida tus conocimientos en IBM Cloud y los microservicios que ofrece'
     ]
-  },
+  }
 ]
 
-export default function JsPresential() {
+export default function JsPresential () {
   return (
     <div>
       <NavBar />
@@ -156,7 +156,7 @@ export default function JsPresential() {
         modules={modules}
       />
       <Workshops workshops={workshops} />
-      <Career achievements={achievements}/>
+      <Career achievements={achievements} />
     </div>
   )
 }
