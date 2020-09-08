@@ -1,10 +1,9 @@
 import Achievement from './Achievement'
 
-export default function Achievements({ achievements }) {
-
+export default function Achievements ({ achievements }) {
   return (
     <div className='achievements'>
-      { achievements.map((achievement, index) => {
+      {achievements.map((achievement, index) => {
         return (
           <Achievement
             key={`achievement-${index}`}
