@@ -7,6 +7,7 @@ import Introduction from '../components/Introduction'
 import Metrics from '../components/Metrics'
 import NavBar from '../components/NavBar'
 import Program from '../components/Program'
+import ReadyToTransform from '../components/ReadyToTransform'
 import Workshops from '../components/Workshops'
 
 const achievements = [
@@ -158,6 +159,7 @@ export default function JsPresential () {
       />
       <Workshops workshops={workshops} />
       <Career achievements={achievements} />
+      <ReadyToTransform />
       <Footer />
     </div>
   )

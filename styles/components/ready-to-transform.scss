@@ -1,0 +1,71 @@
+
+.ready-to-transform {
+  background-color: $black-primary;
+  display: flex;
+  justify-content: center;
+  @include mobile {
+    width: 100%;
+  }
+  .container  {
+    max-width: 1400px;
+    width: 100%;
+    padding: 80px 32px;
+    .card {
+      background-color: $gray;
+      border-radius: 30px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      @include mobile {
+        flex-direction: column;
+      }
+      .card-container {
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+        padding: 80px 0;
+        max-width: $max-page-width;
+        margin: 0 25px;
+
+        @include mobile {
+          flex-direction: column;
+        }
+        .text {
+          color: $white;
+          font-weight: 900;
+          font-size: 2.45em;
+          letter-spacing: 0.05em;
+          @include mobile {
+            font-size: 1.8em;
+          }
+          span {
+            color: $cyan;
+          }
+        }
+        .button-container {
+          width: 33.3%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          @include mobile {
+            width: 100%;
+            padding-top: 50px;
+          }
+          .button {
+            background-color: $cyan;
+            border-radius: 15px;
+            padding: 13px 25px;
+            font-weight: 800;
+            font-size: 1.05em;
+            color: $black;
+            text-align: center;
+            @include mobile {
+              width: 100%;
+              padding: 13px 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
