@@ -8,6 +8,7 @@ import Investment from '../components/Investment'
 import Metrics from '../components/Metrics'
 import NavBar from '../components/NavBar'
 import Program from '../components/Program'
+import Scholarship from '../components/Scholarship'
 import Workshops from '../components/Workshops'
 
 const achievements = [
@@ -149,7 +150,7 @@ const workshops = [
 export default function JsPresential () {
   return (
     <div>
-      <NavBar />
+      {/* <NavBar /> */}
       <Hero
         className='hero'
         apply='/apply'
@@ -163,24 +164,25 @@ export default function JsPresential () {
         donde desarrollarás todas las habilidades para programar una aplicación
         web desde cero
       </Hero>
-      <Metrics metrics={metrics} />
-      <Details details={details} />
-      <Introduction video='/images/video-testimonial.png'>
+      {/* <Metrics metrics={metrics} /> */}
+      {/* <Details details={details} /> */}
+      {/* <Introduction video='/images/video-testimonial.png'>
         Nuestro Bootcamp es un entrenamiento intensivo que te llevará{' '}
         <span>desde cero hasta desarrollador Full Stack</span>. Lograrás crear
         una aplicación web completa empleando{' '}
         <span>UX/UI, metodología SCRUM, FrontEnd y BackEnd con Javascript</span>
         , desplegado en la nube, creando y consumiendo servicios de terceros
-      </Introduction>
-      <Program
+      </Introduction> */}
+      {/* <Program
         brochureDesktop='/brochures/JS_PRESENTIAL-D.pdf'
         brochureMobile='/brochures/JS_PRESENTIAL-M.pdf'
         modules={modules}
-      />
-      <Workshops workshops={workshops} />
-      <Career achievements={achievements} />
-      <Investment paymentPlan={paymentPlan} />
-      <Footer />
+      /> */}
+      {/* <Workshops workshops={workshops} /> */}
+      {/* <Career achievements={achievements} /> */}
+      {/* <Investment paymentPlan={paymentPlan} /> */}
+      {/* <Scholarship /> */}
+      {/* <Footer /> */}
     </div>
   )
 }
