@@ -8,14 +8,23 @@ export default function Introduction ({ children, video }) {
             <div className='info-section'>
               <div className='title'>Transforma tu vida programando</div>
               <div className='text'>
-                {children}
+                Nuestro Bootcamp es un entrenamiento intensivo que te llevará{' '}
+                <span>desde cero hasta desarrollador Full Stack</span>. Lograrás crear
+                una aplicación web completa empleando{' '}
+                <span>UX/UI, metodología SCRUM, FrontEnd y BackEnd con Javascript</span>
+                , desplegado en la nube, creando y consumiendo servicios de terceros
               </div>
               <div className='subtitle'>
                 Nos sumamos a tu objetivo y te acompañamos en el proceso de transformar tu vida programando
               </div>
             </div>
             <div className='video-section'>
-              <img className='video' src={video} alt='koder' />
+              <video controls poster='/images/video-testimonial.png' className='video'>
+                <source
+                  src='/videos/testimonial-intro.mp4'
+                  type='video/mp4'
+                />
+              </video>
             </div>
           </div>
         </div>

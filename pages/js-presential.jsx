@@ -168,13 +168,7 @@ export default function JsPresential () {
       </Hero>
       <Metrics metrics={metrics} />
       <Details details={details} />
-      <Introduction video='/images/video-testimonial.png'>
-        Nuestro Bootcamp es un entrenamiento intensivo que te llevará{' '}
-        <span>desde cero hasta desarrollador Full Stack</span>. Lograrás crear
-        una aplicación web completa empleando{' '}
-        <span>UX/UI, metodología SCRUM, FrontEnd y BackEnd con Javascript</span>
-        , desplegado en la nube, creando y consumiendo servicios de terceros
-      </Introduction>
+      <Introduction />
       <Program
         brochureDesktop='/brochures/JS_PRESENTIAL-D.pdf'
         brochureMobile='/brochures/JS_PRESENTIAL-M.pdf'

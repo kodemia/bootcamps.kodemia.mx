@@ -104,6 +104,12 @@
           .video {
             margin: auto 0;
             max-width: 100%;
+            object-position: center;
+            object-fit: cover;
+            border-radius: 30px;
+            &:focus {
+              outline: none;
+            }
           }
         }
       }
