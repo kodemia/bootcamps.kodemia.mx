@@ -150,28 +150,7 @@ const workshops = [
   }
 ]
 
-const supportItems = [
-  {
-    icon: 'icon',
-    title: 'title',
-    text: 'text'
-  },
-  {
-    icon: 'icon',
-    title: 'title',
-    text: 'text'
-  },
-  {
-    icon: 'icon',
-    title: 'title',
-    text: 'text'
-  },
-  {
-    icon: 'icon',
-    title: 'title',
-    text: 'text'
-  }
-]
+
 
 export default function JsPresential () {
   return (
@@ -203,7 +182,7 @@ export default function JsPresential () {
       <Investment paymentPlan={paymentPlan} />
       <Scholarship />
       <MeetOurKoders />
-      <Support supportItems={supportItems} />
+      <Support />
       <ReadyToTransform />
       <Footer />
     </div>

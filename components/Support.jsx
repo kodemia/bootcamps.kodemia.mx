@@ -1,5 +1,27 @@
+const supportItems = [
+  {
+    icon: 'icon',
+    title: 'title',
+    text: 'text'
+  },
+  {
+    icon: 'icon',
+    title: 'title',
+    text: 'text'
+  },
+  {
+    icon: 'icon',
+    title: 'title',
+    text: 'text'
+  },
+  {
+    icon: 'icon',
+    title: 'title',
+    text: 'text'
+  }
+]
 
-export default function Support ({ supportItems }) {
+export default function Support () {
   return (
     <section className='support'>
       <div className='container'>
