@@ -21,7 +21,8 @@ export default function Introduction ({ children, video }) {
             <div className='video-section'>
               <video controls poster='/images/video-testimonial.png' className='video'>
                 <source
-                  src='/videos/testimonial-intro.mp4'
+                  // src='/videos/testimonial-intro.mp4'
+                  src='https://player.vimeo.com/external/453877636.sd.mp4?s=4f3d8db7da1f40f992196b0f3f76733274dde2d6&profile_id=165'
                   type='video/mp4'
                 />
               </video>
