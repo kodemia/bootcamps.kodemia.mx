@@ -36,17 +36,9 @@
           padding: 0 32px 32px 32px;
         }
 
-        .subtitle {
-          grid-area: subtitle;
-        }
-
-        .title {
-          grid-area: title;
-        }
-
-        .achievements {
-          grid-area: achievements;
-        }
+        .subtitle { grid-area: subtitle; }
+        .title { grid-area: title; }
+        .achievements { grid-area: achievements; }
 
         @include mobile {
           margin: 40px auto;

@@ -1,3 +1,4 @@
+import Vimeo from '@u-wave/react-vimeo'
 
 export default function MeetOurKoders () {
   return (
@@ -13,8 +14,20 @@ export default function MeetOurKoders () {
             y presentar su proyecto en los Kodeawards.
           </div>
         </div>
-        <div className='image-container'>
-          <img className='image' src='/images/video-meet-our-koders.png' alt='conoce a Melisa' />
+        <div className='video-container'>
+          <Vimeo
+            // background
+            className='video'
+            showByline={false}
+            // responsive={false}
+            responsive
+            frameborder='0'
+            showTitle={false}
+            video='440496401'
+            height='360' // '360'
+            width='540' // '540'
+            allowfullscreen
+          />
         </div>
       </div>
     </div>
