@@ -1,23 +1,23 @@
 const supportItems = [
   {
-    icon: 'icon',
-    title: 'title',
-    text: 'text'
+    icon: '/icons/users.svg',
+    title: 'Mentoría personalizada',
+    text: 'Trabajaremos en tus objetivos tanto del Bootcamp como personales que planteamos desde el día uno'
   },
   {
-    icon: 'icon',
-    title: 'title',
-    text: 'text'
+    icon: '/icons/heart.svg',
+    title: 'Aprende en Comunidad',
+    text: 'Buscamos formar las condiciones para generar una comunidad internacional de aprendizaje que esta contigo, antes, durante y después del Bootcamp'
   },
   {
-    icon: 'icon',
-    title: 'title',
-    text: 'text'
+    icon: '/icons/hack-the-job.svg',
+    title: 'Hack the Job',
+    text: 'Es un método de reclutamiento disruptivo para las empresas que buscan programadores. A partir de la semana 7 puedes participar en los retos y colocarte'
   },
   {
-    icon: 'icon',
-    title: 'title',
-    text: 'text'
+    icon: '/icons/video.svg',
+    title: 'Kodemia Live',
+    text: 'Si por alguna razón un día no puedes asistir, puedes ver la clase de manera remota en VIVO. Además  consultar tus clases pasadas OnDemand'
   }
 ]
 
@@ -30,7 +30,7 @@ export default function Support () {
             Soporte Kodemia
           </p>
           <p className='heading'>
-            Además cuentas con comunidad y mucho más
+            Además cuentas con <span>comunidad</span> y mucho más
           </p>
         </header>
         <div className='items'>
