@@ -11,6 +11,7 @@ import NavBar from '../components/NavBar'
 import Program from '../components/Program'
 import ReadyToTransform from '../components/ReadyToTransform'
 import Scholarship from '../components/Scholarship'
+import Support from '../components/Support'
 import Workshops from '../components/Workshops'
 
 const achievements = [
@@ -149,6 +150,8 @@ const workshops = [
   }
 ]
 
+
+
 export default function JsPresential () {
   return (
     <div>
@@ -179,6 +182,7 @@ export default function JsPresential () {
       <Investment paymentPlan={paymentPlan} />
       <Scholarship />
       <MeetOurKoders />
+      <Support />
       <ReadyToTransform />
       <Footer />
     </div>
