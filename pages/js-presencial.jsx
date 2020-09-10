@@ -12,6 +12,7 @@ import Program from '../components/Program'
 import ReadyToTransform from '../components/ReadyToTransform'
 import Scholarship from '../components/Scholarship'
 import Support from '../components/Support'
+import Testimonials from '../components/Testimonials'
 import Workshops from '../components/Workshops'
 
 const achievements = [
@@ -179,6 +180,7 @@ export default function JsPresential () {
       />
       <Workshops workshops={workshops} />
       <Career achievements={achievements} />
+      <Testimonials />
       <Investment paymentPlan={paymentPlan} />
       <Scholarship />
       <MeetOurKoders />

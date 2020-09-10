@@ -1,0 +1,139 @@
+.testimonials {
+  background-color: $white-primary;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+  padding: 0 32px;
+  overflow: hidden;  //slider
+
+  .container {
+    display: flex;
+    margin-top: 80px;
+    max-width: $max-page-width;
+    width: 100%;
+    // transform: translateX(-1000px); // slider
+    
+    .testimonial {
+      padding: 40px 132px;
+      width: 100%;
+
+      @include mobile {
+        padding: 40px 0;
+      }
+
+      .top {
+        display: flex;
+        width: 100%;
+
+        .quote-mark {
+          height: 100px;
+          left: 26px;
+          left: -42px;
+          position: relative;
+          top: -101px;
+          top: -59px;
+          width: 77px;
+          z-index: 1;
+
+          @include mobile {
+            left: -30px;
+            top: -55px;
+            width: 58px;
+          }
+        }
+
+        .quote {
+          color: $gray-darker;
+          font-size: 20px;
+          font-weight: 600;
+          left: -70px;
+          position: relative;
+          z-index: 5;
+
+          @include mobile {
+            font-size: 18px;
+            left: -58px;
+          }
+        }
+      }
+
+      .bottom {
+        display: flex;
+        justify-content: space-between;
+
+        @include mobile {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .autor {  
+          display: grid;
+          grid-column-gap: 20px;
+          grid-template-areas:  'photo name'
+                                'photo employment';
+          margin-top: 40px;
+          height: auto;
+
+          @include mobile {
+            grid-column-gap: 10px;
+          }
+
+          .employment { grid-area: employment;}
+          .name { grid-area: name; }
+          .photo { grid-area: photo; }
+  
+          .photo {
+            display: flex;
+            width: fit-content;
+            img {
+              height: 90px;
+              width: 90px;
+              
+              @include mobile {
+                height: 80px;
+                width: 80px;
+              }
+            }
+          }
+
+          .name {
+            align-self: end;
+            color: $gray-darker;
+            font-size: 22px;
+            font-weight: 600;
+            width: fit-content;
+          }
+
+          .employment {
+            align-self: center;
+            color: $gray-dark;
+            font-size: 14px;
+            font-weight: 600;
+            width: 200px;
+
+            @include mobile {
+              font-size: 12px;
+            }
+          }
+        }
+        .back-forward-buttons {
+          align-self: flex-end;
+          width: fit-content;
+
+          @include mobile {
+            margin-top: 30px;
+          }
+  
+          .back {
+            margin-right: 20px;
+            width: 40px;
+          }
+  
+          .forward {
+            width: 40px;
+          }
+        }
+      }
+    }
+  }
+}
