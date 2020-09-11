@@ -1,7 +1,7 @@
 
 export default function MeetOurKoders () {
   return (
-    <div className='meet-our-koders'>
+    <section className='meet-our-koders'>
       <div className='container'>
         <div className='info-container'>
           <div className='title'>
@@ -25,6 +25,6 @@ export default function MeetOurKoders () {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }

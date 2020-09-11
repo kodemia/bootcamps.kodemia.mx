@@ -2,7 +2,6 @@
   background-color: $black-primary;
   display: flex;
   justify-content: center;
-
   .container {
     bottom: -40px;
     display: flex;
@@ -12,14 +11,12 @@
     padding: 0 32px;
     position: relative;
     width: 100%;
-
     .card {
       background-color: $gray;
       border-radius: 30px;
       box-sizing: border-box;
       height: auto;
       width: 100%;
-
       .card-container {
         display: grid;
         grid-template-areas:  'subtitle subtitle subtitle subtitle'
@@ -28,36 +25,29 @@
         margin: 80px auto;
         max-width: $max-page-width;
         padding: 0 80px 32px 80px;
-
         @include mobile {
           grid-template-areas:  'subtitle'
                                 'title'
                                 'achievements';
           padding: 0 32px 32px 32px;
         }
-
         .subtitle { grid-area: subtitle; }
         .title { grid-area: title; }
         .achievements { grid-area: achievements; }
-
         @include mobile {
           margin: 40px auto;
         }
-
         .subtitle {
           color: $gray-light;
           font-size: 20px;
           font-weight: 600;
-
           &::first-letter {
             text-transform: capitalize;
           }
-
           @include mobile {
             font-size: 18px;
           }
         }
-
         .title {
           color: $white;
           font-size: 35px;
@@ -65,19 +55,15 @@
           letter-spacing: 1.75px;
           line-height: 45px;
           margin-top: 20px;
-          text-transform: initial;
-
           &::first-letter {
             text-transform: capitalize;
           }
-
           @include mobile {
             font-size: 28px;
             letter-spacing: 1.4px;
             line-height: 35px;
             margin-top: 10px;
           }
-
           span {
             color: $cyan;
           }

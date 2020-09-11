@@ -1,21 +1,21 @@
 
 export default function Introduction () {
   return (
-    <div className='introduction'>
+    <section className='introduction'>
       <div className='container'>
         <div className='card'>
           <div className='card-container'>
             <div className='info-section'>
-              <div className='title'>transforma tu vida programando</div>
+              <div className='title'>Transforma tu vida programando</div>
               <div className='text'>
-                nuestro Bootcamp es un entrenamiento intensivo que te llevará{' '}
+                Nuestro Bootcamp es un entrenamiento intensivo que te llevará{' '}
                 <span>desde cero hasta desarrollador Full Stack</span>. Lograrás crear
                 una aplicación web completa empleando{' '}
                 <span>UX/UI, metodología SCRUM, FrontEnd y BackEnd con Javascript</span>
                 , desplegado en la nube, creando y consumiendo servicios de terceros
               </div>
               <div className='subtitle'>
-                nos sumamos a tu objetivo y te acompañamos en el proceso de transformar tu vida programando
+                Nos sumamos a tu objetivo y te acompañamos en el proceso de transformar tu vida programando
               </div>
             </div>
             <div className='video-section'>
@@ -29,6 +29,6 @@ export default function Introduction () {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }

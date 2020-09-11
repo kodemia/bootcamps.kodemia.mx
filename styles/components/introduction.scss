@@ -2,7 +2,6 @@
   background-color: $black-primary;
   display: flex;
   justify-content: center;
-
   .container {
     display: flex;
     justify-content: center;
@@ -12,36 +11,30 @@
     position: relative;
     top: -60px;
     width: 100%;
-
     .card {
       background-color: $gray;
       border-radius: 30px;
       box-sizing: border-box;
       height: auto;
       width: 100%;
-
       .card-container {
         display: flex;
         justify-content: space-between;
         margin: 80px auto;
         max-width: $max-page-width;
         padding: 0 32px;
-
         @include mobile {
           align-items: center;
           flex-direction: column-reverse;
           margin: 40px auto;
           padding: 0 15px;
         }
-
         .info-section {
           flex: 1;
           margin-top: 14px;
-
           @include mobile {
             margin-top: 40px;
           }
-
           .title {
             color: $white;
             font-size: 35px;
@@ -49,13 +42,11 @@
             letter-spacing: 0.05em;
             line-height: 45px;
             max-width: 400px;
-
             @include mobile {
               font-size: 28px;
               line-height: 35px;
             }
           }
-
           .text {
             color: $white-lighter;
             font-size: 18px;
@@ -63,17 +54,14 @@
             line-height: 27px;
             margin-top: 20px;
             max-width: 505px;
-
             @include mobile {
               font-size: 16px;
               line-height: normal;
             }
-
             span {
               color: $cyan;
             }
           }
-
           .subtitle {
             border-left: 4px solid $cyan;
             color: $white;
@@ -82,25 +70,21 @@
             margin-top: 20px;
             max-width: 470px;
             padding: 5px 0 5px 25px;
-
             @include mobile {
               font-size: 20px;
               margin-top: 40px;
             }
           }
         }
-
         .video-section {
           display: flex;
           flex: 1;
           justify-content: flex-end;
           margin-left: 25px;
-
           @include mobile {
             justify-content: flex-start;
             margin-left: 0;
           }
-
           .video {
             margin: auto 0;
             max-width: 100%;

@@ -3,79 +3,68 @@
   display: flex;
   justify-content: center;
   padding: 0 32px;
-
   .container {
     display: flex;
     max-width: $max-page-width;
     padding: 40px 0;
     width: 100%;
-
     @include mobile {
       flex-direction: column-reverse;
       padding: 20px 0;
     }
-
     .info-section {
       flex: 1;
-
+      @include mobile {
+        margin: 0 auto;
+      }
       .modality {
         color: $gray-light;
         font-size: 20px;
         font-weight: 600;
         letter-spacing: -0.4px;
-
+        margin-top: 40px;
         @include mobile {
           font-size: 18px;
           letter-spacing: -0.36px;
           margin-top: 20px;
         }
       }
-
       .margin-title {
         margin-top: 20px;
-
         @include mobile {
           margin-top: 10px;
         }
       }
-
       .title {
         color: $white;
         font-size: 45px;
         font-weight: 600;
         letter-spacing: 2.25px;
         line-height: 1;
-
         @include mobile {
           font-size: 35px;
           letter-spacing: 1.75px;
         }
       }
-
-      .languaje {
+      .language {
         color: $cyan;
       }
-
       .description {
         color: $white-lighter;
         font-size: 18px;
         margin-top: 20px;
         max-width: 450px;
       }
-
       span {
         color: $cyan;
       }
-
       .buttons {
         display: flex;
         width: max-content;
-
         @include mobile {
           flex-direction: column;
           width: 100%;
         }
-
         .apply {
           align-items: center;
           background-color: $cyan;
@@ -89,13 +78,11 @@
           margin-top: 40px;
           padding: 10px 21px;
           width: fit-content;
-
           @include mobile {
             margin: 40px auto 0 auto;
             padding: 8px 46px;
           }
         }
-
         .brochure {
           align-items: center;
           background-color: $gray-medium;
@@ -108,48 +95,38 @@
           margin-top: 40px;
           padding: 10px 13px;
           width: fit-content;
-
           @include mobile {
             padding: 8px 23px;
           }
         }
-
         .is-desktop {
           display: flex;
-
           @include mobile {
             display: none;
           }
-
           .icon {
             margin-right: 7px;
           }
         }
-
         .is-mobile {
           display: none;
-
           @include mobile {
             display: flex;
             margin: 30px auto;
           }
-
           .icon {
             margin-right: 7px;
           }
         }
       }
     }
-
     .image-section {
       display: flex;
       flex: 1;
       justify-content: flex-end;
-
       @include mobile {
         justify-content: center;
       }
-
       .image {
         margin: auto 0;
         max-width: 100%;

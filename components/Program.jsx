@@ -2,7 +2,7 @@ import Modules from './Modules'
 
 export default function Program ({ brochureDesktop, brochureMobile, modules }) {
   return (
-    <div className='program'>
+    <section className='program'>
       <div className='container'>
         <div className='subtitle'>El programa</div>
         <div className='title'>Así es como puedes llegar de cero a Full Stack</div>
@@ -26,6 +26,6 @@ export default function Program ({ brochureDesktop, brochureMobile, modules }) {
         </div>
         <Modules modules={modules} />
       </div>
-    </div>
+    </section>
   )
 }

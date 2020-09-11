@@ -4,32 +4,26 @@
 	display: flex;
 	justify-content: center;
   padding: 0 32px;
-  
   .container {
     display: flex;
     flex-direction: column;
     max-width: $max-page-width;
     width: 100%;
-
     header {
       margin-top: 40px;
       width: 100%;
-
       .title {
         color: $gray-light;
         font-size: 20px;
         font-weight: 600;
         line-height: 30px;
-
         &::first-letter {
           text-transform: capitalize;
         }
-
         @include mobile {
           font-size: 18px;
         }
       }
-      
       .heading {
         color: $white;
         font-size: 35px;
@@ -38,11 +32,9 @@
         line-height: 45px;
         margin-top: 20px;
         max-width: 506px;
-
         &::first-letter {
           text-transform: capitalize;
         }
-
         @include mobile {
           font-size: 28px;
           letter-spacing: 1.4px;
@@ -50,12 +42,10 @@
           margin-top: 10px;
         }
       }
-
       span {
         color: $cyan;
       }
     }
-
     .items {
       display: grid;
       grid-gap: 25px;
@@ -63,12 +53,10 @@
       grid-template-rows: auto;
       margin-top: 40px;
       width: 100%;
-
       @include mobile {
         grid-gap: 40px;
         grid-template-columns: 1fr;
       }
-
       .item {
         .icon {
           color: $white;
@@ -79,7 +67,6 @@
           font-weight: 600;
           margin-top: 10px;
           max-width: 240px;
-
           &::first-letter {
             text-transform: capitalize;
           }
@@ -90,7 +77,6 @@
           font-weight: 500;
           letter-spacing: -0.9px;
           margin-top: 20px;
-
           &::first-letter {
             text-transform: capitalize;
           }

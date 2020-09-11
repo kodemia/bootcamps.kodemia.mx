@@ -5,7 +5,7 @@ export default function Footer () {
   return (
     <footer className='footer'>
       <p>
-        Kodemia® {dateFormat(new Date(), 'yyyy')}. Todos los derechos reservados  |  Pólitica de privacidad
+        Kodemia® {dateFormat(new Date(), 'yyyy')}. Todos los derechos reservados  |  Política de privacidad
       </p>
       <p>
         Tonalá 10, Roma Norte, Cuauhtémoc, 03800 <br />
