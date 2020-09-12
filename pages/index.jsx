@@ -3,7 +3,7 @@ import Router from 'next/router'
 
 export default function Home () {
   useEffect(() => {
-    Router.replace('/js-presencial')
+    Router.replace('/javascript-lifetime')
   }, [])
   return null
 }
