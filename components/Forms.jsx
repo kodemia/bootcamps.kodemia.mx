@@ -1,7 +1,7 @@
 import React from 'react'
 import { useForm } from 'react-hook-form'
 
-export default function Forms() {
+export default function Forms () {
   const { register, handleSubmit, errors } = useForm()
   const onSubmit = data => console.log(data)
   console.log(errors)
@@ -13,14 +13,14 @@ export default function Forms() {
         type='text'
         placeholder='First name'
         name='First name'
-        ref={register({ required: true, maxLength: 80 })}
+        ref={register({ required: true, minLength: 2, maxLength: 80 })}
       />
       <input
         className='input'
         type='text'
         placeholder='Last name'
         name='Last name'
-        ref={register({ required: true, maxLength: 100 })}
+        ref={register({ required: true, minLength: 2, maxLength: 100 })}
       />
       <input
         className='input'
@@ -29,7 +29,6 @@ export default function Forms() {
         name='Email'
         ref={register({ required: true, pattern: /^\S+@\S+$/i })}
       />
-      {/* <div className='terms-conditions'> */}
       <label className='checkbox-label' htmlFor='conditions'>
         <input
           className='check'
@@ -42,7 +41,6 @@ export default function Forms() {
         <span className='checkmark' />
           Acepto los términos y condiciones
       </label>
-      {/* </div> */}
       <input className='submit' type='submit' />
     </form>
   )
