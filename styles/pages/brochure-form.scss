@@ -1,0 +1,45 @@
+.brochure-form {
+  background-color: $black-primary;
+	box-sizing: border-box;
+  display: flex;
+  height: 100vh;
+	justify-content: center;
+	padding: 0 32px;
+  .container {
+    max-width: $max-page-width;
+		width: 100%;
+    .header {
+      padding: 20px 0;
+      width: 100%;
+      .logo {
+        cursor: pointer;
+        margin-right: 10px;
+        max-width: 38vw;
+        width: 130px;
+      }
+    }
+    .content {
+      border: 1px solid red;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+      width: 100%;
+      @include mobile {
+        flex-direction: column;
+        justify-content: center;
+      }
+      .info-section {
+        .title {
+          color: $white;
+          span {
+            color: $cyan;
+          }
+        }
+        .text {
+          color: $white-light;
+        }
+      }
+    }
+
+  }
+}
