@@ -1,10 +1,10 @@
 import Link from 'next/link'
 
-import Forms from '../components/Forms'
+import Forms from '../components/BrochureForm'
 
-export default function BrochureForm () {
+export default function BrochureDownload () {
   return (
-    <div className='brochure-form'>
+    <div className='brochure-download'>
       <div className='container'>
         <section className='header'>
           <Link href='/'>
@@ -24,7 +24,9 @@ export default function BrochureForm () {
               Te enviaremos el Brochure con la información detallada del Bootcamp
             </p>
           </div>
-          <Forms />
+          <div className='form-section'>
+            <Forms />
+          </div>
         </section>
       </div>
     </div>
