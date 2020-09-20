@@ -4,6 +4,7 @@ $black: #000000;
 $black-medium: rgba(0, 0, 0, 0.6);
 $black-primary: #181818;
 
+
 // Cyan
 $cyan: #00ffff; 
 $cyan-primary: #67EBEB;
@@ -24,3 +25,10 @@ $white-primary: #F6F6F6;
 
 // SIZES
 $max-page-width: 1200px;
+
+// pretty-checkbox customization
+$pretty--color-default: $white;
+$pretty--color-info: $cyan;
+$pretty--z-index-back:1;
+$pretty--z-index-between:2;
+$pretty--z-index-front:3;

@@ -1,8 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import "../node_modules/bulma/sass/utilities/_all.sass";
-@import '../node_modules/bulma/sass/form/_all.sass';
-@import './mixins.scss';
+
 @import './variables.scss';
+@import './mixins.scss';
+
+/* pretty-checkbox */
+@import '../node_modules/pretty-checkbox/src/scss/variables';
+@import '../node_modules/pretty-checkbox/src/scss/core';
+@import '../node_modules/pretty-checkbox/src/scss/elements/default/outline';
+@import '../node_modules/pretty-checkbox/src/scss/extras/curve';
+@import '../node_modules/pretty-checkbox/src/scss/extras/animation'; 
+@import '../node_modules/pretty-checkbox/src/scss/extras/colors';
+
+@import '../node_modules/pretty-checkbox/src/scss/extras/bigger';
+
 
 // Components
 @import './components/index.scss';

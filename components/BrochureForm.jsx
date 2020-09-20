@@ -1,4 +1,5 @@
 import React from 'react'
+// import Link from 'next/link'
 import { useForm } from 'react-hook-form'
 
 export default function BrochureForm () {
@@ -14,7 +15,8 @@ export default function BrochureForm () {
           className='input-field'
           name='firstName'
           placeholder='Nombre'
-          ref={register({ required: true, minLength: 1, maxLength: 80 })}
+          maxLength={80}
+          ref={register({ required: true })}
           type='text'
         />
         <label className='input-label' htmlFor='lastName'>Apellido</label>
@@ -22,7 +24,8 @@ export default function BrochureForm () {
           className='input-field'
           name='lastName'
           placeholder='Apellido'
-          ref={register({ required: true, minLength: 1, maxLength: 100 })}
+          maxLength={100}
+          ref={register({ required: true })}
           type='text'
         />
         <label className='input-label' htmlFor='email'>Email</label>
@@ -30,75 +33,27 @@ export default function BrochureForm () {
           className='input-field'
           name='email'
           placeholder='correo@example.com'
-          ref={register({ required: true, pattern: /^\S+@\S+$/i })}
+          ref={
+            register({
+              required: true,
+              pattern: /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+            })
+          }
           type='email'
         />
-        <label className='checkbox'>
-          <input
-            className='check'
-            name='termsAndConditions'
-            ref={register({ required: true })}
-            type='checkbox'
-          />
-          <span>
-            Acepto los{' '}
-            <a href='/' target='__blank'>
-              términos y condiciones
-            </a>
-          </span>
-        </label>
+        <div className='pretty  p-bigger p-default p-curve p-smooth checkbox'>
+          <input type='checkbox' name='termsAndConditions' ref={register({ required: true })} />
+          <div className='state p-info-o'>
+            <label>
+              Acepto los
+              <a href='/' target='__blank'>
+                términos y condiciones
+              </a>
+            </label>
+          </div>
+        </div>
         <input className='submit' type='submit' />
       </form>
     </div>
-
-
-    // <form className='form' onSubmit={handleSubmit(onSubmit)}>
-    //   <div className='register'>
-    //     <label className='input-label' htmlFor='firstName'>Nombre</label>
-    //     <input
-    //       className='input'
-    //       name='firstName'
-    //       placeholder='Nombre'
-    //       ref={register({ required: true, minLength: 1, maxLength: 80 })}
-    //       type='text'
-    //     />
-    //   </div>
-    //   <div className='register'>
-    //     <label className='input-label' htmlFor='lastName'>Apellido</label>
-    //     <input
-    //       className='input'
-    //       name='lastName'
-    //       placeholder='Apellido'
-    //       ref={register({ required: true, minLength: 1, maxLength: 100 })}
-    //       type='text'
-    //     />
-    //   </div>
-    //   <div className='register'>
-    //     <label className='input-label' htmlFor='email'>Email</label>
-    //     <input
-    //       className='input'
-    //       name='email'
-    //       placeholder='correo@example.com'
-    //       ref={register({ required: true, pattern: /^\S+@\S+$/i })}
-    //       type='email'
-    //     />
-    //   </div>
-    //   <label className='checkbox' htmlFor='termsAndConditions'>
-    //     <input
-    //       // className='check'
-    //       name='termsAndConditions'
-    //       ref={register({ required: true })}
-    //       type='checkbox'
-    //     />
-    //     {/* Acepto los<a href='/' target='__blank'> {' '}términos y condiciones</a> */}
-    //     <span>
-    //       Acepto los{' '}
-    //       <a href='/' target='__blank'>
-    //         términos y condiciones
-    //       </a>
-    //     </span>
-    //   </label>
-    //   <input className='submit' type='submit' />
-    // </form>
   )
 }
