@@ -3,7 +3,6 @@
   grid-gap: 25px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   margin-top: 40px;
-
   @include mobile {
     grid-template-columns: 1fr;
   }

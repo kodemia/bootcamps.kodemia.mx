@@ -2,39 +2,28 @@
   background-color: $gray-medium;
   border-radius: 30px;
   padding: 20px 20px 40px 20px;
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: flex-start;
-  // align-items: flex-start;
-  // max-width: 240px;
-
   @include mobile {
     padding: 30px;
   }
-
   .name {
     color: $white-light;
     font-size: 22px;
     font-weight: 600;
     height: 40%;
     line-height: 33px;
-
     &::first-letter {
       text-transform: capitalize;
     }
   }
-
   .text {
     color: $white-lighter;
     font-size: 18px;
     font-weight: 500;
     letter-spacing: -0.9px;
     margin-top: 20px;
-
     &::first-letter {
       text-transform: capitalize;
     }
-
     @include mobile {
       margin-top: 10px;
     }

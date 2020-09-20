@@ -3,7 +3,6 @@
   display: flex;
 	justify-content: center;
   padding: 0 32px;
-  
   .container {
     display: grid;
     grid-template-areas:  'subtitle subtitle subtitle subtitle'
@@ -12,19 +11,16 @@
     max-width: $max-page-width;
     padding: 20px 0 40px 0;
     width: 100%;
-
     .subtitle { grid-area: subtitle;}
     .title { grid-area: title;}
     .button { grid-area: button;}
     .modules { grid-area: modules;}
-
     @include mobile {
       grid-template-areas: 'subtitle'
                             'title'
                             'modules'
                             'button';
     }
-
     .subtitle {
       color: $gray-light;
       display: flex;
@@ -32,13 +28,11 @@
       font-size: 20px;
       font-weight: 600;
       line-height: 30px;
-
       @include mobile {
         font-size: 18px;
         line-height: 27px;
       }
     }
-
     .title {
       color: $white;
       font-size: 35px;
@@ -47,27 +41,22 @@
       line-height: 45px;
       margin-top: 20px;
       max-width: 500px;
-        
       @include  mobile {
         font-size: 28px;
         line-height: 35px;
         margin-top: 10px;
       }
     }
-
-
     .button {
       display: flex;
       align-items: center;
       justify-content: flex-end;
-
       @include mobile {
         margin-top: 40px;
         justify-content: center;
         width: 100%;
       }
     }
-
     .brochure {
       align-items: center;
       background-color: $gray-medium;
@@ -79,31 +68,24 @@
       justify-content: center;
       padding: 10px 13px;
       width: fit-content;
-      
       @include mobile {
         padding: 8px 23px;
       }
     }
-
     .is-desktop {
       display: flex;
-
       @include mobile {
         display: none;
       }
-
       .icon {
         margin-right: 7px;
       }
     }
-
     .is-mobile {
       display: none;
-
       @include mobile {
         display: flex;
       }
-
       .icon {
         margin-right: 7px;
       }

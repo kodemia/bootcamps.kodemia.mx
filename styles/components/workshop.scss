@@ -4,22 +4,18 @@
     box-sizing: border-box;
     height: auto;
     padding: 40px;
-
     @include mobile {
       padding: 30px;
     }
-
     .subtitle {
       color: $gray-light;
       font-size: 20px;
       font-weight: 600;
       line-height: 30px;
       text-transform: capitalize;
-
       &::first-letter {
         text-transform: capitalize;
       }
-
       @include mobile {
         font-size: 18px;
       }
@@ -31,11 +27,9 @@
       letter-spacing: 1.75px;
       line-height: 45px;
       margin-top: 10px;
-
       &::first-letter {
         text-transform: capitalize;
       }
-     
       @include mobile {
         font-size: 27px;
         letter-spacing: 1.4px;
@@ -43,16 +37,11 @@
         overflow-wrap: break-word;
       }
     }
-
      .bullets {
        color: $white-lighter;
        font-size: 18px;
        font-weight: 500;
        line-height: 27px;
        margin-top: 20px;
-
-       &::first-letter {
-        text-transform: capitalize;
-      }
      }
   }

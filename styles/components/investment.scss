@@ -3,11 +3,9 @@
   display: flex;
   justify-content: center;
   padding: 40px 32px 190px 32px;
-
   @include mobile {
     padding: 40px 32px 230px 32px;
   }
-
   .container {
     display: grid;
     grid-template-areas:  'subtitle subtitle subtitle subtitle'
@@ -17,33 +15,24 @@
     max-width: $max-page-width;
     padding: 40px 0;
     width: 100%;
-
     .subtitle { grid-area: subtitle;}
     .title { grid-area: title;}
     .description { grid-area: description;}
     .payment_plan { grid-area: payment_plan;}    
-
     @include mobile {
       grid-template-areas:  'subtitle'
                             'title'
                             'description'
                             'payment_plan';
     }
-
     .subtitle {
       color: $gray-light;
       font-size: 20px;
       font-weight: 600;
-
-      &::first-letter {
-        text-transform: capitalize;
-      }
-
       @include mobile {
         font-size: 18px;
       }
     }
-
     .title {
       color: $white;
       font-size: 35px;
@@ -51,28 +40,20 @@
       letter-spacing: 1.75px;
       line-height: 45px;
       margin-top: 20px;
-
-      &::first-letter {
-        text-transform: capitalize;
-      }
-
       span {
         color: $cyan;
       }
-
       @include mobile {
         font-size: 28px;
         letter-spacing: 1.4px;
         line-height: 35px;
       }
     }
-
     .description {
       color: $white-lighter;
       font-size: 18px;
       font-weight: 500;
       margin-top: 40px;
-
       span {
         color: $cyan;
       }

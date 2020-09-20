@@ -5,6 +5,7 @@ import Footer from '../components/Footer'
 import Hero from '../components/Hero'
 import Introduction from '../components/Introduction'
 import Investment from '../components/Investment'
+import KodeAwards from '../components/KodeAwards'
 import MeetOurKoders from '../components/MeetOurKoders'
 import Metrics from '../components/Metrics'
 import NavBar from '../components/NavBar'
@@ -22,7 +23,7 @@ const achievements = [
   },
   {
     name: 'estilo de aprendizaje',
-    text: 'Conocer tu estilo de aprendizaje te ayudará a asimilar mucho mejor todo lo que estás por aprender en tu nueva vida como developer'
+    text: 'conocer tu estilo de aprendizaje te ayudará a asimilar mucho mejor todo lo que estás por aprender en tu nueva vida como developer'
   },
   {
     name: 'proyección profesional',
@@ -151,8 +152,6 @@ const workshops = [
   }
 ]
 
-
-
 export default function JsPresential () {
   return (
     <div>
@@ -163,11 +162,11 @@ export default function JsPresential () {
         brochureDesktop='/brochures/JS_PRESENTIAL-D.pdf'
         brochureMobile='/brochures/JS_PRESENTIAL-M.pdf'
         image='/images/hero.png'
-        languaje='Javascript'
+        language='Javascript'
         modality='Lifetime Bootcamp'
       >
         Transforma tu vida en <span>19 semanas</span> de aprendizaje intensivo,
-        donde desarrollarás todas las habilidades para programar una aplicación
+        desarrollarás todas las habilidades para programar una aplicación
         web desde cero
       </Hero>
       <Metrics metrics={metrics} />
@@ -178,6 +177,7 @@ export default function JsPresential () {
         brochureMobile='/brochures/JS_PRESENTIAL-M.pdf'
         modules={modules}
       />
+      <KodeAwards />
       <Workshops workshops={workshops} />
       <Career achievements={achievements} />
       <Testimonials />

@@ -1,7 +1,7 @@
 
-export default function Introduction ({ children, video }) {
+export default function Introduction () {
   return (
-    <div className='introduction'>
+    <section className='introduction'>
       <div className='container'>
         <div className='card'>
           <div className='card-container'>
@@ -29,6 +29,6 @@ export default function Introduction ({ children, video }) {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }

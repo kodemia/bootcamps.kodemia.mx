@@ -2,7 +2,7 @@ import Achievements from './Achievements'
 
 export default function Career ({ achievements }) {
   return (
-    <div className='career'>
+    <section className='career'>
       <div className='container'>
         <div className='card'>
           <div className='card-container'>
@@ -12,6 +12,6 @@ export default function Career ({ achievements }) {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }

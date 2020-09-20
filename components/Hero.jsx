@@ -1,14 +1,14 @@
 import Link from 'next/link'
 
-export default function Hero ({ apply, brochureDesktop, brochureMobile, children, image, languaje, modality }) {
+export default function Hero ({ apply, brochureDesktop, brochureMobile, children, image, language, modality }) {
   return (
-    <div className='hero'>
+    <section className='hero'>
       <div className='container'>
         <div className='info-section'>
-          <p className='modality'>Web developer | {modality}</p>
+          <p className='modality'>Web developer  |  {modality}</p>
           <h1 className='title margin-title'>Bootcamp</h1>
           <h1 className='title'>Full Stack con</h1>
-          <h1 className='title languaje'>{languaje}</h1>
+          <h1 className='title language'>{language}</h1>
           <p className='description'>
             {children}
           </p>
@@ -38,6 +38,6 @@ export default function Hero ({ apply, brochureDesktop, brochureMobile, children
           <img className='image' src={image} alt='hero' />
         </div>
       </div>
-    </div>
+    </section>
   )
 }
