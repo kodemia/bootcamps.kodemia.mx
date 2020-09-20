@@ -69,6 +69,7 @@
     }
     .submit {
       background-color: $white;
+      border: none;
       border-radius: 15px;
       color: $gray-darker;
       font-size: 16px;
@@ -79,7 +80,14 @@
       padding: 10px 0;
       width: 100%;
       &:hover {
+        background-color: $cyan-primary;
         cursor: pointer;
+        box-shadow: 1px 1px 3px black;
+        box-shadow: -2px 2px 16px rgba(0, 0, 0, 0.6);
+      }
+      &:active {
+        background-color: $cyan;
+        font-size: 15px;
       }
       @include mobile {
         border-radius: 10px;

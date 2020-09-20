@@ -1,5 +1,4 @@
 import React from 'react'
-// import Link from 'next/link'
 import { useForm } from 'react-hook-form'
 
 export default function BrochureForm () {
