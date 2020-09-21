@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import { useForm } from 'react-hook-form'
 
 export default function BrochureForm () {
@@ -7,7 +8,7 @@ export default function BrochureForm () {
   console.log(errors)
 
   return (
-    <div className='brochure-form'>
+    <div className='register-form brochure-form'>
       <form className='form' onSubmit={handleSubmit(onSubmit)}>
         <label className='input-label' htmlFor='firstName'>Nombre</label>
         <input
@@ -51,7 +52,9 @@ export default function BrochureForm () {
             </label>
           </div>
         </div>
-        <input className='submit' type='submit' />
+        <Link href='/brochure-thankyou'>
+          <input className='submit' type='submit' />
+        </Link>
       </form>
     </div>
   )

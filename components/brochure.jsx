@@ -1,8 +1,8 @@
 import Link from 'next/link'
 
-import Forms from '../components/BrochureForm'
+import BrochureForm from './BrochureForm'
 
-export default function BrochureDownload () {
+export default function Brochure ({ language, modality }) {
   return (
     <div className='brochure-download'>
       <div className='container'>
@@ -18,14 +18,17 @@ export default function BrochureDownload () {
         <section className='content'>
           <div className='info-section'>
             <p className='title'>
-              Conoce más del Bootcamp Full Stack con <span>Javascript</span>
+              Conoce más del Bootcamp Full Stack con <span> {language} </span>
             </p>
             <p className='text'>
               Te enviaremos el Brochure con la información detallada del Bootcamp
             </p>
           </div>
           <div className='form-section'>
-            <Forms />
+            <BrochureForm
+              modality={modality}
+              language={language}
+            />
           </div>
         </section>
       </div>
