@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import { useForm } from 'react-hook-form'
 
-export default function BrochureForm () {
+export default function FormInterview () {
   const { register, handleSubmit, errors } = useForm()
   const onSubmit = data => console.log(data)
   console.log(errors)
@@ -41,6 +41,20 @@ export default function BrochureForm () {
           }
           type='email'
         />
+        <label className='input-label' htmlFor='phone'>Teléfono con WhatsApp</label>
+        <input
+          className='input-field'
+          name='phone'
+          placeholder='55 3333 5555'
+          ref={
+            register({
+              required: true,
+              minLength: 10,
+              maxLength: 13
+            })
+          }
+          type='tel'
+        />
         <div className='pretty  p-bigger p-default p-curve p-smooth checkbox'>
           <input type='checkbox' name='termsAndConditions' ref={register({ required: true })} />
           <div className='state p-info-o'>
@@ -52,7 +66,7 @@ export default function BrochureForm () {
             </label>
           </div>
         </div>
-        <Link href='/brochure-thankyou'>
+        <Link href='/javascript-lifetime/entrevista/gracias'>
           <input className='submit' type='submit' />
         </Link>
       </form>

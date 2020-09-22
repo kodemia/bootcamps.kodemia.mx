@@ -1,8 +1,8 @@
 import Link from 'next/link'
 
-export default function Thanyou () {
+export default function Thanyou ({ applyText, interviewText }) {
   return (
-    <div className='thank-you'>
+    <div className='thankyou'>
       <div className='container'>
         <section className='header'>
           <Link href='/'>
@@ -17,7 +17,8 @@ export default function Thanyou () {
           <div className='card'>
             <h1 className='title'>Gracias por</h1>
             <h1 className='title cyan-color'>registrarte</h1>
-
+            <p className='text'>{applyText}</p>
+            <p className='text'>{interviewText}</p>
             <Link href='/brochures/JS_PRESENTIAL-D.pdf'>
               <a
                 className='brochure is-desktop'

@@ -151,7 +151,7 @@ const workshops = [
   }
 ]
 
-export default function JsPresential () {
+export default function JavascriptLifetime () {
   return (
     <div>
       <NavBar />

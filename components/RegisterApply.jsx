@@ -1,10 +1,10 @@
 import Link from 'next/link'
 
-import InterviewForm from '../components/InterviewForm'
+import FormApply from './FormApply'
 
-export default function Interview () {
+export default function RegisterApply ({ language, modality, text, title }) {
   return (
-    <div className='interview'>
+    <div className='register-apply'>
       <div className='container'>
         <section className='header'>
           <Link href='/'>
@@ -18,14 +18,17 @@ export default function Interview () {
         <section className='content'>
           <div className='info-section'>
             <p className='title'>
-              Conoce más del Bootcamp Full Stack con <span>Javascript</span>
+            Aplica al Bootcamp Full Stack con <span>{language}</span>
             </p>
             <p className='text'>
-              Te enviaremos el Brochure con la información detallada del Bootcamp
+              Te contactaremos lo más pronto posible para coordinar una entrevista personal
             </p>
           </div>
           <div className='form-section'>
-            <InterviewForm />
+            <FormApply
+              language={language}
+              modality={modality}
+            />
           </div>
         </section>
       </div>

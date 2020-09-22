@@ -1,10 +1,10 @@
 import Link from 'next/link'
 
-import BrochureForm from './BrochureForm'
+import FormBrochure from './FormBrochure'
 
-export default function Brochure ({ language, modality }) {
+export default function RegisterBrochure ({ language, modality, text, title }) {
   return (
-    <div className='brochure-download'>
+    <div className='register-brochure'>
       <div className='container'>
         <section className='header'>
           <Link href='/'>
@@ -18,16 +18,16 @@ export default function Brochure ({ language, modality }) {
         <section className='content'>
           <div className='info-section'>
             <p className='title'>
-              Conoce más del Bootcamp Full Stack con <span> {language} </span>
+              Conoce más del Bootcamp Full Stack con <span>{language}</span>
             </p>
             <p className='text'>
-              Te enviaremos el Brochure con la información detallada del Bootcamp
+              Registrate para descargar el Brochure con la información detallada del Bootcamp
             </p>
           </div>
           <div className='form-section'>
-            <BrochureForm
-              modality={modality}
+            <FormBrochure
               language={language}
+              modality={modality}
             />
           </div>
         </section>

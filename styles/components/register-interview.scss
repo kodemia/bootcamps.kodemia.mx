@@ -1,0 +1,72 @@
+.register-interview {
+  background-color: $black-primary;
+  display: flex;
+  min-height: 100vh;
+	justify-content: center;
+	padding: 0 32px;
+  .container {
+    max-width: $max-page-width;
+		width: 100%;
+    .header {
+      padding: 20px 0;
+      width: 100%;
+      .logo {
+        cursor: pointer;
+        margin-right: 10px;
+        max-width: 38vw;
+        width: 130px;
+      }
+    }
+    .content {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+      width: 100%;
+      @include mobile {
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 20px;
+      }
+      .info-section {
+        flex: 1;
+        .title {
+          color: $white;
+          font-size: 45px;
+          font-weight: 600;
+          letter-spacing: 0.05em;
+          line-height: 45px;
+          max-width: 400px;
+          span {
+            color: $cyan;
+          }
+          @include mobile {
+            font-size: 38px;
+          }
+        }
+        .text {
+          color: $white-light;
+          font-size: 22px;
+          font-weight: 500;
+          line-height: 33px;
+          margin-top: 30px;
+          max-width: 450px;
+          @include mobile {
+            font-size: 18px;
+            line-height: 27px;
+            margin-top: 40px;
+            max-width: 100%;
+          }
+        }
+      }
+      .form-section {
+        display: flex;
+        flex: 1;
+        justify-content: flex-end;
+        @include mobile {
+          justify-content: center;
+        }
+      }
+    }
+
+  }
+}

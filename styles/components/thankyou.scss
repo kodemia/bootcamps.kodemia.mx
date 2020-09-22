@@ -1,4 +1,4 @@
-.thank-you {
+.thankyou {
   background-color: $black-primary;
   display: flex;
   min-height: 100vh;
@@ -52,6 +52,15 @@
         }
         .cyan-color {
           color: $cyan;
+          margin-bottom: 25px;
+        }
+        .text {
+          color: $white-light;
+          font-size: 22px;
+          font-weight: 500;
+          line-height: 33px;
+          text-align: center;
+          max-width: 385px;
         }
         .brochure {
           align-items: center;
@@ -62,7 +71,7 @@
           font-size: 18px;
           font-weight: 600;
           justify-content: center;
-          margin-top: 40px;
+          margin-top: 20px;
           padding: 10px 13px;
           width: fit-content;
           @include mobile {
