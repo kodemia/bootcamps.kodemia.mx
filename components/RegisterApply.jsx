@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 import FormApply from './FormApply'
 
-export default function RegisterApply ({ language, modality, text, title }) {
+export default function RegisterApply ({ language, modality }) {
   return (
     <div className='register-apply'>
       <div className='container'>
