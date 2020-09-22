@@ -87,10 +87,80 @@
       border-bottom-left-radius: 20px;
     }
 
-    
+    // .form-select {
+    //   // border: 1px solid red;
+    //   // font-family: 'Poppins', sans-serif;
+    //   // overflow: hidden;
+    //   position: relative;
+    //   width: 95%;
+    //   &:after {
+    //     // content: '▾';
+    //     // color: #bbbbbb;
+    //     content: url('../../public/icons/chevron-left.svg');
+    //     font-size: 20px;
+    //     font-weight: 500;
+    //     line-height: 30px;
+    //     // padding: 12px 20px;
+    //     position: absolute;
+    //     right: 12px;
+    //     top: 0;
+    //     z-index: 1;
+    //   }
+    //   .ie & {
+    //     display: none;
+    // }
+      // select {
+      //   display: none;
 
+        // background-image: none;
+        // position: relative;
+        // background: $black-medium;
+        // color: $gray-lighter;
+        // padding: 10px 10px 10px 5px;
+        // border: none;
+        // cursor: pointer;
+        // display: block;
+        // width: 95%;
+        // outline: none;
+        // z-index: 2;
+        // // This is so hacky.. (for Firefox)
+        // // Removes the default select arrow.
+        // text-overflow: '';
+        // text-indent: 5px;
+        // // End of brutal hack
+      // }
 
-
+      // &[multiple=multiple] {
+      //   height: auto;
+      //   border: 1px solid #cbcbcb;
+      //   border-radius: 3px;
+      //   box-shadow: 0 0 1px rgba(0, 0, 0, 0.1), inset 0 0 10px rgba(0, 0, 0, 0.07);
+      // }
+    // select-selected {
+    //   background-color: $black-medium;
+    //   &:after {
+    //     position: absolute;
+    //     content: "";
+    //     top: 14px;
+    //     right: 10px;
+    //     width: 0;
+    //     height: 0;
+    //     border: 6px solid transparent;
+    //     border-color: #fff transparent transparent transparent;
+    //   }
+    // }
+    // .select-selected.select-arrow-active:after {
+    //   border-color: transparent transparent #fff transparent;
+    //   top: 7px;
+    // }
+    // .select-items div,.select-selected {
+    //   color: #ffffff;
+    //   padding: 8px 16px;
+    //   border: 1px solid transparent;
+    //   border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    //   cursor: pointer;
+    //   user-select: none;
+    // }
 
 
     .field-area {

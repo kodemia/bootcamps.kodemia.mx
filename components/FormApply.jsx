@@ -97,18 +97,21 @@ export default function FormInterview ({ language, modality }) {
           )}
         />
         <label className='input-label' htmlFor='contact-media'>¿Dónde nos conociste?</label>
+        {/* <div className='form-select input-field'> */}
         <select
           className='input-field custom-select'
           name='contact-media'
           ref={register({ required: 'Es requerido seleccionar una opción' })}
           required
         >
-          <option value='Facebook'>Facebook</option>
+          <option defaultValue='Facebook'>Facebook</option>
+          {/* <option value='Facebook'>Facebook</option> */}
           <option value='Instagram'>Instagram</option>
           <option value='Youtube'>Youtube</option>
           <option value='Twitter'>Twitter</option>
           <option value='Otro'>Otro</option>
         </select>
+        {/* </div> */}
         <label className='input-label' htmlFor='application-motive'>¿Por qué quieres aplicar a Kodemia?</label>
         <textarea
           className='input-field field-area'

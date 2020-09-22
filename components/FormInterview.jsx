@@ -15,7 +15,7 @@ export default function FormInterview ({ language, modality }) {
   const onSubmit = async data => {
     setIsSubmitting(true)
     try {
-      const resp = await fetch('https://webhook.site/8f3a2372-93b4-4f2b-bad5-5cb195d4770e', {
+      const resp = await fetch('https://httpstat.us/200', {
         method: 'POST',
         body: JSON.stringify({ ...data, language, modality }),
         headers: { 'Content-Type': 'application/json' }
