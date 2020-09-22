@@ -3,16 +3,17 @@
 @import './variables.scss';
 @import './mixins.scss';
 
-/* pretty-checkbox */
+// pretty-checkbox
 @import '../node_modules/pretty-checkbox/src/scss/variables';
 @import '../node_modules/pretty-checkbox/src/scss/core';
 @import '../node_modules/pretty-checkbox/src/scss/elements/default/outline';
 @import '../node_modules/pretty-checkbox/src/scss/extras/curve';
 @import '../node_modules/pretty-checkbox/src/scss/extras/animation'; 
 @import '../node_modules/pretty-checkbox/src/scss/extras/colors';
-
 @import '../node_modules/pretty-checkbox/src/scss/extras/bigger';
 
+// react-phone-input-2
+@import '../node_modules/react-phone-input-2/lib/style.css';
 
 // Components
 @import './components/index.scss';

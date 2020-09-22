@@ -12,10 +12,12 @@
     "classnames": "^2.2.6",
     "date-fns": "^2.16.1",
     "next": "9.5.2",
+    "node-fetch": "^2.6.1",
     "pretty-checkbox": "^3.0.3",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-hook-form": "^6.8.2",
+    "react-phone-input-2": "^2.13.8",
     "sass": "^1.26.10"
   },
   "devDependencies": {
