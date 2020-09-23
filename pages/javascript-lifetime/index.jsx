@@ -14,6 +14,7 @@ import ReadyToTransform from '../../components/ReadyToTransform'
 import Scholarship from '../../components/Scholarship'
 import Support from '../../components/Support'
 import Workshops from '../../components/Workshops'
+import Testimonials from '../components/Testimonials'
 
 const achievements = [
   {
@@ -179,6 +180,7 @@ export default function JavascriptLifetime () {
       <KodeAwards />
       <Workshops workshops={workshops} />
       <Career achievements={achievements} />
+      <Testimonials />
       <Investment investment='$75,000 MXN (Incluye IVA) + Inscripción de $6,000.' paymentPlan={paymentPlan} />
       <Scholarship interview='/javascript-lifetime/entrevista' />
       <MeetOurKoders />
