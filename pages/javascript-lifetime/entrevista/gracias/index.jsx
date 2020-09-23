@@ -5,6 +5,8 @@ export default function JavascriptLifetimeThankyou () {
     <Thankyou
       applyText=''
       interviewText='Te contactaremos lo más pronto posible para agendar tu entrevista'
+      language='javascript'
+      modality='lifetime'
     />
   )
 }

@@ -1,10 +1,10 @@
 import RegisterBrochure from '../../../components/RegisterBrochure'
 
-export default function JavascriptLifetimeBrochure () {
+export default function JavascriptLiveBrochure () {
   return (
     <RegisterBrochure
       language='Javascript'
-      modality='lifetime'
+      modality='live'
     />
   )
 }

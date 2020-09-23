@@ -1,10 +1,10 @@
 import RegisterApply from '../../../components/RegisterApply'
 
-export default function JavascriptLifetimeApply () {
+export default function JavascriptLiveApply () {
   return (
     <RegisterApply
       language='Javascript'
-      modality='lifetime'
+      modality='live'
     />
   )
 }

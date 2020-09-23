@@ -1,10 +1,10 @@
 import RegisterApply from '../../../components/RegisterApply'
 
-export default function PythonLifetimeApply () {
+export default function PythonLiveApply () {
   return (
     <RegisterApply
       language='Python'
-      modality='lifetime'
+      modality='live'
     />
   )
 }

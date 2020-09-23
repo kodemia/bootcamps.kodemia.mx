@@ -1,10 +1,10 @@
 import RegisterInterview from '../../../components/RegisterInterview'
 
-export default function JavascriptLifetimeInterview () {
+export default function JavascriptLiveInterview () {
   return (
     <RegisterInterview
       language='Javascript'
-      modality='lifetime'
+      modality='live'
     />
   )
 }

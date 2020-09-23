@@ -1,4 +1,3 @@
-
 import Career from '../../components/Career'
 import Details from '../../components/Details'
 import Footer from '../../components/Footer'
@@ -161,7 +160,6 @@ export default function PythonLive () {
         className='hero'
         apply='/python-live/aplicar'
         brochureDesktop='/python-live/brochure'
-        // brochureMobile='/brochures/JS_PRESENTIAL-M.pdf'
         image='/images/hero_live.png'
         language='Python'
         modality='Bootcamp Live'
@@ -175,7 +173,6 @@ export default function PythonLive () {
       <Introduction language='Python' />
       <Program
         brochureDesktop='/python-live/brochure'
-        // brochureMobile='/brochures/JS_PRESENTIAL-M.pdf'
         modules={modules}
       />
       <KodeAwards />
