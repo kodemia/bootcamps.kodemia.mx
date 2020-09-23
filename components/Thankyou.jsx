@@ -1,6 +1,12 @@
 import Link from 'next/link'
+import JavascriptLifetime from '../pages/javascript-lifetime'
+
+// const brochures = [
+//   javascriptLifetime
+// ]
 
 export default function Thanyou ({ applyText, interviewText }) {
+  // language == python ?
   return (
     <div className='thankyou'>
       <div className='container'>
@@ -19,7 +25,7 @@ export default function Thanyou ({ applyText, interviewText }) {
             <h1 className='title cyan-color'>registrarte</h1>
             <p className='text'>{applyText}</p>
             <p className='text'>{interviewText}</p>
-            <Link href='/brochures/JS_PRESENTIAL-D.pdf'>
+            <Link href='/brochures/JAVASCRIPT_LIFETIME-D.pdf'>
               <a
                 className='brochure is-desktop'
                 target='__blank'
@@ -28,7 +34,7 @@ export default function Thanyou ({ applyText, interviewText }) {
                 Descarga el brochure
               </a>
             </Link>
-            <Link href='/brochures/JS_PRESENTIAL-M.pdf'>
+            <Link href='/brochures/JAVASCRIPT_LIFETIME-M.pdf'>
               <a
                 className='brochure is-mobile'
                 target='__blank'

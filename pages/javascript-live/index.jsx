@@ -151,7 +151,7 @@ const workshops = [
   }
 ]
 
-export default function JavascriptLifetime () {
+export default function JavascriptLive () {
   return (
     <div>
       <NavBar apply='/javascript-live/aplicar' />
@@ -170,7 +170,7 @@ export default function JavascriptLifetime () {
       </Hero>
       <Metrics metrics={metrics} />
       <Details details={details} />
-      <Introduction />
+      <Introduction language='Javascript' />
       <Program
         brochureDesktop='/javascript-live/brochure'
         // brochureMobile='/brochures/JS_PRESENTIAL-M.pdf'
