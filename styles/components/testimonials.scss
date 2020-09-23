@@ -1,24 +1,37 @@
 .testimonials {
   background-color: $white-primary;
-	box-sizing: border-box;
 	display: flex;
 	justify-content: center;
   padding: 0 32px;
-  overflow: hidden;  //slider
-
+  overflow: hidden;
+  min-height: max-content;
+  
   .container {
+    min-height: 400px;
     display: flex;
-    margin-top: 80px;
+    margin: 80px 0 40px 0;
     max-width: $max-page-width;
     width: 100%;
-    // transform: translateX(-1000px); // slider
+    justify-content: center;
+
+    @include mobile {
+      flex-direction: column;
+      height: auto;
+      justify-content: space-between;
+    }
     
     .testimonial {
-      padding: 40px 132px;
-      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin: 10px;
+      padding-left: 50px;
+      padding-top: 20px;
+      max-width: 820px;
 
       @include mobile {
         padding: 40px 0;
+        min-height: 555px;
       }
 
       .top {
@@ -27,13 +40,11 @@
 
         .quote-mark {
           height: 100px;
-          left: 26px;
-          left: -42px;
+          left: -50px;
           position: relative;
-          top: -101px;
-          top: -59px;
+          top: -60px;
           width: 77px;
-          z-index: 1;
+          z-index: 2;
 
           @include mobile {
             left: -30px;
@@ -49,36 +60,55 @@
           left: -70px;
           position: relative;
           z-index: 5;
+          margin-left: -6px;
+          width: 100%;
+          margin-right: -77px;
 
           @include mobile {
             font-size: 18px;
-            left: -58px;
+            left: -50px;
           }
+        }
+        .medium{
+          font-size: 21px;
+        }
+        .big{
+          font-size: 34px;
         }
       }
 
       .bottom {
         display: flex;
         justify-content: space-between;
+        max-width: 100%;
 
         @include mobile {
           flex-direction: column;
           align-items: flex-start;
         }
 
-        .autor {  
+        .autor {
           display: grid;
           grid-column-gap: 20px;
           grid-template-areas:  'photo name'
                                 'photo employment';
           margin-top: 40px;
           height: auto;
+          max-width: 100%;
+
 
           @include mobile {
             grid-column-gap: 10px;
           }
 
-          .employment { grid-area: employment;}
+          .employment { 
+            grid-area: employment;
+            word-wrap: normal;
+            justify-content: center;
+            @include mobile {
+              max-width: 100px;
+            }
+          }
           .name { grid-area: name; }
           .photo { grid-area: photo; }
   
@@ -90,8 +120,8 @@
               width: 90px;
               
               @include mobile {
-                height: 80px;
-                width: 80px;
+                height: 70px;
+                width: 70px;
               }
             }
           }
@@ -102,6 +132,9 @@
             font-size: 22px;
             font-weight: 600;
             width: fit-content;
+            @include mobile {
+              font-size: 19px;
+            }
           }
 
           .employment {
@@ -116,23 +149,61 @@
             }
           }
         }
-        .back-forward-buttons {
-          align-self: flex-end;
-          width: fit-content;
+      }
+    }
 
-          @include mobile {
-            margin-top: 30px;
-          }
-  
-          .back {
-            margin-right: 20px;
-            width: 40px;
-          }
-  
-          .forward {
-            width: 40px;
-          }
+    .inactive {
+      display: none;
+    }
+
+    .active {
+      transition: 3s;
+    }
+
+    .back-forward-buttons {
+      align-self: flex-end;
+      justify-content: center;
+      
+      min-width: 100%;
+      max-width: 870px;
+      z-index: 10000;
+      position: absolute;
+      display: flex;
+
+      @include mobile {
+        margin-top: 30px;
+        position: static;
+        flex-direction: column;
+      }
+
+      .container-buttons {
+        margin-top: 800px;
+        align-self: flex-end;
+        width: 100%;
+        max-width: 870px;
+        display: flex;
+        justify-content: flex-end;
+        @include mobile {
+          margin-top: 0;
         }
+      }
+
+      .back, .forward {
+        position: relative;
+        width: 40px;
+        cursor: pointer;
+        top: -25px;
+        left: 5px;
+
+        @include mobile {
+          top: 0;
+          left: 0;
+        }
+      }
+
+      .back {
+        margin-right: 20px;
+
       }
     }
   }
