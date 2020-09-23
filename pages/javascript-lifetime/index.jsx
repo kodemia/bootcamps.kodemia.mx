@@ -14,7 +14,7 @@ import ReadyToTransform from '../../components/ReadyToTransform'
 import Scholarship from '../../components/Scholarship'
 import Support from '../../components/Support'
 import Workshops from '../../components/Workshops'
-import Testimonials from '../components/Testimonials'
+import Testimonials from '../../components/Testimonials'
 
 const achievements = [
   {
