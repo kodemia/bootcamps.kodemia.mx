@@ -19,7 +19,6 @@ export default function Hero ({ apply, brochureDesktop, brochureMobile, children
             <Link href={brochureDesktop}>
               <a
                 className='brochure is-desktop'
-                target='__blank'
               >
                 <img className='icon' src='/icons/download.svg' alt='download' />
               Descarga el brochure
