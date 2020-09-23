@@ -74,21 +74,21 @@
     }
     .is-desktop {
       display: flex;
-      @include mobile {
-        display: none;
-      }
+      // @include mobile {
+      //   display: none;
+      // }
       .icon {
         margin-right: 7px;
       }
     }
-    .is-mobile {
-      display: none;
-      @include mobile {
-        display: flex;
-      }
-      .icon {
-        margin-right: 7px;
-      }
-    }
+  //   .is-mobile {
+  //     display: none;
+  //     @include mobile {
+  //       display: flex;
+  //     }
+  //     .icon {
+  //       margin-right: 7px;
+  //     }
+  //   }
   } 
 }

@@ -8,10 +8,9 @@ export default function MeetOurKoders () {
             conoce la historia de Melisa
           </div>
           <div className='text'>
-            les presentamos a Mell de la octava generación, que nos comparte {' '}
+            Mel, nuestra koder de la octava generación, nos comparte {' '}
             cómo ha sido su experiencia hasta el momento en el Bootcamp, cuando {' '}
-            no tienes conocimientos previos. Ella está por llegar a la recta final {' '}
-            y presentar su proyecto en los Kodeawards
+            comienzas desde cero
           </div>
         </div>
         <div className='video-container'>

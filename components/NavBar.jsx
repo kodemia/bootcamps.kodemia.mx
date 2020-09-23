@@ -11,7 +11,7 @@ export default function NavBar () {
             alt='Logo Kodemia'
           />
         </Link>
-        <Link href='/'>
+        <Link href='/javascript-lifetime/aplicar'>
           <a className='button'>
             Aplica
             <span>&nbsp;hoy</span>

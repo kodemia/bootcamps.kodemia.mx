@@ -55,8 +55,8 @@ const details = [
   },
   {
     icon: '/icons/map-pin.svg',
-    description: 'tonalá 10, col. Roma Norte, CDMX',
-    note: '(Remoto por Covid-19)',
+    description: 'Clases en línea de manera remota',
+    note: '',
     title: 'lugar'
   }
 ]
@@ -162,11 +162,11 @@ export default function JavascriptLifetime () {
         // brochureMobile='/brochures/JS_PRESENTIAL-M.pdf'
         image='/images/hero.png'
         language='Javascript'
-        modality='Lifetime Bootcamp'
+        modality='Bootcamp Live'
       >
         Transforma tu vida en <span>19 semanas</span> de aprendizaje intensivo,
         desarrollarás todas las habilidades para programar una aplicación
-        web desde cero con acceso de por vida a Kodemia
+        web desde cero sin salir de casa
       </Hero>
       <Metrics metrics={metrics} />
       <Details details={details} />
@@ -179,7 +179,7 @@ export default function JavascriptLifetime () {
       <KodeAwards />
       <Workshops workshops={workshops} />
       <Career achievements={achievements} />
-      <Investment investment='$75,000 MXN (Incluye IVA) + Inscripción de $6,000.' paymentPlan={paymentPlan} />
+      <Investment investment='$59,500 MXN (Incluye IVA) + Inscripción de $5,500.' paymentPlan={paymentPlan} />
       <Scholarship />
       <MeetOurKoders />
       <Support />

@@ -5,13 +5,14 @@ export default function KodeAwards () {
       <div className='container'>
         <div className='card'>
           <div className='content'>
-            <div className='period'>semana 4 - 19</div>
+            <div className='period'>semana 4 - 17</div>
             <div className=''>
-              <div className='name'>KodeAwards</div>
+              <div className='name'>KodeAwards, el desafío final</div>
               <div className='text'>
-                Implementa todo tu aprendizaje en un proyecto de aplicación real, en equipo desarrollarás{' '}
-                una web app, desde la idea hasta el despliegue.<br />En tu presentación final recibiras el feedback{' '}
-                de lideres de desarrollo de empresas y startups
+                Aplicarás todo el conocimiento en un proyecto real, desarrollando el MVP en equipo,{' '}
+                con una metodología SCRUM para llevarlo a una web app funcional desplegada en la nube.<br />
+                Crearás el pitch de tu app, porque será evaluada por directores de desarrollo de empresas{' '}
+                invitadas para reconocerte como Full Stack Developer
               </div>
             </div>
           </div>

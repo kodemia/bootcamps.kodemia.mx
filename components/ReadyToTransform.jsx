@@ -11,7 +11,7 @@ export default function ReadyToTransform () {
             ¿Listo para <span>transformar</span> <br /> tu vida programando?
             </div>
             <div className='button-container'>
-              <Link href='/'>
+              <Link href='/javascript-lifetime/aplicar'>
                 <a className='button'>
                 Aplica al Bootcamp hoy
                 </a>

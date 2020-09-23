@@ -2,22 +2,22 @@ const supportItems = [
   {
     icon: '/icons/users.svg',
     title: 'mentoría personalizada',
-    text: 'trabajaremos en tus objetivos tanto del Bootcamp como personales que planteamos desde el día uno'
+    text: 'trabajaremos en tus objetivos del Bootcamp como personales que planteamos desde el día uno'
   },
   {
     icon: '/icons/heart.svg',
     title: 'aprende en Comunidad',
-    text: 'buscamos formar las condiciones para generar una comunidad internacional de aprendizaje que esta contigo, antes, durante y después del Bootcamp'
+    text: 'formamos las condiciones para generar una comunidad internacional de aprendizaje que esta contigo, antes, durante y después del Bootcamp'
   },
   {
     icon: '/icons/hack-the-job.svg',
     title: 'hack the Job',
-    text: 'es un método de reclutamiento disruptivo para las empresas que buscan programadores. A partir de la semana 7 puedes participar en los retos y colocarte'
+    text: 'es un método de reclutamiento disruptivo para las empresas que buscan programadores. A partir de la semana 7 participarás en los retos e incorporte de inmediato al sector laboral'
   },
   {
     icon: '/icons/video.svg',
     title: 'kodemia Live',
-    text: 'si por alguna razón un día no puedes asistir, puedes ver la clase de manera remota en VIVO. Además  consultar tus clases pasadas OnDemand'
+    text: 'asiste a la clase en vivo desde cualquier parte del mundo y consulta todas tus clases en la plataforma'
   }
 ]
 
