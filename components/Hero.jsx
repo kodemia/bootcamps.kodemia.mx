@@ -16,9 +16,10 @@ export default function Hero ({ apply, brochureDesktop, brochureMobile, children
             <Link href={apply}>
               <a className='apply'>Aplica al Bootcamp</a>
             </Link>
-            <Link href={brochureDesktop} target='__blank'>
+            <Link href={brochureDesktop}>
               <a
                 className='brochure is-desktop'
+                target='__blank'
               >
                 <img className='icon' src='/icons/download.svg' alt='download' />
               Descarga el brochure
