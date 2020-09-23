@@ -1,12 +1,6 @@
 import Link from 'next/link'
-import JavascriptLifetime from '../pages/javascript-lifetime'
-
-// const brochures = [
-//   javascriptLifetime
-// ]
 
 export default function Thanyou ({ applyText, interviewText }) {
-  // language == python ?
   return (
     <div className='thankyou'>
       <div className='container'>

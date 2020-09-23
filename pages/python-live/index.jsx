@@ -162,7 +162,7 @@ export default function PythonLive () {
         apply='/python-live/aplicar'
         brochureDesktop='/python-live/brochure'
         // brochureMobile='/brochures/JS_PRESENTIAL-M.pdf'
-        image='/images/hero.png'
+        image='/images/hero_live.png'
         language='Python'
         modality='Bootcamp Live'
       >

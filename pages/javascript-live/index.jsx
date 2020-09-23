@@ -160,7 +160,7 @@ export default function JavascriptLive () {
         apply='/javascript-live/aplicar'
         brochureDesktop='/javascript-live/brochure'
         // brochureMobile='/brochures/JS_PRESENTIAL-M.pdf'
-        image='/images/hero.png'
+        image='/images/hero_live.png'
         language='Javascript'
         modality='Bootcamp Live'
       >
