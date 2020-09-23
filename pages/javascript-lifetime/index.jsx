@@ -154,7 +154,7 @@ const workshops = [
 export default function JavascriptLifetime () {
   return (
     <div>
-      <NavBar />
+      <NavBar apply='/javascript-lifetime/aplicar' />
       <Hero
         className='hero'
         apply='/javascript-lifetime/aplicar'
@@ -180,10 +180,10 @@ export default function JavascriptLifetime () {
       <Workshops workshops={workshops} />
       <Career achievements={achievements} />
       <Investment investment='$75,000 MXN (Incluye IVA) + Inscripción de $6,000.' paymentPlan={paymentPlan} />
-      <Scholarship />
+      <Scholarship interview='/javascript-lifetime/entrevista' />
       <MeetOurKoders />
       <Support />
-      <ReadyToTransform />
+      <ReadyToTransform apply='/javascript-lifetime/aplicar' />
       <Footer />
     </div>
   )

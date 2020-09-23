@@ -1,7 +1,7 @@
 
 import Link from 'next/link'
 
-export default function ReadyToTransform () {
+export default function ReadyToTransform ({ apply }) {
   return (
     <section className='ready-to-transform'>
       <div className='container'>
@@ -11,7 +11,7 @@ export default function ReadyToTransform () {
             ¿Listo para <span>transformar</span> <br /> tu vida programando?
             </div>
             <div className='button-container'>
-              <Link href='/javascript-lifetime/aplicar'>
+              <Link href={apply}>
                 <a className='button'>
                 Aplica al Bootcamp hoy
                 </a>

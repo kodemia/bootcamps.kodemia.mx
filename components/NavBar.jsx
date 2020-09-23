@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-export default function NavBar () {
+export default function NavBar ({ apply }) {
   return (
     <nav className='navbar'>
       <div className='container'>
@@ -11,7 +11,7 @@ export default function NavBar () {
             alt='Logo Kodemia'
           />
         </Link>
-        <Link href='/javascript-lifetime/aplicar'>
+        <Link href={apply}>
           <a className='button'>
             Aplica
             <span>&nbsp;hoy</span>

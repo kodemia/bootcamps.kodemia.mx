@@ -154,11 +154,11 @@ const workshops = [
 export default function JavascriptLifetime () {
   return (
     <div>
-      <NavBar />
+      <NavBar apply='/javascript-live/aplicar' />
       <Hero
         className='hero'
-        apply='/javascript-lifetime/aplicar'
-        brochureDesktop='/javascript-lifetime/brochure'
+        apply='/javascript-live/aplicar'
+        brochureDesktop='/javascript-live/brochure'
         // brochureMobile='/brochures/JS_PRESENTIAL-M.pdf'
         image='/images/hero.png'
         language='Javascript'
@@ -172,7 +172,7 @@ export default function JavascriptLifetime () {
       <Details details={details} />
       <Introduction />
       <Program
-        brochureDesktop='/javascript-lifetime/brochure'
+        brochureDesktop='/javascript-live/brochure'
         // brochureMobile='/brochures/JS_PRESENTIAL-M.pdf'
         modules={modules}
       />
@@ -180,10 +180,10 @@ export default function JavascriptLifetime () {
       <Workshops workshops={workshops} />
       <Career achievements={achievements} />
       <Investment investment='$59,500 MXN (Incluye IVA) + Inscripción de $5,500.' paymentPlan={paymentPlan} />
-      <Scholarship />
+      <Scholarship interview='/javascript-live/entrevista' />
       <MeetOurKoders />
       <Support />
-      <ReadyToTransform />
+      <ReadyToTransform apply='/javascript-live/aplicar' />
       <Footer />
     </div>
   )

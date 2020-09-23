@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-export default function Scholarship () {
+export default function Scholarship ({ interview }) {
   return (
     <section className='scholarship'>
       <div className='container'>
@@ -11,7 +11,7 @@ export default function Scholarship () {
             Aplica a través de una entrevista personalizada, lo más importante es tu talento y actitud
             </div>
             <div className='button'>
-              <Link href='/javascript-lifetime/entrevista'>
+              <Link href={interview}>
                 <a className='interview'>Solicita una entrevista</a>
               </Link>
             </div>
