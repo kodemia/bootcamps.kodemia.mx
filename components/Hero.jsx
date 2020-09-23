@@ -16,22 +16,12 @@ export default function Hero ({ apply, brochureDesktop, brochureMobile, children
             <Link href={apply}>
               <a className='apply'>Aplica al Bootcamp</a>
             </Link>
-            <Link href={brochureDesktop} target='__blank'>
-              <a
-                className='brochure is-desktop'
-              >
+            <Link href={brochureDesktop}>
+              <a className='brochure is-desktop'>
                 <img className='icon' src='/icons/download.svg' alt='download' />
-              Descarga el brochure
+                Descarga el brochure
               </a>
             </Link>
-            {/* <a
-              className='brochure is-mobile'
-              href={brochureMobile}
-              target='__blank'
-            >
-              <img className='icon' src='/icons/download.svg' alt='download' />
-              Descarga el brochure
-            </a> */}
           </div>
         </div>
         <div className='image-section'>

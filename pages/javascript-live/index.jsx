@@ -1,4 +1,3 @@
-
 import Career from '../../components/Career'
 import Details from '../../components/Details'
 import Footer from '../../components/Footer'
@@ -159,7 +158,6 @@ export default function JavascriptLive () {
         className='hero'
         apply='/javascript-live/aplicar'
         brochureDesktop='/javascript-live/brochure'
-        // brochureMobile='/brochures/JS_PRESENTIAL-M.pdf'
         image='/images/hero_live.png'
         language='Javascript'
         modality='Bootcamp Live'
@@ -173,7 +171,6 @@ export default function JavascriptLive () {
       <Introduction language='Javascript' />
       <Program
         brochureDesktop='/javascript-live/brochure'
-        // brochureMobile='/brochures/JS_PRESENTIAL-M.pdf'
         modules={modules}
       />
       <KodeAwards />

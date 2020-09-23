@@ -1,4 +1,3 @@
-
 import Career from '../../components/Career'
 import Details from '../../components/Details'
 import Footer from '../../components/Footer'
@@ -161,7 +160,6 @@ export default function PythonLifetime () {
         className='hero'
         apply='/python-lifetime/aplicar'
         brochureDesktop='/python-lifetime/brochure'
-        // brochureMobile='/brochures/JS_PRESENTIAL-M.pdf'
         image='/images/hero.png'
         language='Python'
         modality='Lifetime Bootcamp'
@@ -175,7 +173,6 @@ export default function PythonLifetime () {
       <Introduction language='Python' />
       <Program
         brochureDesktop='/python-lifetime/brochure'
-        // brochureMobile='/brochures/JS_PRESENTIAL-M.pdf'
         modules={modules}
       />
       <KodeAwards />
