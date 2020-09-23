@@ -33,7 +33,6 @@ const achievements = [
     name: 'estrategias de búsqueda de empleo',
     text: 'crearás una estrategia personalizada acorde a tus fortalezas y objetivos profesionales'
   }
-
 ]
 
 const details = [
@@ -125,7 +124,6 @@ const paymentPlan = [
     text: 'puedes pagar a 12, 18, 24 y 36 meses con mensualidades desde $2,926',
     name: 'financiamiento hasta 36 meses'
   }
-
 ]
 
 const workshops = [
