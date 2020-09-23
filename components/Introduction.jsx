@@ -1,5 +1,5 @@
 
-export default function Introduction () {
+export default function Introduction ({ language }) {
   return (
     <section className='introduction'>
       <div className='container'>
@@ -11,7 +11,7 @@ export default function Introduction () {
                 Nuestro Bootcamp te llevará{' '}
                 <span>desde cero hasta desarrollador Full Stack</span>. Crearás{' '}
                 una aplicación web completa empleando{' '}
-                <span>UX/UI, metodología SCRUM, FrontEnd y BackEnd con Javascript</span>
+                <span>UX/UI, metodología SCRUM, FrontEnd y BackEnd con {language}</span>
                 , todo desplegado en la nube
               </div>
               <div className='subtitle'>

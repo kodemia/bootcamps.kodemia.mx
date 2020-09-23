@@ -169,7 +169,7 @@ export default function JavascriptLifetime () {
       </Hero>
       <Metrics metrics={metrics} />
       <Details details={details} />
-      <Introduction />
+      <Introduction language='Javascript' />
       <Program
         brochureDesktop='/javascript-lifetime/brochure'
         // brochureMobile='/brochures/JS_PRESENTIAL-M.pdf'
