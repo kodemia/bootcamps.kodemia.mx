@@ -1,10 +1,10 @@
 import RegisterInterview from '../../../components/RegisterInterview'
 
-export default function PythonLifetimeInterview () {
+export default function PythonLiveInterview () {
   return (
     <RegisterInterview
       language='Python'
-      modality='lifetime'
+      modality='live'
     />
   )
 }

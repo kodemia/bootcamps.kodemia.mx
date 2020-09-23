@@ -1,6 +1,10 @@
 import Link from 'next/link'
 
-export default function Thanyou ({ applyText, interviewText }) {
+export default function Thankyou ({ applyText, interviewText, language, modality }) {
+  console.log('lenguaje', language)
+  console.log('modalidad', modality)
+  console.log('brochure route:', `/brochures/${language}${modality}.pdf`)
+
   return (
     <div className='thankyou'>
       <div className='container'>
@@ -19,7 +23,7 @@ export default function Thanyou ({ applyText, interviewText }) {
             <h1 className='title cyan-color'>registrarte</h1>
             <p className='text'>{applyText}</p>
             <p className='text'>{interviewText}</p>
-            <Link href='/brochures/JAVASCRIPT_LIFETIME-D.pdf'>
+            <Link href={`/brochures/${language}_${modality}-D.pdf`}>
               <a
                 className='brochure is-desktop'
                 target='__blank'
@@ -28,7 +32,7 @@ export default function Thanyou ({ applyText, interviewText }) {
                 Descarga el brochure
               </a>
             </Link>
-            <Link href='/brochures/JAVASCRIPT_LIFETIME-M.pdf'>
+            <Link href={`/brochures/${language}_${modality}-M.pdf`}>
               <a
                 className='brochure is-mobile'
                 target='__blank'

@@ -5,6 +5,8 @@ export default function PythonLifetimeThankyou () {
     <Thankyou
       applyText=''
       interviewText='Te contactaremos lo más pronto posible para agendar tu entrevista'
+      language='python'
+      modality='lifetime'
     />
   )
 }

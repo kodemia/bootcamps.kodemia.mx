@@ -5,6 +5,8 @@ export default function JavascriptLifetimeThankyou () {
     <Thankyou
       applyText=''
       interviewText=''
+      language='javascript'
+      modality='lifetime'
     />
   )
 }

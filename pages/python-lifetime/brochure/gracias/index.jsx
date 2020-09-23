@@ -5,6 +5,8 @@ export default function PythonLifetimeThankyou () {
     <Thankyou
       applyText=''
       interviewText=''
+      language='python'
+      modality='lifetime'
     />
   )
 }
