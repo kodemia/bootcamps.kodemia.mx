@@ -155,7 +155,7 @@ const workshops = [
 export default function PythonLive () {
   return (
     <div>
-      <NavBar apply='/python-live/aplicar' />
+      <NavBar apply='/python-live/aplicar' language='python' modality='live' />
       <Hero
         className='hero'
         apply='/python-live/aplicar'

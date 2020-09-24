@@ -2,12 +2,12 @@ import Link from 'next/link'
 
 import FormBrochure from './FormBrochure'
 
-export default function RegisterBrochure ({ language, modality, text, title }) {
+export default function RegisterBrochure ({ language, modality }) {
   return (
     <div className='register-brochure'>
       <div className='container'>
         <section className='header'>
-          <Link href='/'>
+          <Link href={`/${language.toLowerCase()}-${modality.toLowerCase()}`}>
             <img
               className='logo'
               src='/images/kodemia-logo-white.png'

@@ -9,7 +9,7 @@ export default function Thankyou ({ applyText, interviewText, language, modality
     <div className='thankyou'>
       <div className='container'>
         <section className='header'>
-          <Link href='/'>
+          <Link href={`/${language.toLowerCase()}-${modality.toLowerCase()}`}>
             <img
               className='logo'
               src='/images/kodemia-logo-white.png'

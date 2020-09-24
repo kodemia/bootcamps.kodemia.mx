@@ -5,6 +5,7 @@ import { useRouter } from 'next/router'
 import { useForm, Controller } from 'react-hook-form'
 import PhoneInput from 'react-phone-input-2'
 import es from 'react-phone-input-2/lang/es.json'
+import services from '../config/services.json'
 
 export default function FormInterview ({ language, modality }) {
   const router = useRouter()
@@ -15,18 +16,17 @@ export default function FormInterview ({ language, modality }) {
   const onSubmit = async data => {
     setIsSubmitting(true)
     try {
-      const resp = await fetch('https://httpstat.us/200', {
+      const resp = await fetch(services.apply.url, {
         method: 'POST',
         body: JSON.stringify({
-          ...data,
           email: data.email,
           firstName: data.firstName,
           lastName: data.lastName,
           phone: data.phone,
-          course: 'python-lifetime'`${language}-${modality}`,
+          course: `${language}-${modality}`,
           customFields: {
-            source: data.contactMedia,
-            reasonToApply: data.applicationMotive
+            source: data.source,
+            reasonToApply: data.reason
           }
         }),
         headers: { 'Content-Type': 'application/json' }
@@ -107,10 +107,10 @@ export default function FormInterview ({ language, modality }) {
             />
           )}
         />
-        <label className='input-label' htmlFor='contact-media'>¿Dónde nos conociste?</label>
+        <label className='input-label' htmlFor='source'>¿Dónde nos conociste?</label>
         <select
           className='input-field custom-select'
-          name='contact-media'
+          name='source'
           ref={register({ required: 'Es requerido seleccionar una opción' })}
           required
         >
@@ -120,11 +120,10 @@ export default function FormInterview ({ language, modality }) {
           <option value='Twitter'>Twitter</option>
           <option value='Otro'>Otro</option>
         </select>
-        {/* </div> */}
-        <label className='input-label' htmlFor='application-motive'>¿Por qué quieres aplicar a Kodemia?</label>
+        <label className='input-label' htmlFor='reason'>¿Por qué quieres aplicar a Kodemia?</label>
         <textarea
           className='input-field field-area'
-          name='application-motive'
+          name='reason'
           placeholder='Quiero aprender...'
           ref={
             register({

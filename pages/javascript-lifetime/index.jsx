@@ -152,7 +152,7 @@ const workshops = [
 export default function JavascriptLifetime () {
   return (
     <div>
-      <NavBar apply='/javascript-lifetime/aplicar' />
+      <NavBar apply='/javascript-lifetime/aplicar' language='javascript' modality='lifetime' />
       <Hero
         className='hero'
         apply='/javascript-lifetime/aplicar'
