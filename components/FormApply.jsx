@@ -17,7 +17,18 @@ export default function FormInterview ({ language, modality }) {
     try {
       const resp = await fetch('https://httpstat.us/200', {
         method: 'POST',
-        body: JSON.stringify({ ...data, language, modality }),
+        body: JSON.stringify({
+          ...data,
+          email: data.email,
+          firstName: data.firstName,
+          lastName: data.lastName,
+          phone: data.phone,
+          course: 'python-lifetime'`${language}-${modality}`,
+          customFields: {
+            source: data.contactMedia,
+            reasonToApply: data.applicationMotive
+          }
+        }),
         headers: { 'Content-Type': 'application/json' }
       })
       if (!resp.ok) throw new Error('¡Algo salió mal! intentalo más tarde')
@@ -97,7 +108,6 @@ export default function FormInterview ({ language, modality }) {
           )}
         />
         <label className='input-label' htmlFor='contact-media'>¿Dónde nos conociste?</label>
-        {/* <div className='form-select input-field'> */}
         <select
           className='input-field custom-select'
           name='contact-media'
@@ -105,7 +115,6 @@ export default function FormInterview ({ language, modality }) {
           required
         >
           <option defaultValue='Facebook'>Facebook</option>
-          {/* <option value='Facebook'>Facebook</option> */}
           <option value='Instagram'>Instagram</option>
           <option value='Youtube'>Youtube</option>
           <option value='Twitter'>Twitter</option>
