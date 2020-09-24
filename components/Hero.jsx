@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-export default function Hero ({ apply, brochureDesktop, brochureMobile, children, image, language, modality }) {
+export default function Hero ({ apply, brochure, children, image, language, modality }) {
   return (
     <section className='hero'>
       <div className='container'>
@@ -16,12 +16,18 @@ export default function Hero ({ apply, brochureDesktop, brochureMobile, children
             <Link href={apply}>
               <a className='apply'>Aplica al Bootcamp</a>
             </Link>
-            <Link href={brochureDesktop}>
-              <a className='brochure is-desktop'>
+            <Link href={brochure}>
+              <a className='brochure'>
                 <img className='icon' src='/icons/download.svg' alt='download' />
                 Descarga el brochure
               </a>
             </Link>
+            {/* <Link href={brochureDesktop}>
+              <a className='brochure is-mobile'>
+                <img className='icon' src='/icons/download.svg' alt='download' />
+                Descarga el brochure
+              </a>
+            </Link> */}
           </div>
         </div>
         <div className='image-section'>

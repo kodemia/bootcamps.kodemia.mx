@@ -156,7 +156,7 @@ export default function JavascriptLifetime () {
       <Hero
         className='hero'
         apply='/javascript-lifetime/aplicar'
-        brochureDesktop='/javascript-lifetime/brochure'
+        brochure='/javascript-lifetime/brochure'
         image='/images/hero.png'
         language='Javascript'
         modality='Lifetime Bootcamp'

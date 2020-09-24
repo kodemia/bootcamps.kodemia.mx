@@ -159,7 +159,7 @@ export default function PythonLive () {
       <Hero
         className='hero'
         apply='/python-live/aplicar'
-        brochureDesktop='/python-live/brochure'
+        brochure='/python-live/brochure'
         image='/images/hero_live.png'
         language='Python'
         modality='Bootcamp Live'

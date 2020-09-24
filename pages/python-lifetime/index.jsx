@@ -159,7 +159,7 @@ export default function PythonLifetime () {
       <Hero
         className='hero'
         apply='/python-lifetime/aplicar'
-        brochureDesktop='/python-lifetime/brochure'
+        brochure='/python-lifetime/brochure'
         image='/images/hero.png'
         language='Python'
         modality='Lifetime Bootcamp'

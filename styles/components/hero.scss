@@ -96,18 +96,19 @@
           padding: 10px 13px;
           width: fit-content;
           @include mobile {
+            margin: 30px auto 0 auto;
             padding: 8px 23px;
           }
         }
-        .is-desktop {
-          display: flex;
-          @include mobile {
-            display: none;
-          }
-          .icon {
-            margin-right: 7px;
-          }
-        }
+        // .is-desktop {
+        //   display: flex;
+        //   @include mobile {
+        //     display: none;
+        //   }
+        //   .icon {
+        //     margin-right: 7px;
+        //   }
+        // }
         // .is-mobile {
         //   display: none;
         //   @include mobile {

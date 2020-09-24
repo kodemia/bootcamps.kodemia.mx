@@ -157,7 +157,7 @@ export default function JavascriptLive () {
       <Hero
         className='hero'
         apply='/javascript-live/aplicar'
-        brochureDesktop='/javascript-live/brochure'
+        brochure='/javascript-live/brochure'
         image='/images/hero_live.png'
         language='Javascript'
         modality='Bootcamp Live'

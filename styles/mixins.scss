@@ -1,6 +1,7 @@
-// BREAK POINTS
-	$mobile-width: 800px;
+// SIZES
+$mobile-width: 800px;
 
+// BREAK POINTS
 @mixin desktop {
 	@media (min-width: #{$mobile-width + 1px})  {
 		@content;
