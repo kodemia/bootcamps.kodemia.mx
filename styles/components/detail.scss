@@ -13,7 +13,7 @@
 		.title {
 			color: $gray-darker;
 			font-size: 22px;
-			font-weight: 600;
+			font-weight: 500;
 			line-height: 33px;
 			&::first-letter {
 				text-transform: capitalize;
@@ -23,7 +23,7 @@
 	.description {
 		color: $gray-dark;
 		font-size: 18px;
-		font-weight: 500;
+		font-weight: 400;
 		letter-spacing: -0.36px;
 		line-height: 27px;
 		&::first-letter {

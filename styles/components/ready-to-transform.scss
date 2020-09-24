@@ -2,13 +2,12 @@
   background-color: $black-primary;
   display: flex;
   justify-content: center;
-  @include mobile {
-    width: 100%;
-  }
+  box-sizing: border-box;
+  padding: 80px 15px;
   .container  {
     max-width: 1400px;
-    padding: 80px 32px;
     width: 100%;
+    // padding: 80px 32px;
     .card {
       background-color: $gray;
       border-radius: 30px;
@@ -22,17 +21,18 @@
         display: flex;
         flex: 1;
         justify-content: space-between;
-        margin: 0 25px;
+        margin: 0 15px;
         max-width: $max-page-width;
-        padding: 80px 0;
+        padding: 50px 0;
         @include mobile {
           flex-direction: column;
         }
         .text {
           color: $white;
           font-size: 2.45em;
-          font-weight: 900;
+          font-weight: 500;
           letter-spacing: 0.05em;
+          line-height: 35px;
           @include mobile {
             font-size: 1.8em;
           }
@@ -53,8 +53,8 @@
             background-color: $cyan;
             border-radius: 15px;
             color: $black;
-            font-size: 1.05em;
-            font-weight: 800;
+            font-size: 1.2rem;
+            font-weight: 500;
             padding: 13px 25px;
             text-align: center;
             @include mobile {
