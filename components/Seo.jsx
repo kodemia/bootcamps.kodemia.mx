@@ -11,15 +11,15 @@ const SEO = (props) => {
       <meta name='viewport' content='width=device-width, initial-scale=1.0, shrink-to-fit=no' />
       <meta httpEquiv='X-UA-Compatible' content='IE=edge' />
       <meta name='apple-mobile-web-app-capable' content='yes' />
-      <meta name='author' content='SVAcademy' />
+      <meta name='author' content='Kodemia' />
       <meta name='description' content={props.description || defaults.description} />
       <meta name='twitter:card' content='summary_large_image' />
       <meta property='og:title' content={props.title || defaults.title} />
       <meta property='og:type' content='website' />
       <meta property='og:description' content={props.description || defaults.description} />
-      <meta property='og:site_name' content='SVAcademy' />
+      <meta property='og:site_name' content='Kodemia' />
       <meta property='og:image' content={props.image || defaults.image} />
-      <meta name='theme-color' content='#FA0D1B' />
+      <meta name='theme-color' content='#000' />
     </Head>
   )
 }
