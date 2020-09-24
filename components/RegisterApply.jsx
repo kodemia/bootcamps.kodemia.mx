@@ -7,7 +7,7 @@ export default function RegisterApply ({ language, modality }) {
     <div className='register-apply'>
       <div className='container'>
         <section className='header'>
-          <Link href='/'>
+          <Link href={`/${language.toLowerCase()}-${modality.toLowerCase()}`}>
             <img
               className='logo'
               src='/images/kodemia-logo-white.png'
