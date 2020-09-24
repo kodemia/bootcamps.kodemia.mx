@@ -153,7 +153,7 @@ const workshops = [
 export default function JavascriptLive () {
   return (
     <div>
-      <NavBar apply='/javascript-live/aplicar' />
+      <NavBar apply='/javascript-live/aplicar' language='javascript' modality='live' />
       <Hero
         className='hero'
         apply='/javascript-live/aplicar'

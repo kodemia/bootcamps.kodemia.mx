@@ -5,6 +5,7 @@ import { useRouter } from 'next/router'
 import { useForm, Controller } from 'react-hook-form'
 import PhoneInput from 'react-phone-input-2'
 import es from 'react-phone-input-2/lang/es.json'
+import services from '../config/services.json'
 
 export default function FormInterview ({ language, modality }) {
   const router = useRouter()
@@ -15,9 +16,15 @@ export default function FormInterview ({ language, modality }) {
   const onSubmit = async data => {
     setIsSubmitting(true)
     try {
-      const resp = await fetch('https://httpstat.us/200', {
+      const resp = await fetch(services.apply.url, {
         method: 'POST',
-        body: JSON.stringify({ ...data, language, modality }),
+        body: JSON.stringify({
+          email: data.email,
+          firstName: data.firstName,
+          lastName: data.lastName,
+          phone: data.phone,
+          course: `${language}-${modality}`
+        }),
         headers: { 'Content-Type': 'application/json' }
       })
       if (!resp.ok) throw new Error('¡Algo salió mal! intentalo más tarde')

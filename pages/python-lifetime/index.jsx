@@ -155,7 +155,7 @@ const workshops = [
 export default function PythonLifetime () {
   return (
     <div>
-      <NavBar apply='/python-lifetime/aplicar' />
+      <NavBar apply='/python-lifetime/aplicar' language='python' modality='lifetime' />
       <Hero
         className='hero'
         apply='/python-lifetime/aplicar'
