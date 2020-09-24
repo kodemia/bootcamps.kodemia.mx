@@ -13,6 +13,7 @@ import ReadyToTransform from '../../components/ReadyToTransform'
 import Scholarship from '../../components/Scholarship'
 import Support from '../../components/Support'
 import Workshops from '../../components/Workshops'
+import Seo from '../../components/Seo'
 
 const achievements = [
   {
@@ -155,6 +156,11 @@ const workshops = [
 export default function PythonLive () {
   return (
     <div>
+      <Seo
+        title='Kodemia | Python live'
+        description='Conoce el bootcamp python live'
+        image='https://images.prismic.io/kodemia/2ad0c223-4117-436c-bb0c-5d8c7b249f4f_kodemia-seo-live.png?auto=compress,format'
+      />
       <NavBar apply='/python-live/aplicar' language='python' modality='live' />
       <Hero
         className='hero'

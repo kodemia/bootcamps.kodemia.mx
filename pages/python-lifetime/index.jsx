@@ -13,6 +13,7 @@ import ReadyToTransform from '../../components/ReadyToTransform'
 import Scholarship from '../../components/Scholarship'
 import Support from '../../components/Support'
 import Workshops from '../../components/Workshops'
+import Seo from '../../components/Seo'
 
 const achievements = [
   {
@@ -155,6 +156,11 @@ const workshops = [
 export default function PythonLifetime () {
   return (
     <div>
+      <Seo
+        title='Kodemia | Python live'
+        description='Conoce el bootcamp python lifetime'
+        image='https://images.prismic.io/kodemia/f61441bd-be14-43c5-90ca-2021dccb9ee6_kodemia-seo-lifetime.png?auto=compress,format'
+      />
       <NavBar apply='/python-lifetime/aplicar' language='python' modality='lifetime' />
       <Hero
         className='hero'

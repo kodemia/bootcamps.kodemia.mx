@@ -14,6 +14,7 @@ import Scholarship from '../../components/Scholarship'
 import Support from '../../components/Support'
 import Workshops from '../../components/Workshops'
 import Testimonials from '../../components/Testimonials'
+import Seo from '../../components/Seo'
 
 const achievements = [
   {
@@ -152,6 +153,11 @@ const workshops = [
 export default function JavascriptLifetime () {
   return (
     <div>
+      <Seo
+        title='Kodemia | Javascript lifetime'
+        description='Conoce el bootcamp javascript lifetime'
+        image='https://images.prismic.io/kodemia/f61441bd-be14-43c5-90ca-2021dccb9ee6_kodemia-seo-lifetime.png?auto=compress,format'
+      />
       <NavBar apply='/javascript-lifetime/aplicar' language='javascript' modality='lifetime' />
       <Hero
         className='hero'
