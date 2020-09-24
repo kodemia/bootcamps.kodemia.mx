@@ -11,6 +11,7 @@ import NavBar from '../../components/NavBar'
 import Program from '../../components/Program'
 import ReadyToTransform from '../../components/ReadyToTransform'
 import Scholarship from '../../components/Scholarship'
+import Seo from '../../components/Seo'
 import Support from '../../components/Support'
 import Testimonials from '../../components/Testimonials'
 import Workshops from '../../components/Workshops'
@@ -156,6 +157,11 @@ const workshops = [
 export default function PythonLifetime () {
   return (
     <div>
+      <Seo
+        title='Kodemia | Python live'
+        description='Conoce el bootcamp python lifetime'
+        image='https://images.prismic.io/kodemia/f61441bd-be14-43c5-90ca-2021dccb9ee6_kodemia-seo-lifetime.png?auto=compress,format'
+      />
       <NavBar
         apply='/python-lifetime/aplicar'
         language='Python'

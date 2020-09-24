@@ -11,6 +11,7 @@ import NavBar from '../../components/NavBar'
 import Program from '../../components/Program'
 import ReadyToTransform from '../../components/ReadyToTransform'
 import Scholarship from '../../components/Scholarship'
+import Seo from '../../components/Seo'
 import Support from '../../components/Support'
 import Testimonials from '../../components/Testimonials'
 import Workshops from '../../components/Workshops'
@@ -156,6 +157,11 @@ const workshops = [
 export default function PythonLive () {
   return (
     <div>
+      <Seo
+        title='Kodemia | Python live'
+        description='Conoce el bootcamp python live'
+        image='https://images.prismic.io/kodemia/2ad0c223-4117-436c-bb0c-5d8c7b249f4f_kodemia-seo-live.png?auto=compress,format'
+      />
       <NavBar
         apply='/python-live/aplicar'
         language='Python'

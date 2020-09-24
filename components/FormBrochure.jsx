@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import fetch from 'node-fetch'
 import { useRouter } from 'next/router'
 import { useForm } from 'react-hook-form'
+import services from '../config/services.json'
 
 export default function FormBrochure ({ language, modality }) {
   const router = useRouter()
@@ -12,9 +13,14 @@ export default function FormBrochure ({ language, modality }) {
   const onSubmit = async data => {
     setIsSubmitting(true)
     try {
-      const resp = await fetch('https://httpstat.us/200', {
+      const resp = await fetch(services.apply.url, {
         method: 'POST',
-        body: JSON.stringify({ ...data, language, modality }),
+        body: JSON.stringify({
+          email: data.email,
+          firstName: data.firstName,
+          lastName: data.lastName,
+          course: `${language}-${modality}`
+        }),
         headers: { 'Content-Type': 'application/json' }
       })
       if (!resp.ok) throw new Error('¡Algo salió mal! intentalo más tarde')

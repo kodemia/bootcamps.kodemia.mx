@@ -12,6 +12,7 @@ import Program from '../../components/Program'
 import ReadyToTransform from '../../components/ReadyToTransform'
 import Scholarship from '../../components/Scholarship'
 import Support from '../../components/Support'
+import Seo from '../../components/Seo'
 import Testimonials from '../../components/Testimonials'
 import Workshops from '../../components/Workshops'
 
@@ -154,6 +155,11 @@ const workshops = [
 export default function JavascriptLive () {
   return (
     <div>
+      <Seo
+        title='Kodemia | Javascript live'
+        description='Conoce el bootcamp javascript live'
+        image='/https://images.prismic.io/kodemia/2ad0c223-4117-436c-bb0c-5d8c7b249f4f_kodemia-seo-live.png?auto=compress,format'
+      />
       <NavBar
         apply='/javascript-live/aplicar'
         language='Javascript'
