@@ -30,7 +30,7 @@ export default function FormInterview ({ language, modality }) {
   }
 
   return (
-    <div className='register-form brochure-form'>
+    <div className='register-form'>
       <form className='form' onSubmit={handleSubmit(onSubmit)}>
         <label className='input-label' htmlFor='firstName'>Nombre</label>
         <input

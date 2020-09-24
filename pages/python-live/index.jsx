@@ -12,6 +12,7 @@ import Program from '../../components/Program'
 import ReadyToTransform from '../../components/ReadyToTransform'
 import Scholarship from '../../components/Scholarship'
 import Support from '../../components/Support'
+import Testimonials from '../../components/Testimonials'
 import Workshops from '../../components/Workshops'
 
 const achievements = [
@@ -155,7 +156,11 @@ const workshops = [
 export default function PythonLive () {
   return (
     <div>
-      <NavBar apply='/python-live/aplicar' />
+      <NavBar
+        apply='/python-live/aplicar'
+        language='Python'
+        modality='Live'
+      />
       <Hero
         className='hero'
         apply='/python-live/aplicar'
@@ -172,12 +177,13 @@ export default function PythonLive () {
       <Details details={details} />
       <Introduction language='Python' />
       <Program
-        brochureDesktop='/python-live/brochure'
+        brochure='/python-live/brochure'
         modules={modules}
       />
       <KodeAwards />
       <Workshops workshops={workshops} />
       <Career achievements={achievements} />
+      <Testimonials />
       <Investment investment='$69,500 MXN (Incluye IVA) + Inscripción de $5,950.' paymentPlan={paymentPlan} />
       <Scholarship interview='/python-live/entrevista' />
       <MeetOurKoders />

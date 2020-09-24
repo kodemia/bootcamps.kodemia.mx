@@ -12,6 +12,7 @@ import Program from '../../components/Program'
 import ReadyToTransform from '../../components/ReadyToTransform'
 import Scholarship from '../../components/Scholarship'
 import Support from '../../components/Support'
+import Testimonials from '../../components/Testimonials'
 import Workshops from '../../components/Workshops'
 
 const achievements = [
@@ -153,7 +154,11 @@ const workshops = [
 export default function JavascriptLive () {
   return (
     <div>
-      <NavBar apply='/javascript-live/aplicar' />
+      <NavBar
+        apply='/javascript-live/aplicar'
+        language='Javascript'
+        modality='Live'
+      />
       <Hero
         className='hero'
         apply='/javascript-live/aplicar'
@@ -170,12 +175,13 @@ export default function JavascriptLive () {
       <Details details={details} />
       <Introduction language='Javascript' />
       <Program
-        brochureDesktop='/javascript-live/brochure'
+        brochure='/javascript-live/brochure'
         modules={modules}
       />
       <KodeAwards />
       <Workshops workshops={workshops} />
       <Career achievements={achievements} />
+      <Testimonials />
       <Investment investment='$59,500 MXN (Incluye IVA) + Inscripción de $5,500.' paymentPlan={paymentPlan} />
       <Scholarship interview='/javascript-live/entrevista' />
       <MeetOurKoders />

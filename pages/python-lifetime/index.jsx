@@ -12,6 +12,7 @@ import Program from '../../components/Program'
 import ReadyToTransform from '../../components/ReadyToTransform'
 import Scholarship from '../../components/Scholarship'
 import Support from '../../components/Support'
+import Testimonials from '../../components/Testimonials'
 import Workshops from '../../components/Workshops'
 
 const achievements = [
@@ -155,7 +156,11 @@ const workshops = [
 export default function PythonLifetime () {
   return (
     <div>
-      <NavBar apply='/python-lifetime/aplicar' />
+      <NavBar
+        apply='/python-lifetime/aplicar'
+        language='Python'
+        modality='Lifetime'
+      />
       <Hero
         className='hero'
         apply='/python-lifetime/aplicar'
@@ -172,12 +177,13 @@ export default function PythonLifetime () {
       <Details details={details} />
       <Introduction language='Python' />
       <Program
-        brochureDesktop='/python-lifetime/brochure'
+        brochure='/python-lifetime/brochure'
         modules={modules}
       />
       <KodeAwards />
       <Workshops workshops={workshops} />
       <Career achievements={achievements} />
+      <Testimonials />
       <Investment investment='$89,000 MXN (Incluye IVA) + Inscripción de $6,950.' paymentPlan={paymentPlan} />
       <Scholarship interview='/python-lifetime/entrevista' />
       <MeetOurKoders />

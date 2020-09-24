@@ -15,9 +15,6 @@
     max-width: $max-page-width;
     padding: 40px 0;
     width: 100%;
-    .subtitle { grid-area: subtitle;}
-    .title { grid-area: title;}
-    .description { grid-area: description;}
     .payment_plan { grid-area: payment_plan;}    
     @include mobile {
       grid-template-areas:  'subtitle'
@@ -29,6 +26,7 @@
       color: $gray-light;
       font-size: 20px;
       font-weight: 600;
+      grid-area: subtitle;
       @include mobile {
         font-size: 18px;
       }
@@ -37,6 +35,7 @@
       color: $white;
       font-size: 35px;
       font-weight: 600;
+      grid-area: title;
       letter-spacing: 1.75px;
       line-height: 45px;
       margin-top: 20px;
@@ -53,6 +52,7 @@
       color: $white-lighter;
       font-size: 18px;
       font-weight: 500;
+      grid-area: description;
       margin-top: 40px;
       span {
         color: $cyan;

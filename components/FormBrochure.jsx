@@ -3,7 +3,7 @@ import fetch from 'node-fetch'
 import { useRouter } from 'next/router'
 import { useForm } from 'react-hook-form'
 
-export default function FormInterview ({ language, modality }) {
+export default function FormBrochure ({ language, modality }) {
   const router = useRouter()
   const { register, handleSubmit, errors } = useForm()
   const [submitError, setSubmitError] = useState('')
@@ -27,7 +27,7 @@ export default function FormInterview ({ language, modality }) {
   }
 
   return (
-    <div className='register-form brochure-form'>
+    <div className='register-form'>
       <form className='form' onSubmit={handleSubmit(onSubmit)}>
         <label className='input-label' htmlFor='firstName'>Nombre</label>
         <input

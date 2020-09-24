@@ -7,16 +7,6 @@
   .container {
     max-width: $max-page-width;
 		width: 100%;
-    .header {
-      padding: 20px 0;
-      width: 100%;
-      .logo {
-        cursor: pointer;
-        margin-right: 10px;
-        max-width: 38vw;
-        width: 130px;
-      }
-    }
     .content {
       display: flex;
       justify-content: space-between;

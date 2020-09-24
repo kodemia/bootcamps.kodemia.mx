@@ -6,7 +6,7 @@ import { useForm, Controller } from 'react-hook-form'
 import PhoneInput from 'react-phone-input-2'
 import es from 'react-phone-input-2/lang/es.json'
 
-export default function FormInterview ({ language, modality }) {
+export default function FormApply ({ language, modality }) {
   const router = useRouter()
   const { register, handleSubmit, errors, control } = useForm()
   const [submitError, setSubmitError] = useState('')
@@ -30,7 +30,7 @@ export default function FormInterview ({ language, modality }) {
   }
 
   return (
-    <div className='register-form apply-form'>
+    <div className='register-form'>
       <form className='form' onSubmit={handleSubmit(onSubmit)}>
         <label className='input-label' htmlFor='firstName'>Nombre</label>
         <input

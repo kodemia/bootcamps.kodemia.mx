@@ -22,12 +22,6 @@ export default function Hero ({ apply, brochure, children, image, language, moda
                 Descarga el brochure
               </a>
             </Link>
-            {/* <Link href={brochureDesktop}>
-              <a className='brochure is-mobile'>
-                <img className='icon' src='/icons/download.svg' alt='download' />
-                Descarga el brochure
-              </a>
-            </Link> */}
           </div>
         </div>
         <div className='image-section'>

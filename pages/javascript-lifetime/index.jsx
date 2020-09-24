@@ -12,8 +12,8 @@ import Program from '../../components/Program'
 import ReadyToTransform from '../../components/ReadyToTransform'
 import Scholarship from '../../components/Scholarship'
 import Support from '../../components/Support'
-import Workshops from '../../components/Workshops'
 import Testimonials from '../../components/Testimonials'
+import Workshops from '../../components/Workshops'
 
 const achievements = [
   {
@@ -43,7 +43,7 @@ const details = [
   {
     icon: '/icons/clock.svg',
     description: 'lunes a viernes de 19 a 22 hrs',
-    note: '7 sábados de 10 a 18 hrs  |  GMT-6',
+    note: '7 sábados de 10 a 18 hrs | GMT-6',
     title: 'horarios'
   },
   {
@@ -152,7 +152,11 @@ const workshops = [
 export default function JavascriptLifetime () {
   return (
     <div>
-      <NavBar apply='/javascript-lifetime/aplicar' />
+      <NavBar
+        apply='/javascript-lifetime/aplicar'
+        language='Javascript'
+        modality='Lifetime'
+      />
       <Hero
         className='hero'
         apply='/javascript-lifetime/aplicar'
@@ -169,7 +173,7 @@ export default function JavascriptLifetime () {
       <Details details={details} />
       <Introduction language='Javascript' />
       <Program
-        brochureDesktop='/javascript-lifetime/brochure'
+        brochure='/javascript-lifetime/brochure'
         modules={modules}
       />
       <KodeAwards />
