@@ -83,7 +83,7 @@ const metrics = [
 
 const modules = [
   {
-    image: '/images/class-room.png',
+    image: '/images/classroom.png',
     name: 'pre-Bootcamp',
     period: '+40 horas',
     text: 'desde tu inscripción desarrollarás las bases a través de cursos online y asesoría personalizada'
@@ -97,13 +97,13 @@ const modules = [
   {
     image: '/images/mentor.png',
     name: 'modulo Back End',
-    period: 'semana 7 - 11',
+    period: 'semana 7 - 15',
     text: 'aprenderás a crear todo el Back End del primer proyecto, bases de datos y tu propia API utilizando Python, Django y PostgreSQL'
   },
   {
     image: '/images/koders.png',
     name: 'modulo Cloud',
-    period: 'semana 12 - 15',
+    period: 'semana 15 - 17',
     text: 'desplegarás en Cloud tu aplicación completa con tu dominio e integrarás las API’s de AI disponibles en la plataforma de IBM'
   }
 ]
@@ -158,7 +158,7 @@ export default function PythonLifetime () {
   return (
     <div>
       <Seo
-        title='Kodemia | Python live'
+        title='Kodemia | Python lifetime'
         description='Conoce el bootcamp python lifetime'
         image='https://images.prismic.io/kodemia/f61441bd-be14-43c5-90ca-2021dccb9ee6_kodemia-seo-lifetime.png?auto=compress,format'
       />
@@ -186,7 +186,13 @@ export default function PythonLifetime () {
         brochure='/python-lifetime/brochure'
         modules={modules}
       />
-      <KodeAwards />
+      <KodeAwards
+        name='KodeAwards, el desafío final'
+        period='semana 7 - 19'
+        text='Aplicarás todo el conocimiento en un proyecto real, desarrollando el MVP en equipo, con una metodología SCRUM
+          para llevarlo a una web app funcional desplegada en la nube.<br /> Crearás el pitch de tu app, porque será
+          evaluada por directores de desarrollo de empresas invitadas para reconocerte como Full Stack Developer'
+      />
       <Workshops workshops={workshops} />
       <Career achievements={achievements} />
       <Testimonials />

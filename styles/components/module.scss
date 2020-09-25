@@ -18,13 +18,15 @@
   .period {
     background-color: $cyan;
     border-radius: 10px;
+    box-sizing: border-box;
     color: $black;
     font-size: 11px;
     font-weight: 700;
     line-height: 16px;
     margin-top: 40px;
-    padding: 0 5px;
-    width: fit-content;
+    padding: 1px 5px;
+    text-align: center;
+    width: 93px;
     &::first-letter {
       text-transform: capitalize;
     }
@@ -32,7 +34,8 @@
   .name {
     color: $white;
     font-size: 22px;
-    font-weight: 600;
+    font-weight: 500;
+    line-height: 33px;
     margin-top: 10px;
     &::first-letter {
       text-transform: capitalize;
@@ -41,11 +44,11 @@
   .text {
     color: $white-lighter;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: -0.05em;
     letter-spacing: -0.9px;
     line-height: 27px;
-    margin-top: 30px;
+    margin-top: 20px;
     &::first-letter {
       text-transform: capitalize;
     }

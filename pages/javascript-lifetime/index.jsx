@@ -82,7 +82,7 @@ const metrics = [
 
 const modules = [
   {
-    image: '/images/class-room.png',
+    image: '/images/classroom.png',
     name: 'pre-Bootcamp',
     period: '+40 horas',
     text: 'desde tu inscripción desarrollarás las bases a través de cursos online y asesoría personalizada'
@@ -182,11 +182,20 @@ export default function JavascriptLifetime () {
         brochure='/javascript-lifetime/brochure'
         modules={modules}
       />
-      <KodeAwards />
+      <KodeAwards
+        name='KodeAwards, el desafío final'
+        period='semana 7 - 17'
+        text='Aplicarás todo el conocimiento en un proyecto real, desarrollando el MVP en equipo, con una metodología SCRUM
+          para llevarlo a una web app funcional desplegada en la nube.<br /> Crearás el pitch de tu app, porque será
+          evaluada por directores de desarrollo de empresas invitadas para reconocerte como Full Stack Developer'
+      />
       <Workshops workshops={workshops} />
       <Career achievements={achievements} />
       <Testimonials />
-      <Investment investment='$75,000 MXN (Incluye IVA) + Inscripción de $6,000.' paymentPlan={paymentPlan} />
+      <Investment
+        investment='$75,000 MXN (Incluye IVA) + Inscripción de $6,000.'
+        paymentPlan={paymentPlan}
+      />
       <Scholarship interview='/javascript-lifetime/entrevista' />
       <MeetOurKoders />
       <Support />
