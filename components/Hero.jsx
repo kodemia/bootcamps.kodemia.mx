@@ -7,7 +7,7 @@ export default function Hero ({ apply, brochure, children, image, language, moda
         <div className='info-section'>
           <p className='modality'>Web developer  |  {modality}</p>
           <h1>
-            <span className='title margin-title'>Bootcamp{' \r\n'}</span>
+            <span className='title'>Bootcamp{'\r\n'}</span>
             <span className='title'>Full Stack con{' '}</span>
             <span className='title language'>{language}</span>
           </h1>
