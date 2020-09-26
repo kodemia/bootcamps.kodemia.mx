@@ -13,7 +13,6 @@
 		width: 100%;
 		@include mobile {
 			flex-direction: column;
-			row-gap: 30px;
 		}
 	}
 }
