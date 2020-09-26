@@ -2,7 +2,9 @@
   background-color: $black-primary;
   display: flex;
   justify-content: center;
+  box-sizing: border-box;
   .container {
+    box-sizing: border-box;
     bottom: -40px;
     display: flex;
     justify-content: center;

@@ -134,30 +134,31 @@
     .inactive {
       display: none;
     }
-    .active {
-      transition: 3s;
-    }
     .back-forward-buttons {
       align-self: flex-end;
       justify-content: center;
       min-width: 100%;
       max-width: 870px;
-      z-index: 10000;
       position: absolute;
       display: flex;
+      box-sizing: border-box;
       @include mobile {
         margin-top: 30px;
         position: static;
         flex-direction: column;
       }
       .container-buttons {
+        box-sizing: border-box;
+        margin: 0 35px;
         margin-top: 800px;
         align-self: flex-end;
         width: 100%;
         max-width: 870px;
         display: flex;
         justify-content: flex-end;
+        // display: none;
         @include mobile {
+          max-width: 100vw;
           margin-top: 0;
         }
       }
@@ -167,7 +168,8 @@
         width: 40px;
         cursor: pointer;
         top: -25px;
-        left: 5px;
+        left: 0px;
+        padding-right: 10px;
 
         @include mobile {
           top: 0;
@@ -175,7 +177,7 @@
         }
       }
       .back {
-        margin-right: 20px;
+        margin-right: 10px;
       }
     }
   }
