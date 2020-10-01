@@ -16,7 +16,7 @@ export default function Thankyou ({ applyText, interviewText, language, modality
               <h1 className='title cyan-color'>registrarte</h1>
               <p className='text'>{applyText}</p>
               <p className='text'>{interviewText}</p>
-              <Link href={`/brochures/${language}_${modality}-D.pdf`}>
+              <Link href={`/brochures/${language}_${modality}_D.pdf`}>
                 <a
                   className='brochure is-desktop'
                   target='__blank'
@@ -25,7 +25,7 @@ export default function Thankyou ({ applyText, interviewText, language, modality
                 Descarga el brochure
                 </a>
               </Link>
-              <Link href={`/brochures/${language}_${modality}-M.pdf`}>
+              <Link href={`/brochures/${language}_${modality}_M.pdf`}>
                 <a
                   className='brochure is-mobile'
                   target='__blank'
