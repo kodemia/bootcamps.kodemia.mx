@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Head from 'next/head'
+import { initGTM } from '../lib/gtm'
 
 import '../styles/index.scss'
 
 function MyApp ({ Component, pageProps }) {
+  useEffect(() => {
+    initGTM()
+  }, [])
   return (
     <>
       <Component {...pageProps} />
