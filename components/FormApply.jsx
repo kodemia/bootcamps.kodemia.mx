@@ -7,7 +7,7 @@ import PhoneInput from 'react-phone-input-2'
 import es from 'react-phone-input-2/lang/es.json'
 import services from '../config/services.json'
 
-export default function FormApply ({ language, modality }) {
+export default function FormApply({ language, modality }) {
   const router = useRouter()
   const { register, handleSubmit, errors, control } = useForm()
   const [submitError, setSubmitError] = useState('')
@@ -26,7 +26,8 @@ export default function FormApply ({ language, modality }) {
           course: `${language}-${modality}`,
           customFields: {
             source: data.source,
-            reasonToApply: data.reason
+            reasonToApply: data.reason,
+            campaignName: `${language}-${modality}`
           }
         }),
         headers: { 'Content-Type': 'application/json' }
@@ -158,9 +159,9 @@ export default function FormApply ({ language, modality }) {
         />
         {
           submitError &&
-            <div className='error-message'>
-              {submitError}
-            </div>
+          <div className='error-message'>
+            {submitError}
+          </div>
         }
       </form>
     </div>
