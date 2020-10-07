@@ -28,7 +28,7 @@ export default function FormApply ({ language, modality }) {
           customFields: {
             source: data.source,
             reasonToApply: data.reason,
-            campaignName: campaign[language.toLowerCase()][modality]
+            campaignName: campaign[language.toLowerCase()][modality.toLowerCase()]
           }
         }),
         headers: { 'Content-Type': 'application/json' }
