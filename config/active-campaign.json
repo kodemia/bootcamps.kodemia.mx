@@ -1,0 +1,10 @@
+{
+  "python": {
+    "live": "BWPL - LP",
+    "lifetime": "BWP - LP"
+  },
+  "javascript": {
+    "live":  "BWJL - LP",
+    "lifetime": "BWJ - LP"
+  }
+}
