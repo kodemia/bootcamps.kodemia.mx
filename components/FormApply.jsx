@@ -6,7 +6,7 @@ import { useForm, Controller } from 'react-hook-form'
 import PhoneInput from 'react-phone-input-2'
 import es from 'react-phone-input-2/lang/es.json'
 import services from '../config/services.json'
-import campaign from '../config/campaign.json'
+import campaign from '../config/active-campaign.json'
 
 export default function FormApply ({ language, modality }) {
   const router = useRouter()
