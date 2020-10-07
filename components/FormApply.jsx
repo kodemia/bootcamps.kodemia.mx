@@ -6,13 +6,13 @@ import { useForm, Controller } from 'react-hook-form'
 import PhoneInput from 'react-phone-input-2'
 import es from 'react-phone-input-2/lang/es.json'
 import services from '../config/services.json'
+import campaign from '../config/campaign.json'
 
-export default function FormApply({ language, modality }) {
+export default function FormApply ({ language, modality }) {
   const router = useRouter()
   const { register, handleSubmit, errors, control } = useForm()
   const [submitError, setSubmitError] = useState('')
   const [isSubmitting, setIsSubmitting] = useState(false)
-
   const onSubmit = async data => {
     setIsSubmitting(true)
     try {
@@ -27,7 +27,7 @@ export default function FormApply({ language, modality }) {
           customFields: {
             source: data.source,
             reasonToApply: data.reason,
-            campaignName: `${language}-${modality}`
+            campaignName: `${campaign[language][modality]}`
           }
         }),
         headers: { 'Content-Type': 'application/json' }
@@ -159,7 +159,7 @@ export default function FormApply({ language, modality }) {
         />
         {
           submitError &&
-          <div className='error-message'>
+            <div className='error-message'>
             {submitError}
           </div>
         }
