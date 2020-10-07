@@ -1,5 +1,5 @@
 {
   "apply": {
-    "url": "http://localhost:8080/active-campaign/apply"
+    "url": "https://api-kodemia-mx.vercel.app/active-campaign/apply"
   }
 }

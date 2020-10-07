@@ -13,6 +13,7 @@ export default function FormApply ({ language, modality }) {
   const { register, handleSubmit, errors, control } = useForm()
   const [submitError, setSubmitError] = useState('')
   const [isSubmitting, setIsSubmitting] = useState(false)
+
   const onSubmit = async data => {
     setIsSubmitting(true)
     try {
@@ -27,7 +28,7 @@ export default function FormApply ({ language, modality }) {
           customFields: {
             source: data.source,
             reasonToApply: data.reason,
-            campaignName: `${campaign[language][modality]}`
+            campaignName: campaign[language.toLowerCase()][modality]
           }
         }),
         headers: { 'Content-Type': 'application/json' }

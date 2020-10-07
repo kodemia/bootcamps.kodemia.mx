@@ -1,9 +1,9 @@
 {
-  "Python": {
+  "python": {
     "live": "BWPL - LP",
     "lifetime": "BWP - LP"
   },
-  "Javascript": {
+  "javascript": {
     "live":  "BWJL - LP",
     "lifetime": "BWJ - LP"
   }
