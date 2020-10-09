@@ -85,25 +85,25 @@ const modules = [
     image: '/images/classroom.png',
     name: 'pre-Bootcamp',
     period: '+40 horas',
-    text: 'desde tu inscripción desarrollarás las bases a través de cursos online y asesoría personalizada'
+    text: 'desde tu inscripción desarrollarás las bases a través de cursos online y asesoría personalizada.'
   },
   {
     image: '/images/kode-day.png',
     name: 'modulo Front End',
     period: 'semana 1 - 6',
-    text: 'crearás tu primer sitio web dinámico y funcional aplicando tu conocimiento de HTML, CSS, Bootstrap, SASS y Javascript'
+    text: 'crearás tu primer sitio web dinámico y funcional aplicando tu conocimiento de HTML, CSS, Bootstrap, SASS y Javascript.'
   },
   {
     image: '/images/mentor.png',
     name: 'modulo Back End',
     period: 'semana 7 - 11',
-    text: 'aprenderás a crear todo el Back End del primer proyecto, bases de datos y tu propia API utilizando Node, Mongo y Express'
+    text: 'aprenderás a crear todo el Back End del primer proyecto, bases de datos y tu propia API utilizando Node, Mongo y Express.'
   },
   {
     image: '/images/koders.png',
     name: 'front End Reactivo',
     period: 'semana 12 - 15',
-    text: 'crearás el Front End con ReactJS a través de componentes de código reutilizable, una estructura solicitada por cualquier compañía tecnológica del mundo'
+    text: 'crearás el Front End con ReactJS a través de componentes de código reutilizable, una estructura solicitada por cualquier compañía tecnológica del mundo.'
   }
 ]
 
@@ -187,7 +187,7 @@ export default function JavascriptLifetime () {
         period='semana 7 - 17'
         text='Aplicarás todo el conocimiento en un proyecto real, desarrollando el MVP en equipo, con una metodología SCRUM
           para llevarlo a una web app funcional desplegada en la nube.<br /> Crearás el pitch de tu app, porque será
-          evaluada por directores de desarrollo de empresas invitadas para reconocerte como Full Stack Developer'
+          evaluada por directores de desarrollo de empresas invitadas para reconocerte como Full Stack Developer.'
       />
       <Workshops workshops={workshops} />
       <Career achievements={achievements} />
