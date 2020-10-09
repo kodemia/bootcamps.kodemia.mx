@@ -44,8 +44,8 @@ const details = [
   },
   {
     icon: '/icons/clock.svg',
-    description: 'GMT-6 Lunes a Viernes de 19 a 22 hrs',
-    note: '7 sábados de 10 a 18 hrs',
+    description: 'Lunes a Viernes de 19 a 22 hrs',
+    note: '7 sábados de 10 a 18 hrs GMT-6',
     title: 'horarios'
   },
   {
