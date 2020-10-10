@@ -1,4 +1,5 @@
 import Career from '../../components/Career'
+import DataManipulation from '../../components/DataManipulation'
 import Details from '../../components/Details'
 import Footer from '../../components/Footer'
 import Hero from '../../components/Hero'
@@ -186,7 +187,10 @@ export default function PythonLive () {
         brochure='/python-live/brochure'
         modules={modules}
       />
+      <DataManipulation isHideOnDesktop />
       <Workshops workshops={workshops} />
+      <DataManipulation isHideOnMobile />
+
       <KodeAwards
         name='KodeAwards, el desafío final'
         period='semana 7 - 19'

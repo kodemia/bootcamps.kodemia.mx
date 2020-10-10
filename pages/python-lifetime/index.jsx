@@ -187,8 +187,9 @@ export default function PythonLifetime () {
         brochure='/python-lifetime/brochure'
         modules={modules}
       />
+      <DataManipulation isHideOnDesktop />
       <Workshops workshops={workshops} />
-      <DataManipulation />
+      <DataManipulation isHideOnMobile />
       <KodeAwards
         name='KodeAwards, el desafío final'
         period='semana 7 - 19'
