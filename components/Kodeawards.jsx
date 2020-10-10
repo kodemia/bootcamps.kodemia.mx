@@ -19,18 +19,12 @@ export default function KodeAwards ({ brochure, hasButton, name, period, text })
         {
           hasButton &&
             <Link href={brochure}>
-              <a className={`brochure ${hasButton ? 'has-button' : ''}`}>
+              <a className='brochure is-mobile'>
                 <img className='icon' src='/icons/download.svg' alt='download' />
                 Descarga el brochure
               </a>
             </Link>
         }
-        {/* <Link href={brochure}>
-          <a className='brochure is-mobile'>
-            <img className='icon' src='/icons/download.svg' alt='download' />
-              Descarga el brochure
-          </a>
-        </Link> */}
       </div>
     </section>
   )

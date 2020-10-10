@@ -182,7 +182,6 @@ export default function JavascriptLive () {
       <Introduction language='Javascript' />
       <Program
         brochure='/javascript-live/brochure'
-        hasButton
         modules={modules}
       />
       <KodeAwards

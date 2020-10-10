@@ -180,7 +180,6 @@ export default function JavascriptLifetime () {
       <Introduction language='Javascript' />
       <Program
         brochure='/javascript-lifetime/brochure'
-        hasButton
         modules={modules}
       />
       <KodeAwards

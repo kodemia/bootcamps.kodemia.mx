@@ -71,14 +71,11 @@
         margin-right: 7px;
       }
     }
-    .has-button {
+    .is-mobile {
       display: none;
       @include mobile {
         display: flex;
       }
-      // .icon {
-      //   margin-right: 7px;
-      // }
     }
   }
 }

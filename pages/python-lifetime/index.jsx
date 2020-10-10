@@ -188,7 +188,7 @@ export default function PythonLifetime () {
       </Introduction>
       <Program
         brochure='/python-lifetime/brochure'
-        hasButton
+        hideButtonOnMobile
         modules={modules}
       />
       <Workshops workshops={workshops} />

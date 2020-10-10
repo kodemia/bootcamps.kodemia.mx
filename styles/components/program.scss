@@ -75,10 +75,10 @@
         margin-right: 7px;
       }
     }
-    .has-button {
+    .hide-button-on-mobile {
       display: flex;
       @include mobile {
-        // display: none;
+        display: none;
       }
     }
   } 

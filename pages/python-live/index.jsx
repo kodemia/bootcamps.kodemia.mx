@@ -188,7 +188,7 @@ export default function PythonLive () {
       </Introduction>
       <Program
         brochure='/python-live/brochure'
-        hasButton
+        hideButtonOnMobile
         modules={modules}
       />
       <Workshops workshops={workshops} />
