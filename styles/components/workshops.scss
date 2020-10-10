@@ -6,7 +6,7 @@
   .container {
     display: grid;
     max-width: $max-page-width;
-    padding: 40px 0;
+    padding: 40px 0 20px;
     width: 100%;
     column-gap: 25px;
     grid-template-columns: repeat(2, 1fr);

@@ -1,0 +1,55 @@
+.data-manipulation {
+  background-color: $black-primary;
+  display: flex;
+	justify-content: center;
+  padding: 0 32px;
+  .container {
+    max-width: $max-page-width;
+    width: 100%;
+    .card {
+      background-color: $gray-medium;
+      border-radius: 30px;
+      margin: 20px 0 40px;
+      .content {
+        display: grid;
+        grid-template-areas:  'subtitle technologies'
+                              'title technologies'
+                              'text text';
+        padding: 40px;
+        @include mobile {
+          grid-template-areas:  'subtitle'
+                                'title'
+                                'text';
+        }
+        .subtitle {
+          color: $gray-light;
+          font-size: 20px;
+          font-weight: 500;
+          grid-area: subtitle;
+        }
+        .title {
+          color: $white-light;
+          font-size: 35px;
+          font-weight: 500;
+          grid-area: title;
+          letter-spacing: 1.75px;
+          line-height: 1.14;
+        }
+        .technologies {
+          grid-area: technologies;
+          text-align: end;
+          .pandas {
+            margin-right: 30px;
+          }
+        }
+        .text {
+          color: $white-lighter;
+          font-size: 18px;
+          font-weight: 400;
+          grid-area: text;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}

@@ -1,4 +1,5 @@
 import Career from '../../components/Career'
+import DataManipulation from '../../components/DataManipulation'
 import Details from '../../components/Details'
 import Footer from '../../components/Footer'
 import Hero from '../../components/Hero'
@@ -186,6 +187,8 @@ export default function PythonLifetime () {
         brochure='/python-lifetime/brochure'
         modules={modules}
       />
+      <Workshops workshops={workshops} />
+      <DataManipulation />
       <KodeAwards
         name='KodeAwards, el desafío final'
         period='semana 7 - 19'
@@ -193,7 +196,6 @@ export default function PythonLifetime () {
           para llevarlo a una web app funcional desplegada en la nube.<br /> Crearás el pitch de tu app, porque será
           evaluada por directores de desarrollo de empresas invitadas para reconocerte como Full Stack Developer'
       />
-      <Workshops workshops={workshops} />
       <Career achievements={achievements} />
       <Testimonials />
       <Investment investment='$89,000 MXN (Incluye IVA) + Inscripción de $6,950.' paymentPlan={paymentPlan} />

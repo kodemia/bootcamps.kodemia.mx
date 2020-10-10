@@ -186,6 +186,7 @@ export default function PythonLive () {
         brochure='/python-live/brochure'
         modules={modules}
       />
+      <Workshops workshops={workshops} />
       <KodeAwards
         name='KodeAwards, el desafío final'
         period='semana 7 - 19'
@@ -193,7 +194,6 @@ export default function PythonLive () {
           para llevarlo a una web app funcional desplegada en la nube.<br /> Crearás el pitch de tu app, porque será
           evaluada por directores de desarrollo de empresas invitadas para reconocerte como Full Stack Developer'
       />
-      <Workshops workshops={workshops} />
       <Career achievements={achievements} />
       <Testimonials />
       <Investment investment='$69,500 MXN (Incluye IVA) + Inscripción de $5,950.' paymentPlan={paymentPlan} />

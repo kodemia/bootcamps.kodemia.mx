@@ -9,7 +9,7 @@
     .card {
       background-color: $cyan-primary;
       border-radius: 30px;
-      margin: 0 80px;
+      margin-top: 40px;
       @include mobile {
         margin: 0;
       }
