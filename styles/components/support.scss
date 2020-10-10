@@ -58,6 +58,9 @@
         grid-template-columns: 1fr;
       }
       .item {
+        @include mobile {
+          min-width: 216px;
+        }
         .icon {
           color: $white;
         }
@@ -65,10 +68,16 @@
           color: $white-light;
           font-size: 22px;
           font-weight: 500;
+          height: 60px;
           margin-top: 10px;
-          max-width: 240px;
+          width: 144px;
           &::first-letter {
             text-transform: capitalize;
+          }
+          @include mobile {
+            height: 50px;
+            width: 216px;
+            max-width: 310px;
           }
         }
         .text {

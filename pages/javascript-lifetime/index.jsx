@@ -180,9 +180,11 @@ export default function JavascriptLifetime () {
       <Introduction language='Javascript' />
       <Program
         brochure='/javascript-lifetime/brochure'
+        hasButton
         modules={modules}
       />
       <KodeAwards
+        brochure='/python-lifetime/brochure'
         name='KodeAwards, el desafío final'
         period='semana 7 - 17'
         text='Aplicarás todo el conocimiento en un proyecto real, desarrollando el MVP en equipo, con una metodología SCRUM

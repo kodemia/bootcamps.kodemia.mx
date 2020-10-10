@@ -72,7 +72,13 @@
         padding: 8px 23px;
       }
       .icon {
-        margin-right: 5px;
+        margin-right: 7px;
+      }
+    }
+    .has-button {
+      display: flex;
+      @include mobile {
+        // display: none;
       }
     }
   } 

@@ -188,10 +188,13 @@ export default function PythonLifetime () {
       </Introduction>
       <Program
         brochure='/python-lifetime/brochure'
+        hasButton
         modules={modules}
       />
       <Workshops workshops={workshops} />
       <KodeAwards
+        brochure='/python-lifetime/brochure'
+        hasButton
         name='KodeAwards, el desafío final'
         period='semana 7 - 19'
         text='Aplicarás todo el conocimiento en un proyecto real, desarrollando el MVP en equipo, con una metodología SCRUM
