@@ -1,0 +1,83 @@
+.data-manipulation {
+  background-color: $black-primary;
+  display: flex;
+	justify-content: center;
+  padding: 0 32px;
+  .container {
+    max-width: $max-page-width;
+    width: 100%;
+    .card {
+      background-color: $gray-medium;
+      border-radius: 30px;
+      margin: 20px 0;
+      .content {
+        display: grid;
+        grid-template-areas:  'subtitle technologies'
+                              'title technologies'
+                              'text text';
+        padding: 40px;
+        @include mobile {
+          grid-template-areas:  'subtitle'
+                                'title'
+                                'text';
+        }
+        .subtitle {
+          color: $gray-light;
+          font-size: 20px;
+          font-weight: 500;
+          grid-area: subtitle;
+          line-height: 30px;
+          @include mobile {
+            font-size: 18px;
+            line-height: 27px;
+          }
+        }
+        .title {
+          color: $white-light;
+          font-size: 35px;
+          font-weight: 500;
+          grid-area: title;
+          letter-spacing: 1.75px;
+          line-height: 40px;
+          @include mobile {
+            font-size: 22px;
+          }
+        }
+        .technologies {
+          grid-area: technologies;
+          text-align: end;
+          @include mobile {
+            display: none;
+          }
+          .pandas {
+            filter: invert(1);
+            height: 100px;
+            margin-right: 30px;
+          }
+          .scrapy {
+            height: 100px;
+          }
+        }
+        .text {
+          color: $white-lighter;
+          font-size: 18px;
+          font-weight: 400;
+          grid-area: text;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}
+.is-hide-on-desktop {
+  display: none;
+  @include mobile {
+    display: flex;
+  }
+}
+.is-hide-on-mobile {
+  display: flex;
+  @include mobile {
+    display: none;
+  }
+}

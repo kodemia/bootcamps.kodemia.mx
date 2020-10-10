@@ -1,17 +1,17 @@
 import Link from 'next/link'
 import Modules from './Modules'
 
-export default function Program ({ brochure, modules }) {
+export default function Program ({ brochure, hideButtonOnMobile, modules }) {
   return (
     <section className='program'>
       <div className='container'>
         <div className='subtitle'>El programa</div>
         <div className='title'>Así es como puedes llegar de cero a Full Stack</div>
-        <div className='button'>
+        <div className={`button ${hideButtonOnMobile ? 'hide-button-on-mobile' : ''}`}>
           <Link href={brochure}>
             <a className='brochure'>
               <img className='icon' src='/icons/download.svg' alt='download' />
-              Descarga el brochure
+                Descarga el brochure
             </a>
           </Link>
         </div>

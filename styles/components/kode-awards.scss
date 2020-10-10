@@ -9,7 +9,7 @@
     .card {
       background-color: $cyan-primary;
       border-radius: 30px;
-      margin: 0 80px;
+      margin-top: 40px;
       @include mobile {
         margin: 0;
       }
@@ -50,6 +50,31 @@
             text-align: start;
           }
         }
+      }
+    }
+    .brochure {
+      align-items: center;
+      background-color: $gray-medium;
+      border-radius: 15px;
+      color: $white;
+      display: flex;
+      font-size: 16px;
+      font-weight: 500;
+      justify-content: center;
+      margin: 80px auto 50px;
+      padding: 10px 13px;
+      width: fit-content;
+      @include mobile {
+        padding: 8px 23px;
+      }
+      .icon {
+        margin-right: 7px;
+      }
+    }
+    .is-mobile {
+      display: none;
+      @include mobile {
+        display: flex;
       }
     }
   }

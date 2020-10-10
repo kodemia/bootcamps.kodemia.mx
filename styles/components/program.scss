@@ -11,12 +11,14 @@
     max-width: $max-page-width;
     padding: 20px 0 40px 0;
     width: 100%;
-    .modules { grid-area: modules; }
     @include mobile {
-      grid-template-areas: 'subtitle'
+      grid-template-areas:  'subtitle'
                             'title'
                             'modules'
                             'button';
+    }
+    .modules {
+      grid-area: modules;
     }
     .subtitle {
       color: $gray-light;
@@ -72,7 +74,13 @@
         padding: 8px 23px;
       }
       .icon {
-        margin-right: 5px;
+        margin-right: 7px;
+      }
+    }
+    .hide-button-on-mobile {
+      display: flex;
+      @include mobile {
+        display: none;
       }
     }
   } 

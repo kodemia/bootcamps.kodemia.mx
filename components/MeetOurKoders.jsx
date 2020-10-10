@@ -5,12 +5,12 @@ export default function MeetOurKoders () {
       <div className='container'>
         <div className='info-container'>
           <div className='title'>
-            conoce la historia de Melisa
+            conoce la historia de Melissa
           </div>
           <div className='text'>
             Mel, nuestra koder de la octava generación, nos comparte {' '}
             cómo ha sido su experiencia hasta el momento en el Bootcamp, cuando {' '}
-            comienzas desde cero
+            comienzas desde cero.
           </div>
         </div>
         <div className='video-container'>
