@@ -5,7 +5,15 @@ export default function Hero ({ apply, brochure, children, image, language, moda
     <section className='hero'>
       <div className='container'>
         <div className='info-section'>
-          <p className='modality'>Web developer  |  {modality}</p>
+          <p className='modality'>
+            <span className='is-mobile'>
+              Web developer{' '}|
+            </span>
+            <span>
+              {' '}
+              {modality}
+            </span>
+          </p>
           <h1>
             <span className='title'>Bootcamp{'\r\n'}</span>
             <span className='title'>Full Stack con{' '}</span>

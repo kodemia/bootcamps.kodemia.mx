@@ -8,7 +8,7 @@ export default function Scholarship ({ interview }) {
           <div className='content'>
             <div className='title'>Aplicar por una beca del 5% hasta el 15%</div>
             <div className='text'>
-            Aplica a través de una entrevista personalizada, lo más importante es tu talento y actitud
+            Aplica a través de una entrevista personalizada, lo más importante es tu talento y actitud.
             </div>
             <div className='button'>
               <Link href={interview}>

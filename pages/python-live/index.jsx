@@ -20,19 +20,19 @@ import Workshops from '../../components/Workshops'
 const achievements = [
   {
     name: 'personalización de currículum',
-    text: 'crearás una mejor impresión con una estrategia para mostrar tus habilidades y tu potencial en un CV de nivel profesional'
+    text: 'crearás una mejor impresión con una estrategia para mostrar tus habilidades y tu potencial en un CV de nivel profesional.'
   },
   {
     name: 'estilo de aprendizaje',
-    text: 'conocer tu estilo de aprendizaje te ayudará a asimilar todo lo que estás por aprender en tu nueva vida como developer'
+    text: 'conocer tu estilo de aprendizaje te ayudará a asimilar todo lo que estás por aprender en tu nueva vida como developer.'
   },
   {
     name: 'proyección profesional',
-    text: 'conocerás todas las posibilidades de crecimiento que puedes tener en el sector Tech para que tomes las mejores decisiones según tus objetivos'
+    text: 'conocerás todas las posibilidades de crecimiento que puedes tener en el sector Tech para que tomes las mejores decisiones según tus objetivos.'
   },
   {
     name: 'estrategias de búsqueda de empleo',
-    text: 'crearás una estrategia personalizada acorde a tus fortalezas y objetivos profesionales'
+    text: 'crearás una estrategia personalizada acorde a tus fortalezas y objetivos profesionales.'
   }
 
 ]
@@ -45,8 +45,8 @@ const details = [
   },
   {
     icon: '/icons/clock.svg',
-    description: 'lunes a viernes de 19 a 22 hrs',
-    note: '7 sábados de 10 a 18 hrs  |  GMT-6',
+    description: ' GMT-6 Lunes a viernes de 19 a 22 hrs',
+    note: '7 sábados de 10 a 18 hrs',
     title: 'horarios'
   },
   {
@@ -57,8 +57,7 @@ const details = [
   },
   {
     icon: '/icons/map-pin.svg',
-    description: 'tonalá 10, col. Roma Norte, CDMX',
-    note: '(Remoto por Covid-19)',
+    description: 'clases en línea de manera remota',
     title: 'lugar'
   }
 ]
@@ -66,7 +65,7 @@ const details = [
 const metrics = [
   {
     description: 'horas en clases y talleres complementarios',
-    value: '+340'
+    value: '+380'
   },
   {
     description: 'certificaciones de valor curricular e internacional',
@@ -87,43 +86,43 @@ const modules = [
     image: '/images/classroom.png',
     name: 'pre-Bootcamp',
     period: '+40 horas',
-    text: 'desde tu inscripción desarrollarás las bases a través de cursos online y asesoría personalizada'
+    text: 'desde tu inscripción desarrollarás las bases a través de cursos online y asesoría personalizada.'
   },
   {
     image: '/images/kode-day.png',
     name: 'modulo Front End',
     period: 'semana 1 - 6',
-    text: 'crearás tu primer sitio web dinámico y funcional aplicando tu conocimiento de HTML, CSS, Bootstrap, SASS y Javascript'
+    text: 'crearás tu primer sitio web dinámico y funcional aplicando tu conocimiento de HTML, CSS, Bootstrap, SASS y Javascript.'
   },
   {
     image: '/images/mentor.png',
     name: 'modulo Back End',
     period: 'semana 7 - 15',
-    text: 'aprenderás a crear todo el Back End del primer proyecto, bases de datos y tu propia API utilizando Python, Django y PostgreSQL'
+    text: 'aprenderás a crear todo el Back End del primer proyecto, bases de datos y tu propia API utilizando Python, Django y PostgreSQL.'
   },
   {
     image: '/images/koders.png',
     name: 'modulo Cloud',
     period: 'semana 15 - 17',
-    text: 'desplegarás en Cloud tu aplicación completa con tu dominio e integrarás las API’s de AI disponibles en la plataforma de IBM'
+    text: 'desplegarás en Cloud tu aplicación completa con tu dominio e integrarás las API’s de AI disponibles en la plataforma de IBM.'
   }
 ]
 
 const paymentPlan = [
   {
-    text: 'aceptamos VISA, Mastercard y Amercian Express',
+    text: 'aceptamos VISA, Mastercard y Amercian Express.',
     name: 'a MSI con tarjeta de crédito'
   },
   {
-    text: 'con pago en una sola exhibición',
+    text: 'con pago en una sola exhibición.',
     name: '10% de descuento'
   },
   {
-    text: 'sin intereses y sin intermediarios',
+    text: 'sin intereses y sin intermediarios.',
     name: 'diferido a 4 o 5 meses'
   },
   {
-    text: 'puedes pagar a 12, 18, 24 y 36 meses con mensualidades desde $2,926',
+    text: 'puedes pagar a 12, 18, 24 y 36 meses con mensualidades desde $2,926.',
     name: 'financiamiento hasta 36 meses'
   }
 
@@ -135,14 +134,14 @@ const workshops = [
     title: '9 talleres sabatinos',
     bullets: [
       'Fundamentos de diseño UX/UI',
-      'Scrum Fundamentals',
-      'Xtreme Programming',
-      'Git y Github Avanzado',
+      'Scrum fundamentals',
+      'Xtreme programming',
+      'Git y Github avanzado',
       'Negocios en TI',
       'AWS Cloud',
-      'Numpy',
       'Flask',
-      'Selenium'
+      'Pandas',
+      'Scrapy'
     ]
   },
   {
@@ -177,26 +176,33 @@ export default function PythonLive () {
         modality='Bootcamp Live'
       >
         Transforma tu vida en <span>21 semanas</span> de aprendizaje intensivo,
-        desarrollarás todas las habilidades para programar una aplicación
-        web desde cero sin salir de casa
+        donde desarrollarás todas las habilidades para programar una aplicación
+        web desde cero sin salir de casa.
       </Hero>
       <Metrics metrics={metrics} />
       <Details details={details} />
-      <Introduction language='Python' />
+      <Introduction>
+        Nuestro Bootcamp es un entrenamiento intensivo que te llevará{' '}
+        <span>desde cero hasta desarrollador Full Stack</span>. Lograrás crear una aplicación web completa empleando{' '}
+        <span>UX/UI, metodología SCRUM, FrontEnd y BackEnd con Python</span>,{' '}
+        desplegado en la nube, creando y consumiendo servicios de terceros.
+      </Introduction>
       <Program
         brochure='/python-live/brochure'
+        hideButtonOnMobile
         modules={modules}
       />
       <DataManipulation isHideOnDesktop />
       <Workshops workshops={workshops} />
       <DataManipulation isHideOnMobile />
-
       <KodeAwards
+        brochure='/python-lifetime/brochure'
+        hasButton
         name='KodeAwards, el desafío final'
         period='semana 7 - 19'
         text='Aplicarás todo el conocimiento en un proyecto real, desarrollando el MVP en equipo, con una metodología SCRUM
           para llevarlo a una web app funcional desplegada en la nube.<br /> Crearás el pitch de tu app, porque será
-          evaluada por directores de desarrollo de empresas invitadas para reconocerte como Full Stack Developer'
+          evaluada por directores de desarrollo de empresas invitadas para reconocerte como Full Stack Developer.'
       />
       <Career achievements={achievements} />
       <Testimonials />

@@ -77,5 +77,11 @@
         margin-right: 7px;
       }
     }
+    .hide-button-on-mobile {
+      display: flex;
+      @include mobile {
+        display: none;
+      }
+    }
   } 
 }

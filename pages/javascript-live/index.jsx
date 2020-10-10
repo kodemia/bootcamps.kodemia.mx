@@ -185,11 +185,12 @@ export default function JavascriptLive () {
         modules={modules}
       />
       <KodeAwards
+        brochure='/python-lifetime/brochure'
         name='KodeAwards, el desafío final'
         period='semana 7 - 17'
         text='Aplicarás todo el conocimiento en un proyecto real, desarrollando el MVP en equipo, con una metodología SCRUM
           para llevarlo a una web app funcional desplegada en la nube.<br /> Crearás el pitch de tu app, porque será
-          evaluada por directores de desarrollo de empresas invitadas para reconocerte como Full Stack Developer'
+          evaluada por directores de desarrollo de empresas invitadas para reconocerte como Full Stack Developer.'
       />
       <Workshops workshops={workshops} />
       <Career achievements={achievements} />

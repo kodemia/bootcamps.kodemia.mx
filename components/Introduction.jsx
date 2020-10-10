@@ -1,5 +1,6 @@
+import { Children } from 'react';
 
-export default function Introduction ({ language }) {
+export default function Introduction ({ children }) {
   return (
     <section className='introduction'>
       <div className='container'>
@@ -8,11 +9,7 @@ export default function Introduction ({ language }) {
             <div className='info-section'>
               <div className='title'>Transforma tu vida programando</div>
               <div className='text'>
-                Nuestro Bootcamp te llevará{' '}
-                <span>desde cero hasta desarrollador Full Stack</span>. Crearás{' '}
-                una aplicación web completa empleando{' '}
-                <span>UX/UI, metodología SCRUM, FrontEnd y BackEnd con {language}</span>
-                , todo desplegado en la nube
+                {children}
               </div>
               <div className='subtitle'>
                 Nos sumamos a tu objetivo y te acompañamos en el proceso
