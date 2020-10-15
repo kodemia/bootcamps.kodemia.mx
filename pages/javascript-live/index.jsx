@@ -110,7 +110,7 @@ const modules = [
 
 const paymentPlan = [
   {
-    text: 'aceptamos VISA, Mastercard y Amercian Express',
+    text: 'aceptamos VISA, Mastercard y American Express',
     name: 'a MSI con tarjeta de crédito'
   },
   {
@@ -122,7 +122,7 @@ const paymentPlan = [
     name: 'diferido a 4 o 5 meses'
   },
   {
-    text: 'puedes pagar a 12, 18, 24 y 36 meses con mensualidades desde $2,926',
+    text: 'puedes pagar a 12, 18, 24 y 36 meses con mensualidades desde $3,190',
     name: 'financiamiento hasta 36 meses'
   }
 
@@ -195,7 +195,10 @@ export default function JavascriptLive () {
       <Workshops workshops={workshops} />
       <Career achievements={achievements} />
       <Testimonials />
-      <Investment investment='$59,500 MXN (Incluye IVA) + Inscripción de $5,500.' paymentPlan={paymentPlan} />
+      <Investment
+        investment='$59,500 MXN (Incluye IVA) + Inscripción de $5,500.'
+        paymentPlan={paymentPlan}
+      />
       <Scholarship interview='/javascript-live/entrevista' />
       <MeetOurKoders />
       <Support />
