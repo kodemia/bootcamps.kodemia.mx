@@ -109,7 +109,7 @@ const modules = [
 
 const paymentPlan = [
   {
-    text: 'aceptamos VISA, Mastercard y Amercian Express',
+    text: 'aceptamos VISA, Mastercard y American Express',
     name: 'a MSI con tarjeta de crédito'
   },
   {
