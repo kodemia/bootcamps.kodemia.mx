@@ -39,7 +39,7 @@ const achievements = [
 const details = [
   {
     icon: '/icons/calendar.svg',
-    description: 'del 19 de octubre al 1 de febrero',
+    description: 'del 8 de febrero al 25 de junio',
     title: 'fechas'
   },
   {
@@ -114,16 +114,16 @@ const paymentPlan = [
     name: 'a MSI con tarjeta de crédito'
   },
   {
-    text: 'con pago en una sola exhibición',
-    name: '10% de descuento'
+    text: 'aplica por un financiamiento a Meses sin Intereses',
+    name: '15 ó 18 MSI'
   },
   {
-    text: 'sin intereses y sin intermediarios',
-    name: 'diferido a 4 o 5 meses'
+    text: 'cubre tu Bootcamp en pagos diferidos antes de concluir tu Bootcamp',
+    name: 'pre-pago Kodemia'
   },
   {
-    text: 'puedes pagar a 12, 18, 24 y 36 meses con mensualidades desde $3,190',
-    name: 'financiamiento hasta 36 meses'
+    text: 'puedes pagar a 12, 18 y 24 meses con mensualidades desde $3,509',
+    name: 'financiamiento hasta 24 meses'
   }
 
 ]
@@ -196,7 +196,7 @@ export default function JavascriptLive () {
       <Career achievements={achievements} />
       <Testimonials />
       <Investment
-        investment='$59,500 MXN (Incluye IVA) + Inscripción de $5,500.'
+        investment='$65,500 MXN (Incluye IVA) + Inscripción de $5,700.'
         paymentPlan={paymentPlan}
       />
       <Scholarship interview='/javascript-live/entrevista' />

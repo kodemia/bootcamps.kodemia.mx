@@ -23,18 +23,19 @@
         justify-content: space-between;
         margin: 0 15px;
         max-width: $max-page-width;
-        padding: 50px 0;
+        padding: 110px 0;
         @include mobile {
           flex-direction: column;
         }
         .text {
           color: $white;
-          font-size: 2.45em;
+          font-size: 2.35rem;
           font-weight: 500;
-          letter-spacing: 0.05em;
-          line-height: 35px;
+          letter-spacing: 2.25px;
+          line-height: 45px;
           @include mobile {
-            font-size: 1.8em;
+            font-size: 1.75em;
+            letter-spacing: 1.1px;
           }
           span {
             color: $cyan;
@@ -53,7 +54,7 @@
             background-color: $cyan;
             border-radius: 15px;
             color: $black;
-            font-size: 1.2rem;
+            font-size: 1.15rem;
             font-weight: 500;
             padding: 13px 25px;
             text-align: center;
