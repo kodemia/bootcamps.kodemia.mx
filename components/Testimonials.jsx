@@ -4,13 +4,6 @@ import classnames from 'classnames'
 
 const testimonials = [
   {
-    employment: 'Desarrolladora Front End en Iterando',
-    quote: 'El bootcamp de Kodemia marcó una diferencia en mi vida, tanto a nivel profesional como a nivel personal. Cada uno de los mentores cuenta con mucho conocimiento y una gran experiencia que comparten dentro y fuera del aula.',
-    name: 'Brenda Gonzalez',
-    photo: '/images/koder-frame-1.png',
-    fontSize: 'small'
-  },
-  {
     employment: 'Desarrolladora Front End en Conekta',
     quote: 'Ofrecen un bootcamp muy completo, con excelentes mentores, buenos amigos y una gran comunidad',
     name: 'Rosa Ortega',
