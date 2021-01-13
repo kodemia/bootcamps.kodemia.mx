@@ -40,7 +40,7 @@ const achievements = [
 const details = [
   {
     icon: '/icons/calendar.svg',
-    description: 'del 16 de noviembre al 2 de abril',
+    description: '15 de marzo al 30 de julio',
     title: 'fechas'
   },
   {
@@ -110,7 +110,7 @@ const modules = [
 
 const paymentPlan = [
   {
-    text: 'aceptamos VISA, Mastercard y American Express.',
+    text: 'aceptamos Visa, Mastercard y American Express.',
     name: 'a MSI con tarjeta de crédito'
   },
   {
@@ -119,7 +119,7 @@ const paymentPlan = [
   },
   {
     text: 'sin intereses y sin intermediarios.',
-    name: 'diferido a 4 o 5 meses'
+    name: 'diferido a 4 ó 5 meses'
   },
   {
     text: 'puedes pagar a 12, 18, 24 y 36 meses con mensualidades desde $3,583.',
@@ -207,7 +207,7 @@ export default function PythonLive () {
       <Career achievements={achievements} />
       <Testimonials />
       <Investment
-        investment='$69,500 MXN (Incluye IVA) + Inscripción de $5,950.'
+        investment='$79,900 MXN (Incluye IVA) + Inscripción de $3,500.'
         paymentPlan={paymentPlan}
       />
       <Scholarship interview='/python-live/entrevista' />
