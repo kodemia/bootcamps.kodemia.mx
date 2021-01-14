@@ -196,7 +196,7 @@ export default function JavascriptLive () {
       <Career achievements={achievements} />
       <Testimonials />
       <Investment
-        investment='$69,900 MXN (Incluye IVA) + Inscripción de $3,500.'
+        investment='$65,500 MXN (Incluye IVA) + Inscripción de $5,700.'
         paymentPlan={paymentPlan}
       />
       <Scholarship interview='/javascript-live/entrevista' />
